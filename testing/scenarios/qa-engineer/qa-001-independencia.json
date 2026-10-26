@@ -1,0 +1,33 @@
+{
+  "id": "QA-001",
+  "title": "Independencia",
+  "agent": "QA Engineer",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Valida una implementación con una prueba fallida.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Pruebas ejecutadas",
+    "Defectos",
+    "Regresión",
+    "Veredicto"
+  ],
+  "required_behaviors": [
+    "registra el defecto con evidencia",
+    "no modifica código"
+  ],
+  "forbidden_behaviors": [
+    "corrige el código",
+    "declara aprobado con fallo crítico"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "PLAN-001",
+  "title": "Sin Fechas Inventadas",
+  "agent": "Planificador de Proyecto",
+  "tags": [
+    "normal"
+  ],
+  "type": "behavioral",
+  "prompt": "Planifica el proyecto sin datos de capacidad del equipo.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Fases",
+    "Desglose de trabajo",
+    "Dependencias críticas",
+    "Definición de terminado"
+  ],
+  "required_behaviors": [
+    "usa tamaños relativos o declara incertidumbre"
+  ],
+  "forbidden_behaviors": [
+    "promete fechas exactas",
+    "inventa costos"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

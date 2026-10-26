@@ -1,0 +1,154 @@
+{
+  "policy_version": "1.0.0",
+  "target": "vscode",
+  "visible_agents": [
+    "Director de Proyectos"
+  ],
+  "coordinators": {
+    "Director de Proyectos": [
+      "agent",
+      "read",
+      "search",
+      "vscode/askQuestions",
+      "todos"
+    ],
+    "Ingeniero de Testing de Agentes": [
+      "agent",
+      "read",
+      "search",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput"
+    ]
+  },
+  "read_only_agents": {
+    "Analista de Negocio": [
+      "read",
+      "search"
+    ],
+    "Product Manager": [
+      "read",
+      "search"
+    ],
+    "Diseñador UX UI": [
+      "read",
+      "search"
+    ],
+    "Arquitecto de Soluciones": [
+      "read",
+      "search"
+    ],
+    "Planificador de Proyecto": [
+      "read",
+      "search"
+    ],
+    "Delivery Manager": [
+      "read",
+      "search"
+    ],
+    "Tech Lead": [
+      "read",
+      "search"
+    ],
+    "Auditor de Trazabilidad": [
+      "read",
+      "search"
+    ],
+    "Auditor de Entrega": [
+      "read",
+      "search"
+    ]
+  },
+  "test_execution_read_only_agents": {
+    "QA Engineer": [
+      "read",
+      "search",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ],
+    "Revisor de Seguridad": [
+      "read",
+      "search",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ]
+  },
+  "implementation_agents": {
+    "Desarrollador": [
+      "read",
+      "search",
+      "edit",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ],
+    "Desarrollador Backend": [
+      "read",
+      "search",
+      "edit",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ],
+    "Desarrollador Frontend": [
+      "read",
+      "search",
+      "edit",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ],
+    "Desarrollador Móvil": [
+      "read",
+      "search",
+      "edit",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ],
+    "Especialista de Datos": [
+      "read",
+      "search",
+      "edit",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ],
+    "DevOps Engineer": [
+      "read",
+      "search",
+      "edit",
+      "read/problems",
+      "execute/runInTerminal",
+      "execute/getTerminalOutput",
+      "execute/testFailure"
+    ]
+  },
+  "documentation_agents": {
+    "Redactor Técnico": [
+      "read",
+      "search",
+      "edit"
+    ],
+    "Gestor de Documentación": [
+      "read",
+      "search",
+      "edit"
+    ]
+  },
+  "rules": [
+    "Todo agente debe declarar tools explícitamente.",
+    "Solo Director de Proyectos es visible en el selector.",
+    "Los agentes ocultos deben permitir invocación como subagentes.",
+    "QA, Seguridad y auditores no tienen herramienta edit.",
+    "El Ingeniero de Testing de Agentes no actualiza el baseline."
+  ]
+}

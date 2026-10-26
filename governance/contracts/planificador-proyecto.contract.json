@@ -1,0 +1,59 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "planificador-proyecto",
+  "agent_name": "Planificador de Proyecto",
+  "purpose": "Convertir alcance y arquitectura en fases, tareas, dependencias, riesgos y criterios de salida.",
+  "allowed_phases": [
+    "PLANNING"
+  ],
+  "allowed_tools": [
+    "read",
+    "search"
+  ],
+  "allowed_actions": [
+    "desglosar trabajo",
+    "ordenar dependencias",
+    "definir hitos",
+    "proponer responsables"
+  ],
+  "forbidden_actions": [
+    "editar archivos",
+    "programar",
+    "inventar fechas",
+    "inventar costos",
+    "aprobar plan"
+  ],
+  "allowed_paths": [
+    "** (lectura)"
+  ],
+  "forbidden_paths": [
+    "** (escritura)"
+  ],
+  "required_inputs": [
+    "alcance",
+    "arquitectura",
+    "criterios",
+    "riesgos"
+  ],
+  "required_outputs": [
+    "fases",
+    "tareas",
+    "dependencias",
+    "DoR",
+    "DoD",
+    "plan de validación"
+  ],
+  "completion_criteria": [
+    "cada tarea tiene entrada, salida y cierre",
+    "riesgos visibles"
+  ],
+  "escalation_rules": [
+    "dependencia sin dueño",
+    "criterio no verificable",
+    "estimación sin base"
+  ],
+  "test_scenarios": [
+    "PLAN-001"
+  ]
+}

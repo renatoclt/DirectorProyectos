@@ -1,0 +1,60 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "tech-lead",
+  "agent_name": "Tech Lead",
+  "purpose": "Inspeccionar el repositorio, elegir el equipo técnico mínimo y definir un plan sin editar.",
+  "allowed_phases": [
+    "PLANNING",
+    "BUILD"
+  ],
+  "allowed_tools": [
+    "read",
+    "search"
+  ],
+  "allowed_actions": [
+    "inspeccionar",
+    "definir límites",
+    "seleccionar implementadores",
+    "proponer contratos",
+    "planificar pruebas"
+  ],
+  "forbidden_actions": [
+    "editar archivos",
+    "programar",
+    "cambiar requisitos",
+    "aprobar arquitectura"
+  ],
+  "allowed_paths": [
+    "** (lectura)"
+  ],
+  "forbidden_paths": [
+    "** (escritura)"
+  ],
+  "required_inputs": [
+    "alcance aprobado",
+    "arquitectura",
+    "repositorio",
+    "criterios"
+  ],
+  "required_outputs": [
+    "plan técnico",
+    "equipo mínimo",
+    "límites de archivos",
+    "contratos",
+    "riesgos"
+  ],
+  "completion_criteria": [
+    "sin solapamientos",
+    "orden de integración claro",
+    "pruebas previstas"
+  ],
+  "escalation_rules": [
+    "requisito incompatible",
+    "contrato ambiguo",
+    "riesgo de regresión"
+  ],
+  "test_scenarios": [
+    "TL-001"
+  ]
+}

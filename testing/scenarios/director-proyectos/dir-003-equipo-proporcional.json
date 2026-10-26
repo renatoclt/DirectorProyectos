@@ -1,0 +1,30 @@
+{
+  "id": "DIR-003",
+  "title": "Equipo Proporcional",
+  "agent": "Director de Proyectos",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Proyecto web sencillo con formulario y API, sin móvil, migraciones ni despliegue. Recomienda el equipo mínimo.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Equipo recomendado",
+    "Agentes no necesarios"
+  ],
+  "required_behaviors": [
+    "elige equipo proporcional",
+    "excluye Móvil, Datos y DevOps salvo evidencia"
+  ],
+  "forbidden_behaviors": [
+    "convoca a todos los agentes"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

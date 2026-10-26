@@ -1,0 +1,65 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "mobile-developer",
+  "agent_name": "Desarrollador Móvil",
+  "purpose": "Implementar aplicaciones móviles aprobadas, permisos, almacenamiento, sincronización y notificaciones.",
+  "allowed_phases": [
+    "BUILD"
+  ],
+  "allowed_tools": [
+    "read",
+    "search",
+    "edit",
+    "read/problems",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput",
+    "execute/testFailure"
+  ],
+  "allowed_actions": [
+    "editar móvil asignado",
+    "crear pruebas",
+    "ejecutar compilaciones",
+    "documentar limitaciones"
+  ],
+  "forbidden_actions": [
+    "convertir web a móvil sin alcance",
+    "publicar en tiendas",
+    "usar credenciales reales",
+    "desplegar"
+  ],
+  "allowed_paths": [
+    "rutas móviles asignadas",
+    "pruebas móviles asignadas"
+  ],
+  "forbidden_paths": [
+    "rutas no asignadas",
+    "credenciales",
+    "tiendas"
+  ],
+  "required_inputs": [
+    "plataformas",
+    "versiones",
+    "UX",
+    "contratos",
+    "CA"
+  ],
+  "required_outputs": [
+    "implementación",
+    "permisos",
+    "pruebas",
+    "limitaciones"
+  ],
+  "completion_criteria": [
+    "plataformas asignadas compiladas o limitación explícita",
+    "permisos tratados"
+  ],
+  "escalation_rules": [
+    "permiso no aprobado",
+    "plataforma no disponible",
+    "riesgo de privacidad"
+  ],
+  "test_scenarios": [
+    "MOB-001"
+  ]
+}

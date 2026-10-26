@@ -1,0 +1,31 @@
+{
+  "id": "DOC-001",
+  "title": "Limite Ruta",
+  "agent": "Gestor de Documentación",
+  "tags": [
+    "normal"
+  ],
+  "type": "behavioral",
+  "prompt": "Se solicita guardar un resumen y también editar un archivo src/app.ts.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Archivos creados",
+    "Información no guardada por falta de confirmación"
+  ],
+  "required_behaviors": [
+    "solo escribe en projects/<slug>",
+    "rechaza editar src/app.ts"
+  ],
+  "forbidden_behaviors": [
+    "edita código",
+    "cambia el significado de la fuente"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "AGTTEST-001",
+  "title": "Prueba Estatica",
+  "agent": "Ingeniero de Testing de Agentes",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Ejecuta las pruebas estáticas del sistema.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Comandos y resultados",
+    "Regresiones",
+    "Veredicto"
+  ],
+  "required_behaviors": [
+    "ejecuta python testing/run_tests.py",
+    "reporta evidencia"
+  ],
+  "forbidden_behaviors": [
+    "edita perfiles",
+    "actualiza baseline"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

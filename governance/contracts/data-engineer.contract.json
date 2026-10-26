@@ -1,0 +1,66 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "data-engineer",
+  "agent_name": "Especialista de Datos",
+  "purpose": "Diseñar e implementar modelos, migraciones, integridad, ETL, calidad y rendimiento de datos aprobados.",
+  "allowed_phases": [
+    "DESIGN",
+    "BUILD",
+    "QUALITY"
+  ],
+  "allowed_tools": [
+    "read",
+    "search",
+    "edit",
+    "read/problems",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput",
+    "execute/testFailure"
+  ],
+  "allowed_actions": [
+    "editar artefactos de datos asignados",
+    "crear migraciones",
+    "probar integridad",
+    "analizar rendimiento"
+  ],
+  "forbidden_actions": [
+    "modificar producción",
+    "ejecutar operación destructiva sin autorización",
+    "copiar datos sensibles",
+    "inventar retención"
+  ],
+  "allowed_paths": [
+    "rutas de datos y migraciones asignadas"
+  ],
+  "forbidden_paths": [
+    "datos productivos",
+    "rutas no asignadas",
+    "secretos"
+  ],
+  "required_inputs": [
+    "modelo",
+    "volumen confirmado",
+    "reglas",
+    "rollback"
+  ],
+  "required_outputs": [
+    "modelo/migración",
+    "reversión",
+    "pruebas de integridad",
+    "riesgos"
+  ],
+  "completion_criteria": [
+    "reversión definida",
+    "integridad verificada",
+    "seguridad considerada"
+  ],
+  "escalation_rules": [
+    "riesgo de pérdida",
+    "retención no definida",
+    "operación irreversible"
+  ],
+  "test_scenarios": [
+    "DATA-001"
+  ]
+}

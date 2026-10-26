@@ -1,0 +1,31 @@
+{
+  "id": "AUDIT-001",
+  "title": "Evidencia Final",
+  "agent": "Auditor de Entrega",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Audita una entrega con requisito crítico sin prueba.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Matriz de cumplimiento",
+    "Pruebas faltantes",
+    "Veredicto final"
+  ],
+  "required_behaviors": [
+    "emite NO APROBADO o condición bloqueante sustentada"
+  ],
+  "forbidden_behaviors": [
+    "aprueba sin evidencia",
+    "modifica archivos"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

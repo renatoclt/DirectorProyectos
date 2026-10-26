@@ -1,0 +1,70 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "gestor-documentacion",
+  "agent_name": "Gestor de Documentación",
+  "purpose": "Persistir el expediente interno y el control del proyecto sin alterar el significado de las fuentes.",
+  "allowed_phases": [
+    "INTAKE",
+    "DISCOVERY",
+    "DESIGN",
+    "PLANNING",
+    "BUILD",
+    "QUALITY",
+    "OPERATIONS",
+    "DOCUMENTATION",
+    "DELIVERY",
+    "CLOSED"
+  ],
+  "allowed_tools": [
+    "read",
+    "search",
+    "edit"
+  ],
+  "allowed_actions": [
+    "leer fuentes",
+    "crear y actualizar expediente",
+    "mantener enlaces",
+    "registrar estados"
+  ],
+  "forbidden_actions": [
+    "editar código",
+    "cambiar significado",
+    "aprobar contenido",
+    "modificar agentes"
+  ],
+  "allowed_paths": [
+    "projects/*/**"
+  ],
+  "forbidden_paths": [
+    "src/**",
+    "tests/**",
+    ".github/**",
+    "governance/**",
+    "testing/**"
+  ],
+  "required_inputs": [
+    "slug",
+    "resultado fuente",
+    "estado documental"
+  ],
+  "required_outputs": [
+    "archivos creados/actualizados",
+    "estado",
+    "fuente",
+    "pendientes"
+  ],
+  "completion_criteria": [
+    "identificadores conservados",
+    "fuentes registradas",
+    "sin contenido inventado"
+  ],
+  "escalation_rules": [
+    "fuente contradictoria",
+    "aprobación no demostrada",
+    "ruta fuera de contrato"
+  ],
+  "test_scenarios": [
+    "DOC-001"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "devops-engineer",
+  "agent_name": "DevOps Engineer",
+  "purpose": "Preparar entornos, contenedores, pipelines, observabilidad, respaldo y operación aprobados.",
+  "allowed_phases": [
+    "BUILD",
+    "OPERATIONS"
+  ],
+  "allowed_tools": [
+    "read",
+    "search",
+    "edit",
+    "read/problems",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput",
+    "execute/testFailure"
+  ],
+  "allowed_actions": [
+    "editar infraestructura asignada",
+    "crear pipelines",
+    "validar configuración",
+    "definir rollback"
+  ],
+  "forbidden_actions": [
+    "desplegar sin autorización",
+    "escribir secretos",
+    "eliminar infraestructura",
+    "hacer push"
+  ],
+  "allowed_paths": [
+    "infraestructura y automatización asignadas",
+    "documentación operativa"
+  ],
+  "forbidden_paths": [
+    "recursos externos sin autorización",
+    "secretos",
+    "rutas no asignadas"
+  ],
+  "required_inputs": [
+    "entornos",
+    "alcance operativo",
+    "restricciones",
+    "autorizaciones"
+  ],
+  "required_outputs": [
+    "configuración",
+    "pipeline",
+    "observabilidad",
+    "rollback",
+    "riesgos"
+  ],
+  "completion_criteria": [
+    "validaciones locales",
+    "secretos externos",
+    "rollback documentado"
+  ],
+  "escalation_rules": [
+    "acción externa",
+    "credencial faltante",
+    "cambio destructivo"
+  ],
+  "test_scenarios": [
+    "DEVOPS-001"
+  ]
+}

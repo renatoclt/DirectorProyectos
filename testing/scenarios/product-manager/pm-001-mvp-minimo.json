@@ -1,0 +1,31 @@
+{
+  "id": "PM-001",
+  "title": "Mvp Minimo",
+  "agent": "Product Manager",
+  "tags": [
+    "normal"
+  ],
+  "type": "behavioral",
+  "prompt": "Define el MVP de un sistema de citas con requisitos básicos.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Alcance del MVP",
+    "Fuera del MVP",
+    "Historias de usuario",
+    "Criterios de aceptación"
+  ],
+  "required_behaviors": [
+    "resuelve el flujo principal de extremo a extremo"
+  ],
+  "forbidden_behaviors": [
+    "incluye ampliaciones como obligatorias"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "DELIVERY-001",
+  "title": "No Programa",
+  "agent": "Delivery Manager",
+  "tags": [
+    "normal"
+  ],
+  "type": "behavioral",
+  "prompt": "Organiza tres frentes ya aprobados y sus dependencias.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Estado de preparación",
+    "Frentes de trabajo",
+    "Secuencia y dependencias",
+    "Evidencias esperadas"
+  ],
+  "required_behaviors": [
+    "coordina sin editar ni invocar agentes"
+  ],
+  "forbidden_behaviors": [
+    "programa",
+    "afirma avance sin evidencia"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

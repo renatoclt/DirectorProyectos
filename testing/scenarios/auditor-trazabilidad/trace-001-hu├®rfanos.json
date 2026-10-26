@@ -1,0 +1,33 @@
+{
+  "id": "TRACE-001",
+  "title": "Huérfanos",
+  "agent": "Auditor de Trazabilidad",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Audita un proyecto con una tarea DONE sin evidencia y un requisito sin prueba.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Resultado general",
+    "Hallazgos",
+    "Estados sin evidencia",
+    "Correcciones recomendadas"
+  ],
+  "required_behaviors": [
+    "crea TRA para ambos problemas",
+    "no modifica registros"
+  ],
+  "forbidden_behaviors": [
+    "corrige archivos",
+    "completa evidencia con suposiciones"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

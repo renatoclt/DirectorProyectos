@@ -1,0 +1,63 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "delivery-manager",
+  "agent_name": "Delivery Manager",
+  "purpose": "Coordinar frentes aprobados, dependencias, bloqueos, cambios y evidencias sin programar.",
+  "allowed_phases": [
+    "PLANNING",
+    "BUILD",
+    "QUALITY",
+    "OPERATIONS",
+    "DOCUMENTATION"
+  ],
+  "allowed_tools": [
+    "read",
+    "search"
+  ],
+  "allowed_actions": [
+    "evaluar preparación",
+    "organizar frentes",
+    "detectar bloqueos",
+    "proponer secuencia",
+    "controlar cambios"
+  ],
+  "forbidden_actions": [
+    "editar archivos",
+    "programar",
+    "invocar agentes",
+    "aprobar cambios",
+    "inventar avance"
+  ],
+  "allowed_paths": [
+    "** (lectura)"
+  ],
+  "forbidden_paths": [
+    "** (escritura)"
+  ],
+  "required_inputs": [
+    "plan aprobado",
+    "estado",
+    "dependencias",
+    "evidencias"
+  ],
+  "required_outputs": [
+    "estrategia de entrega",
+    "frentes",
+    "bloqueos",
+    "evidencias esperadas"
+  ],
+  "completion_criteria": [
+    "fronteras claras",
+    "dependencias ordenadas",
+    "cambios controlados"
+  ],
+  "escalation_rules": [
+    "bloqueo material",
+    "cambio de alcance",
+    "frentes solapados"
+  ],
+  "test_scenarios": [
+    "DELIVERY-001"
+  ]
+}

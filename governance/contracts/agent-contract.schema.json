@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./agent-contract.schema.json",
+  "title": "Contrato de alcance de agente",
+  "type": "object",
+  "required": [
+    "contract_version",
+    "agent_id",
+    "agent_name",
+    "purpose",
+    "allowed_phases",
+    "allowed_tools",
+    "allowed_actions",
+    "forbidden_actions",
+    "allowed_paths",
+    "forbidden_paths",
+    "required_inputs",
+    "required_outputs",
+    "completion_criteria",
+    "escalation_rules",
+    "test_scenarios"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "contract_version": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "agent_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_phases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "allowed_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "allowed_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "forbidden_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "required_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "required_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "completion_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "escalation_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "test_scenarios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

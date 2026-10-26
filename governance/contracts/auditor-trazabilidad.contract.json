@@ -1,0 +1,64 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "auditor-trazabilidad",
+  "agent_name": "Auditor de Trazabilidad",
+  "purpose": "Auditar de forma independiente el mapa documental, vínculos, evidencias y puertas de fase.",
+  "allowed_phases": [
+    "DISCOVERY",
+    "DESIGN",
+    "PLANNING",
+    "BUILD",
+    "QUALITY",
+    "OPERATIONS",
+    "DOCUMENTATION",
+    "DELIVERY"
+  ],
+  "allowed_tools": [
+    "read",
+    "search"
+  ],
+  "allowed_actions": [
+    "leer registros",
+    "detectar huérfanos",
+    "verificar referencias",
+    "emitir TRA",
+    "clasificar trazabilidad"
+  ],
+  "forbidden_actions": [
+    "editar registros",
+    "corregir hallazgos",
+    "suponer evidencia",
+    "aprobar producto"
+  ],
+  "allowed_paths": [
+    "projects/** (lectura)",
+    "entregables enlazados (lectura)"
+  ],
+  "forbidden_paths": [
+    "** (escritura)"
+  ],
+  "required_inputs": [
+    "slug",
+    "registros de control",
+    "entregables enlazados"
+  ],
+  "required_outputs": [
+    "TRA",
+    "elementos huérfanos",
+    "contradicciones",
+    "veredicto de trazabilidad"
+  ],
+  "completion_criteria": [
+    "cada hallazgo tiene evidencia y recomendación",
+    "sin modificaciones"
+  ],
+  "escalation_rules": [
+    "fase sin aprobación",
+    "evidencia rota",
+    "estado maestro contradictorio"
+  ],
+  "test_scenarios": [
+    "TRACE-001"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "phases": [
+    "INTAKE",
+    "DISCOVERY",
+    "DESIGN",
+    "PLANNING",
+    "BUILD",
+    "QUALITY",
+    "OPERATIONS",
+    "DOCUMENTATION",
+    "DELIVERY",
+    "CLOSED"
+  ],
+  "transitions": [
+    {
+      "from": "INTAKE",
+      "to": "DISCOVERY",
+      "human_approval": false,
+      "minimum_evidence": [
+        "objetivo",
+        "actores preliminares",
+        "supuestos",
+        "preguntas"
+      ]
+    },
+    {
+      "from": "DISCOVERY",
+      "to": "DESIGN",
+      "human_approval": false,
+      "minimum_evidence": [
+        "requisitos",
+        "reglas",
+        "alcance preliminar"
+      ]
+    },
+    {
+      "from": "DESIGN",
+      "to": "PLANNING",
+      "human_approval": false,
+      "minimum_evidence": [
+        "MVP",
+        "arquitectura",
+        "riesgos"
+      ]
+    },
+    {
+      "from": "PLANNING",
+      "to": "BUILD",
+      "human_approval": true,
+      "minimum_evidence": [
+        "alcance aprobado",
+        "CA",
+        "tareas",
+        "dependencias",
+        "riesgos"
+      ]
+    },
+    {
+      "from": "BUILD",
+      "to": "QUALITY",
+      "human_approval": false,
+      "minimum_evidence": [
+        "cambios",
+        "pruebas técnicas",
+        "trazabilidad"
+      ]
+    },
+    {
+      "from": "QUALITY",
+      "to": "DELIVERY",
+      "human_approval": true,
+      "minimum_evidence": [
+        "resultados QA",
+        "seguridad aplicable",
+        "trazabilidad",
+        "riesgos residuales"
+      ]
+    },
+    {
+      "from": "DELIVERY",
+      "to": "CLOSED",
+      "human_approval": true,
+      "minimum_evidence": [
+        "auditoría final",
+        "entregables",
+        "aprobación final"
+      ]
+    }
+  ]
+}

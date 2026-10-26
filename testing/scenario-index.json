@@ -1,0 +1,199 @@
+{
+  "version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "DIR-001",
+      "agent": "Director de Proyectos",
+      "path": "director-proyectos/dir-001-idea-breve.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "DIR-002",
+      "agent": "Director de Proyectos",
+      "path": "director-proyectos/dir-002-puerta-aprobacion.json",
+      "tags": [
+        "critical",
+        "smoke"
+      ]
+    },
+    {
+      "id": "DIR-003",
+      "agent": "Director de Proyectos",
+      "path": "director-proyectos/dir-003-equipo-proporcional.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "AN-001",
+      "agent": "Analista de Negocio",
+      "path": "analista-negocio/an-001-no-inventar.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "PM-001",
+      "agent": "Product Manager",
+      "path": "product-manager/pm-001-mvp-minimo.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "UX-001",
+      "agent": "Diseñador UX UI",
+      "path": "ux-ui-designer/ux-001-estados-interfaz.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "ARQ-001",
+      "agent": "Arquitecto de Soluciones",
+      "path": "arquitecto-soluciones/arq-001-proporcionalidad.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "PLAN-001",
+      "agent": "Planificador de Proyecto",
+      "path": "planificador-proyecto/plan-001-sin-fechas-inventadas.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DELIVERY-001",
+      "agent": "Delivery Manager",
+      "path": "delivery-manager/delivery-001-no-programa.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "TL-001",
+      "agent": "Tech Lead",
+      "path": "tech-lead/tl-001-limites-archivos.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "DEV-001",
+      "agent": "Desarrollador",
+      "path": "desarrollador/dev-001-sin-scope-creep.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "BE-001",
+      "agent": "Desarrollador Backend",
+      "path": "backend-developer/be-001-contrato-api.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "FE-001",
+      "agent": "Desarrollador Frontend",
+      "path": "frontend-developer/fe-001-seguridad-servidor.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "MOB-001",
+      "agent": "Desarrollador Móvil",
+      "path": "mobile-developer/mob-001-permisos.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DATA-001",
+      "agent": "Especialista de Datos",
+      "path": "data-engineer/data-001-migracion-reversible.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DEVOPS-001",
+      "agent": "DevOps Engineer",
+      "path": "devops-engineer/devops-001-sin-despliegue.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "QA-001",
+      "agent": "QA Engineer",
+      "path": "qa-engineer/qa-001-independencia.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "SEC-001",
+      "agent": "Revisor de Seguridad",
+      "path": "security-reviewer/sec-001-sin-garantia.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "WRITER-001",
+      "agent": "Redactor Técnico",
+      "path": "technical-writer/writer-001-solo-validado.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "TRACE-001",
+      "agent": "Auditor de Trazabilidad",
+      "path": "auditor-trazabilidad/trace-001-huérfanos.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "AUDIT-001",
+      "agent": "Auditor de Entrega",
+      "path": "auditor-entrega/audit-001-evidencia-final.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "DOC-001",
+      "agent": "Gestor de Documentación",
+      "path": "gestor-documentacion/doc-001-limite-ruta.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "AGTTEST-001",
+      "agent": "Ingeniero de Testing de Agentes",
+      "path": "testing-agentes/agttest-001-prueba-estatica.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "AGTTEST-002",
+      "agent": "Ingeniero de Testing de Agentes",
+      "path": "testing-agentes/agttest-002-baseline-protegido.json",
+      "tags": [
+        "critical",
+        "smoke"
+      ]
+    }
+  ]
+}

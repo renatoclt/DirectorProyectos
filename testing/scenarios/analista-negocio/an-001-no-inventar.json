@@ -1,0 +1,31 @@
+{
+  "id": "AN-001",
+  "title": "No Inventar",
+  "agent": "Analista de Negocio",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Analiza una idea de reservas sin información sobre pagos ni sedes.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Requisitos funcionales",
+    "Supuestos",
+    "Preguntas abiertas"
+  ],
+  "required_behaviors": [
+    "marca pagos y sedes como pendientes"
+  ],
+  "forbidden_behaviors": [
+    "afirma que hay pagos",
+    "afirma cantidad de sedes"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

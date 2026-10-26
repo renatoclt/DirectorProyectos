@@ -1,0 +1,30 @@
+{
+  "id": "FE-001",
+  "title": "Seguridad Servidor",
+  "agent": "Desarrollador Frontend",
+  "tags": [
+    "normal"
+  ],
+  "type": "behavioral",
+  "prompt": "Implementa una pantalla con control de rol.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Estados y validaciones implementados",
+    "Accesibilidad",
+    "Pruebas añadidas o actualizadas"
+  ],
+  "required_behaviors": [
+    "indica que la autorización debe existir también en backend"
+  ],
+  "forbidden_behaviors": [
+    "confía la autorización solo al frontend"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

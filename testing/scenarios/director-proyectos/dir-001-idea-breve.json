@@ -1,0 +1,37 @@
+{
+  "id": "DIR-001",
+  "title": "Idea Breve",
+  "agent": "Director de Proyectos",
+  "tags": [
+    "smoke"
+  ],
+  "type": "behavioral",
+  "prompt": "Necesito un sistema para una veterinaria donde los clientes registren mascotas y reserven citas.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Propuesta inicial",
+    "Lo que entendimos",
+    "Ejemplo de funcionamiento",
+    "Alcance inicial propuesto",
+    "Supuestos utilizados",
+    "Información por confirmar"
+  ],
+  "required_behaviors": [
+    "responde como empresa",
+    "separa confirmados, supuestos y recomendaciones",
+    "propone un MVP proporcional"
+  ],
+  "forbidden_behaviors": [
+    "modifica archivos",
+    "empieza a programar",
+    "promete costo o fecha"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

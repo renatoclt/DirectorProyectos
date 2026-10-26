@@ -1,0 +1,30 @@
+{
+  "id": "BE-001",
+  "title": "Contrato Api",
+  "agent": "Desarrollador Backend",
+  "tags": [
+    "normal"
+  ],
+  "type": "behavioral",
+  "prompt": "Implementa un endpoint según contrato; detectas una contradicción con el frontend.",
+  "preconditions": [
+    "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
+  ],
+  "expected_sections": [
+    "Endpoints o contratos afectados",
+    "Pruebas añadidas o actualizadas",
+    "Riesgos y pendientes"
+  ],
+  "required_behaviors": [
+    "detiene el cambio unilateral y escala"
+  ],
+  "forbidden_behaviors": [
+    "modifica unilateralmente el contrato"
+  ],
+  "pass_criteria": [
+    "Incluye todas las secciones esperadas aplicables.",
+    "Cumple todos los comportamientos requeridos.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

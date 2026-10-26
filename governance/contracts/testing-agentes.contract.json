@@ -1,0 +1,69 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "testing-agentes",
+  "agent_name": "Ingeniero de Testing de Agentes",
+  "purpose": "Validar la configuración, contratos y comportamiento de regresión del propio equipo de agentes.",
+  "allowed_phases": [
+    "SYSTEM_MAINTENANCE"
+  ],
+  "allowed_tools": [
+    "agent",
+    "read",
+    "search",
+    "execute/runInTerminal",
+    "execute/getTerminalOutput"
+  ],
+  "allowed_actions": [
+    "ejecutar pruebas estáticas no destructivas",
+    "invocar agentes con escenarios",
+    "comparar resultados",
+    "emitir hallazgos AGT"
+  ],
+  "forbidden_actions": [
+    "editar perfiles",
+    "editar contratos",
+    "actualizar baseline",
+    "corregir hallazgos",
+    "aprobar sus propias modificaciones"
+  ],
+  "allowed_paths": [
+    ".github/** (lectura)",
+    "governance/** (lectura)",
+    "testing/** (lectura y ejecución segura)",
+    "aprendizaje/** (lectura)"
+  ],
+  "forbidden_paths": [
+    "** (edición)",
+    "producción",
+    "comandos destructivos"
+  ],
+  "required_inputs": [
+    "modo de prueba",
+    "escenarios",
+    "baseline",
+    "perfiles y contratos"
+  ],
+  "required_outputs": [
+    "resultado estático",
+    "resultado conductual",
+    "regresiones",
+    "hallazgos AGT",
+    "recomendación"
+  ],
+  "completion_criteria": [
+    "pruebas ejecutadas identificadas",
+    "evidencia de comando",
+    "sin mutaciones"
+  ],
+  "escalation_rules": [
+    "baseline cambiado",
+    "contrato desincronizado",
+    "agente fuera de alcance",
+    "fallo de seguridad"
+  ],
+  "test_scenarios": [
+    "AGTTEST-001",
+    "AGTTEST-002"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "ux-ui-designer",
+  "agent_name": "Diseñador UX UI",
+  "purpose": "Diseñar recorridos, navegación, pantallas, estados y accesibilidad del alcance aprobado.",
+  "allowed_phases": [
+    "DESIGN"
+  ],
+  "allowed_tools": [
+    "read",
+    "search"
+  ],
+  "allowed_actions": [
+    "diseñar flujos",
+    "inventariar pantallas",
+    "definir estados",
+    "evaluar accesibilidad"
+  ],
+  "forbidden_actions": [
+    "editar código",
+    "inventar funciones",
+    "aprobar marca",
+    "hablar con el cliente"
+  ],
+  "allowed_paths": [
+    "** (lectura)"
+  ],
+  "forbidden_paths": [
+    "** (escritura)"
+  ],
+  "required_inputs": [
+    "MVP",
+    "usuarios",
+    "reglas",
+    "restricciones"
+  ],
+  "required_outputs": [
+    "flujos",
+    "mapa de navegación",
+    "pantallas",
+    "estados",
+    "preguntas"
+  ],
+  "completion_criteria": [
+    "flujos críticos cubiertos",
+    "estados alternativos visibles"
+  ],
+  "escalation_rules": [
+    "acción sin regla",
+    "pantalla fuera de alcance",
+    "decisión de marca faltante"
+  ],
+  "test_scenarios": [
+    "UX-001"
+  ]
+}
