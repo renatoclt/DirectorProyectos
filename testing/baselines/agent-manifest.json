@@ -1,0 +1,283 @@
+{
+  "baseline_version": "1.0.0",
+  "system_version": "3.0.0",
+  "agents": {
+    "analista-negocio": {
+      "name": "Analista de Negocio",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "0d81bc84f8cfd08b598e84ff1e58238aa8970f891ef6e891ed77511f31cc423f",
+      "contract_sha256": "6f6eec57e50bea6ff23fbee3baf6c273a976b3ae6b09b9be7e3bf17dbb27318a"
+    },
+    "arquitecto-soluciones": {
+      "name": "Arquitecto de Soluciones",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "80669fa8c0c120499565acad472a3a1f01633c9623ed4c2926c4d54160a941f4",
+      "contract_sha256": "8d695c7cb5e5b9727fd37b15c07307cdec9779a77ab2d075b107608915ec4877"
+    },
+    "auditor-entrega": {
+      "name": "Auditor de Entrega",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "74174b1c005fbbfdc31649379495eec5b76564395fcda8171321af8be289e70d",
+      "contract_sha256": "11bbc7ee804427f20f8606b555494ba70e35d29c53e33a04dd71d59b8f34c1a8"
+    },
+    "auditor-trazabilidad": {
+      "name": "Auditor de Trazabilidad",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "e01a29c5f588b0b7b377075a33a4bf807cc594910a42fb44a06b74faf0d6443e",
+      "contract_sha256": "7b6c3c1944dbfdd81b8a707ccc8bf965782c33ca5d76e232c6c9a0fd5d0c30a8"
+    },
+    "backend-developer": {
+      "name": "Desarrollador Backend",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "5d238578027df12ca5d14811c016e34f13b67221970b17cd7aa13bcf4e2e5536",
+      "contract_sha256": "673e0c3aad2df8369b6f1bf6a2013dd6c214662af430a59ba74f4443bd31060b"
+    },
+    "data-engineer": {
+      "name": "Especialista de Datos",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "afe18229e5d13f6bbfe28bc5ab3089b83905a17bdf51aa4187054c4da1320120",
+      "contract_sha256": "f7fb8bb7d99bcfaa02523e12d024b1ecd74eb6234f19a116a01384c9b24434db"
+    },
+    "delivery-manager": {
+      "name": "Delivery Manager",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "8cf9276abd611d3ed2463dda887fa9456c925b548208f0443b1b171975921ee9",
+      "contract_sha256": "ad719fc95544c24b91aa1c54aa959764ab3121f63f403f4bfd0ee93aaa781cba"
+    },
+    "desarrollador": {
+      "name": "Desarrollador",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "bedf513b3fbb420416149fbf76de7a49fc843af65842e309d22a716c29168373",
+      "contract_sha256": "12cd8a80ce25889ec23310092ea2c499f50a7305a2df9fe9db0b1f5a73095505"
+    },
+    "devops-engineer": {
+      "name": "DevOps Engineer",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "bfd428271eeb58cc8dda0d7b5a85cfa878e8d9eafca39e9abc573f043b2ad065",
+      "contract_sha256": "2a854c24a1275a061dec5320df630be090a4f275cdd8c08f1a6f90c5e5e23e14"
+    },
+    "director-proyectos": {
+      "name": "Director de Proyectos",
+      "tools": [
+        "agent",
+        "read",
+        "search",
+        "vscode/askQuestions",
+        "todos"
+      ],
+      "user_invocable": true,
+      "disable_model_invocation": false,
+      "profile_sha256": "c4ddef3bc62170cf8e5176dc7ec39205b52152c77f7a0b74d6fd0c27efa6f6e5",
+      "contract_sha256": "092911c33abf5f3519f0a20c45c6abac4f6b1227e249160768d8db18c4ed9596"
+    },
+    "frontend-developer": {
+      "name": "Desarrollador Frontend",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "0a44e86778f9cae676a11b269d8788c5f2ca50ddb17d830535b87988a213fb70",
+      "contract_sha256": "32e8e12da27ac2fc78ad38613f8ff3e00d9b5201454726d47c6ae3ed3c8ccb33"
+    },
+    "gestor-documentacion": {
+      "name": "Gestor de Documentación",
+      "tools": [
+        "read",
+        "search",
+        "edit"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "879fa6a8d61e902153f748b9390e4ae624ca11cd6a28763a7bc1ad4b7f000ba4",
+      "contract_sha256": "224f28022fd46f9105aad51f4c93ec7ce97d8a689923d71d758b8eceaac29d99"
+    },
+    "mobile-developer": {
+      "name": "Desarrollador Móvil",
+      "tools": [
+        "read",
+        "search",
+        "edit",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "22ce325b1ac426d2edad9dcf9e101e230e976cfe95697bf70e84e38215f2cda3",
+      "contract_sha256": "49183590e03364d8be9cd26debd27c6a3fbc630bb8b7f673c9418892157e0c48"
+    },
+    "planificador-proyecto": {
+      "name": "Planificador de Proyecto",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "8e2d69cf1da8e8e6826a4f9a50e021465b233df558394ce7fd9a5659e4cc6303",
+      "contract_sha256": "7bbc4791bc09d7ebc15a981e822c25ca92015b9d3110a439b2b60cc8b9ad2e06"
+    },
+    "product-manager": {
+      "name": "Product Manager",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "1bccde85dd0d203b438a84e0d4020504b87a6d852f16c8f4de93d3efd405c4a5",
+      "contract_sha256": "f692d171ae5f04ca4e365603d89d545ccb6d375130cf1d065974a05af88bb946"
+    },
+    "qa-engineer": {
+      "name": "QA Engineer",
+      "tools": [
+        "read",
+        "search",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "e763711e40f8f1f6d2f453dbe6b9e1d40fdb57d35e88e50a5765bb1a467f483a",
+      "contract_sha256": "91bf73f7527bae33dd4d44dc6bde8359909c06736e9a7f67e23ad078ad83cfbc"
+    },
+    "security-reviewer": {
+      "name": "Revisor de Seguridad",
+      "tools": [
+        "read",
+        "search",
+        "read/problems",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput",
+        "execute/testFailure"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "ebc6e9c3d627a85a385ab6b43ab28124b0bc6dbaec74c767650b36e3e10ec054",
+      "contract_sha256": "73305f37622643de4838ca19a30ec83a4580eb10b4e6168b3e462e80706654dc"
+    },
+    "tech-lead": {
+      "name": "Tech Lead",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "d7aad3b5932ef5d7ae0cd51c92899291c82df598d8de69c4e545677fbae91514",
+      "contract_sha256": "6118b5108043bc13634becd265714bc112aeeb73a83ca0713f51a9ef0f190689"
+    },
+    "technical-writer": {
+      "name": "Redactor Técnico",
+      "tools": [
+        "read",
+        "search",
+        "edit"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "d648e7d1143a4f4963bc57b31fe59d27a923d981337794d9ba5f5e01bffefab2",
+      "contract_sha256": "c04d0dc44500ab5cd7746afdf206f59a5b0b2d99680453992c13f8ea633ed31d"
+    },
+    "testing-agentes": {
+      "name": "Ingeniero de Testing de Agentes",
+      "tools": [
+        "agent",
+        "read",
+        "search",
+        "execute/runInTerminal",
+        "execute/getTerminalOutput"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "38f19ca1d3c687c8c07fb09e5fb17c2c52ae35b24f7c0d883f098c83007b7572",
+      "contract_sha256": "564af1b123d451ac2c46bf43a4e86f9d6bb02a5898b98b980b55e88838c9c7bb"
+    },
+    "ux-ui-designer": {
+      "name": "Diseñador UX UI",
+      "tools": [
+        "read",
+        "search"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "184ac8b0d45ee4d58a527c4b118f2d27a3732ddc4c887b9ece97f16b4a31e3cb",
+      "contract_sha256": "370ba820f1fe814d6911030c444c541ed055263ab40b3279e5794c2ec1a1d0f9"
+    }
+  }
+}
