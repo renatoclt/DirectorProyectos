@@ -1,6 +1,6 @@
 {
   "$schema": "./agent-contract.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.2.0",
   "agent_id": "testing-agentes",
   "agent_name": "Ingeniero de Testing de Agentes",
   "purpose": "Validar la configuración, contratos y comportamiento de regresión del propio equipo de agentes.",
@@ -18,7 +18,8 @@
     "ejecutar pruebas estáticas no destructivas",
     "invocar agentes con escenarios",
     "comparar resultados",
-    "emitir hallazgos AGT"
+    "emitir hallazgos AGT",
+    "validar estructura, lock y baseline de Skills"
   ],
   "forbidden_actions": [
     "editar perfiles",
@@ -31,7 +32,9 @@
     ".github/** (lectura)",
     "governance/** (lectura)",
     "testing/** (lectura y ejecución segura)",
-    "aprendizaje/** (lectura)"
+    "aprendizaje/** (lectura)",
+    ".github/skills/** (lectura)",
+    "governance/skills-lock.json (lectura)"
   ],
   "forbidden_paths": [
     "** (edición)",
@@ -42,28 +45,34 @@
     "modo de prueba",
     "escenarios",
     "baseline",
-    "perfiles y contratos"
+    "perfiles y contratos",
+    "Skills, licencias, lock y baseline de Skills"
   ],
   "required_outputs": [
     "resultado estático",
     "resultado conductual",
     "regresiones",
     "hallazgos AGT",
-    "recomendación"
+    "recomendación",
+    "resultado de validación de Skills"
   ],
   "completion_criteria": [
     "pruebas ejecutadas identificadas",
     "evidencia de comando",
-    "sin mutaciones"
+    "sin mutaciones",
+    "Skills y referencias validadas sin mutaciones"
   ],
   "escalation_rules": [
     "baseline cambiado",
     "contrato desincronizado",
     "agente fuera de alcance",
-    "fallo de seguridad"
+    "fallo de seguridad",
+    "Skill o licencia cambió respecto al baseline"
   ],
   "test_scenarios": [
     "AGTTEST-001",
-    "AGTTEST-002"
+    "AGTTEST-002",
+    "AGTTEST-003",
+    "AGTTEST-004"
   ]
 }

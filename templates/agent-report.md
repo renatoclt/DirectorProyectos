@@ -3,6 +3,7 @@
 - Agente:
 - Objetivo:
 - Contrato aplicado:
+- Skills aplicadas:
 - Elementos relacionados:
 - Tareas realizadas:
 - Archivos consultados:

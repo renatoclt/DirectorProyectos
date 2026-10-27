@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vista móvil (entrega inicial) · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+  <p class="fase-aviso" role="note"><span class="fase">ENTREGA INICIAL</span> Pantalla de la opción B (CR-001): inicio y solicitud de reserva en ancho móvil.</p>
+
+  <header class="cabecera">
+    <h1>Vista móvil, versión entrega inicial: inicio y solicitud</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">Opción B (CR-001), P01 y P05/P06 de 03-ux en ancho móvil (sección 8) · RNF-003, RF-001, RF-006 (parcial) · HU-016</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a> · Versión de la fase siguiente: <a href="10-movil-inicio-y-resultados.html">10 · Móvil con resultados y disponibilidad</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <p>Enfoque «móvil primero»: una sola columna, menú compacto, objetivos táctiles amplios y un botón principal «Solicitar reserva» siempre visible en una barra inferior. Los dos «teléfonos» son contenedores estrechos ilustrativos.</p>
+
+    <div class="moviles">
+      <section aria-labelledby="titulo-m1">
+        <h2 class="movil-titulo" id="titulo-m1">Inicio en móvil</h2>
+        <div class="movil">
+          <header class="sitio-cab">
+            <a class="logo" href="01-inicio-entrega-inicial.html">Ruta Camper</a>
+            <nav aria-label="Menú compacto (ilustrativo)">
+              <a href="03-ficha-camper-entrega-inicial.html">Campers</a>
+              <a href="12-tarifas-y-condiciones.html">Tarifas</a>
+              <a href="11-solicitud-reserva.html">Solicitar reserva</a>
+            </nav>
+            <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+          </header>
+          <div class="sitio-cuerpo">
+            <div class="hero">
+              <h3>Alquila tu camper en España</h3>
+              <p>Elige tu camper y envíanos tu solicitud.</p>
+              <p><a class="btn acento" href="11-solicitud-reserva.html">Solicitar reserva</a></p>
+            </div>
+            <h3>Nuestros campers</h3>
+            <article class="camper">
+              <figure class="foto-ejemplo">
+                <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo A <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="precio">Desde 90 € / noche <span class="insignia aviso">dato de ejemplo</span></p>
+                <a class="btn sec" href="03-ficha-camper-entrega-inicial.html">Ver ficha</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="titulo-m2">
+        <h2 class="movil-titulo" id="titulo-m2">Solicitud en móvil</h2>
+        <div class="movil">
+          <header class="sitio-cab">
+            <a class="logo" href="01-inicio-entrega-inicial.html">Ruta Camper</a>
+            <nav aria-label="Menú compacto (ilustrativo)">
+              <a href="03-ficha-camper-entrega-inicial.html">Campers</a>
+              <a href="12-tarifas-y-condiciones.html">Tarifas</a>
+              <a href="11-solicitud-reserva.html" class="actual">Solicitar reserva</a>
+            </nav>
+          </header>
+          <div class="sitio-cuerpo">
+            <h3>Solicitar reserva</h3>
+            <p class="aviso-sitio">Es una solicitud, no una reserva confirmada. No se cobra nada.</p>
+            <form action="#" aria-label="Solicitud de reserva (móvil)">
+              <div class="buscador">
+                <div class="campo">
+                  <label for="m-recogida">Recogida</label>
+                  <input id="m-recogida" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="campo">
+                  <label for="m-devolucion">Devolución</label>
+                  <input id="m-devolucion" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="campo">
+                  <label for="m-email">Correo electrónico</label>
+                  <input id="m-email" type="email" autocomplete="email" placeholder="correo@ejemplo.test">
+                </div>
+              </div>
+              <div class="casilla">
+                <input id="m-acepto" type="checkbox">
+                <label for="m-acepto">Acepto la política de privacidad (obligatorio, sin marcar). <span class="pendiente">Texto en borrador (PEND-010)</span></label>
+              </div>
+            </form>
+            <div class="barra-inferior">
+              <span class="nota-ejemplo">Sin cobro en la web</span>
+              <button type="button" class="btn acento">Enviar solicitud</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados" style="margin-top:16px">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueletos con la altura final reservada.</div>
+      <div class="estado error"><strong>Error:</strong> mensaje junto al campo, con texto que explica cómo corregir.</div>
+      <div class="estado"><strong>Sin conexión:</strong> aviso y reintento, sin perder lo escrito.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RNF-003 (adaptable a móvil), RF-001 (parcial), RF-006 (parcial: solicitud) · HU-016 (sección 8 de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>).</li>
+        <li>La velocidad en móvil es un objetivo (RNF-001), sin garantía de resultados reales; el protocolo de medición está pendiente (PEND-014).</li>
+        <li>Diferencia con la fase siguiente: no hay resultados con disponibilidad ni total.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

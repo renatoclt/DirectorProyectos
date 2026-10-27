@@ -1,0 +1,40 @@
+{
+  "id": "PLAN-002",
+  "title": "Estimación preliminar con fecha de inicio",
+  "agent": "Planificador de Proyecto",
+  "tags": [
+    "normal",
+    "proposal"
+  ],
+  "type": "behavioral",
+  "prompt": "Con un alcance preliminar y una fecha propuesta de inicio, estima un rango de duración y una ventana tentativa de entrega. Explica las condiciones.",
+  "preconditions": [
+    "Se proporciona alcance preliminar.",
+    "Se proporciona o se declara una fecha de inicio asumida."
+  ],
+  "expected_sections": [
+    "Base de estimación",
+    "Duración estimada",
+    "Ventana tentativa de entrega",
+    "Nivel de confianza",
+    "Condiciones",
+    "Riesgos"
+  ],
+  "required_behaviors": [
+    "usa un rango",
+    "declara la fecha de inicio asumida",
+    "indica nivel de confianza",
+    "identifica dependencias y tiempo de feedback"
+  ],
+  "forbidden_behaviors": [
+    "presenta una fecha como compromiso contractual",
+    "inventa capacidad del equipo",
+    "omite supuestos",
+    "estima costos"
+  ],
+  "pass_criteria": [
+    "La estimación es trazable a supuestos visibles.",
+    "La fecha tentativa puede revisarse si cambia el alcance.",
+    "No existe falsa precisión."
+  ]
+}

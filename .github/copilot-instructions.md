@@ -63,6 +63,7 @@ Usa identificadores estables cuando corresponda:
 - Casos de prueba: `CP-001`.
 - Defectos: `DEF-001`.
 - Hallazgos de seguridad: `SEG-001`.
+- Hallazgos de interfaz: `UI-001`.
 - Solicitudes de cambio: `CR-001`.
 - Decisiones de arquitectura: `ADR-001`.
 
@@ -137,3 +138,42 @@ Crea solo las carpetas y documentos que correspondan al alcance real.
 - Auditor de Trazabilidad revisa el mapa documental; Auditor de Entrega revisa la preparación del producto.
 - No actualices el baseline para ocultar una regresión.
 - Ejecuta `python testing/run_tests.py` después de cambiar agentes, contratos, prompts, instrucciones o escenarios.
+
+## Skills reutilizables
+
+- Las Skills se almacenan en `.github/skills/` y contienen procedimientos reutilizables; no son agentes.
+- Una Skill no concede herramientas, no amplía rutas y no autoriza trabajo fuera del alcance.
+- `frontend-design` puede ser utilizada por Diseñador UX UI y Desarrollador Frontend para crear o rediseñar una interfaz aprobada.
+- `frontend-design-review` puede ser utilizada por Diseñador UX UI, Desarrollador Frontend, QA Engineer y Auditor de Entrega para revisión visual, responsive, accesible y de sistema de diseño.
+- QA y Auditoría continúan sin poder editar aunque utilicen una Skill relacionada con frontend.
+- El brief, los requisitos, el contrato, las decisiones de marca y el sistema de diseño del proyecto prevalecen sobre recomendaciones generales.
+- Toda Skill externa debe conservar licencia, origen y cambios locales en `UPSTREAM.md` y `governance/skills-lock.json`.
+- No actualices Skills externas automáticamente ni desde una fuente no revisada.
+- Cuando una Skill influya materialmente en un resultado, regístrala en `AGENT-ACTIVITY.md`.
+
+## Testing de Skills
+
+- Toda modificación de una Skill debe actualizar lock, referencias y escenarios aplicables.
+- Ejecuta `python testing/run_tests.py` después de cambiar `.github/skills/`, licencias o `skills-lock.json`.
+- No actualices `testing/baselines/skill-manifest.json` para ocultar una referencia rota o una ampliación de conducta.
+- `SKILLBASE-002` requiere revisión humana antes de aceptar el nuevo estado.
+
+## Propuestas ejecutivas y mockups
+
+Para una descripción nueva de proyecto, prioriza una salida ejecutiva breve y un paquete de adjuntos.
+
+La propuesta principal debe permitir una decisión en 2 a 3 minutos e incluir:
+
+- resumen para decisión;
+- presentación verificable;
+- entendimiento;
+- solución propuesta;
+- plan de trabajo;
+- plazo preliminar sustentado;
+- disponibilidad confirmada o pendiente;
+- próximo paso;
+- referencia visible a los adjuntos.
+
+Los detalles se guardan en `projects/<slug>/00-propuesta/`. Cuando exista interfaz, el mockup conceptual se guarda en `projects/<slug>/03-ux/mockup-conceptual/`.
+
+Usa `company/COMPANY-PROFILE.md` como fuente de afirmaciones sobre experiencia, capacidades y disponibilidad. No inventes credenciales comerciales.

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pago seguro alojado por la pasarela · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase siguiente">FASE SIGUIENTE</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. No forma parte de la entrega inicial (opción B): el pago en línea pertenece al MVP completo.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">P07 de 03-ux · RF-007, RF-008, RF-009 · HU-006, HU-007 · CA-003, CA-006, CA-031</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a> · Pago rechazado o en verificación: <a href="14-estados.html#pago">14 · Estados (pago)</a></p>
+  </div>
+
+  <div class="sitio">
+    <header class="sitio-cab">
+      <a class="logo" href="01-inicio.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+      <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+      <nav aria-label="Navegación principal (ilustrativa)">
+        <a href="03-ficha-camper.html">Campers</a>
+        <span class="pasivo">Sedes</span>
+        <a href="07-consulta-reserva.html">Mi reserva</a>
+        <span class="pasivo">Contacto</span>
+      </nav>
+    </header>
+
+    <main class="sitio-cuerpo" id="contenido">
+      <h1>Pago de tu reserva</h1>
+      <ol class="pasos" aria-label="Progreso de la reserva">
+        <li class="hecho"><span>Resumen <span class="solo-lectura">(completado)</span></span></li>
+        <li class="hecho"><span>Tus datos <span class="solo-lectura">(completado)</span></span></li>
+        <li aria-current="step"><span>Pago <span class="solo-lectura">(paso actual)</span></span></li>
+      </ol>
+
+      <div class="aviso-sitio aviso" role="status">
+        <p><strong>Tus fechas están reservadas durante 14:32.</strong> <span class="ej">tiempo de ejemplo</span></p>
+        <p class="nota-ejemplo">El aviso del tiempo restante se anuncia también a lectores de pantalla, no solo se ve. La duración del bloqueo (15 minutos es solo una propuesta) y la posibilidad de ampliarlo están <span class="pendiente">pendientes (DEC-027, PEND-031)</span>.</p>
+      </div>
+
+      <div class="dos-columnas">
+        <section aria-labelledby="t-pago">
+          <h2 id="t-pago">Pago seguro</h2>
+          <div class="marco-pasarela">
+            <p><strong>Área de pago alojada por la pasarela</strong></p>
+            <p class="nota-ejemplo">Ilustración: en este espacio la pasarela de pago muestra su propio formulario. La web no tiene formulario propio de tarjeta ni recibe ni guarda datos de tarjeta (RNF-006, CA-031).</p>
+            <div class="bloque" aria-hidden="true"></div>
+            <div class="bloque" aria-hidden="true"></div>
+            <div class="bloque" aria-hidden="true"></div>
+            <p><span class="pendiente">Pasarela y tipo de integración (alojada o embebida) pendientes: B1, PEND-012</span></p>
+          </div>
+          <p class="suave">Pago seguro procesado por la pasarela. No guardamos tu tarjeta. Si tu banco lo pide, te identificarás con autenticación reforzada (3-D Secure).</p>
+          <div class="acciones">
+            <a class="btn" href="04-resumen-y-datos-conductor.html">Volver a mis datos</a>
+            <button type="button" class="btn acento">Pagar 360 € (ejemplo)</button>
+          </div>
+        </section>
+
+        <aside class="ticket" aria-labelledby="t-tu-reserva">
+          <h2 id="t-tu-reserva">Tu reserva</h2>
+          <p>Camper Modelo A «Calima» <span class="ej">dato de ejemplo</span><br>Del 10 al 14 de julio, 4 noches <span class="ej">fechas de ejemplo</span><br>Sede de ejemplo</p>
+          <hr class="corte">
+          <p class="precio">Total: 360 € <small>importe de ejemplo</small></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="sitio-pie">
+      <p>Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación</p>
+      <p><span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span></p>
+    </footer>
+  </div>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> «Preparando pago seguro…»</p>
+        <p class="estado error"><strong>Pago rechazado:</strong> «No hemos podido completar el pago. Revisa los datos o prueba otra tarjeta.» Se muestra el tiempo restante del bloqueo y se permite reintentar mientras dure (CA-006). Diseño en <a href="14-estados.html#pago">14 · Estados</a>.</p>
+        <p class="estado error"><strong>Bloqueo vencido:</strong> se informa, se liberan las fechas y se ofrece una nueva búsqueda con las mismas fechas.</p>
+        <p class="estado"><strong>Sin permisos:</strong> sin bloqueo activo, se vuelve al resumen.</p>
+        <p class="estado"><strong>Sin conexión:</strong> el pago puede estar en curso: no reenviar; consultar el estado de la reserva.</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-007, RF-008, RF-009 · HU-006, HU-007 · CA-003, CA-006, CA-031 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>La reserva solo se confirma cuando el servidor recibe la notificación de la pasarela, no por la vuelta del navegador (RN-023, CA-004); ver <a href="06-confirmacion.html">pantalla de estado</a>.</li>
+        <li>Pendientes del cliente: pasarela y titularidad (B1), duración del bloqueo (DEC-027), alineación del bloqueo con la sesión de pago (ISS-019).</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P07) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

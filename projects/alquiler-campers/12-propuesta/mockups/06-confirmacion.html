@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estado y confirmación de la reserva · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase siguiente">FASE SIGUIENTE</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. No forma parte de la entrega inicial (opción B): la confirmación de reserva con justificante de pago pertenece al MVP completo.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">P08 de 03-ux · RF-010, RF-032 · HU-008, HU-009, HU-010 · CA-004, CA-005, CA-007, CA-019</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a> · Variantes de pago: <a href="14-estados.html#pago">14 · Estados (pago)</a></p>
+  </div>
+
+  <div class="sitio">
+    <header class="sitio-cab">
+      <a class="logo" href="01-inicio.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+      <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+      <nav aria-label="Navegación principal (ilustrativa)">
+        <a href="03-ficha-camper.html">Campers</a>
+        <span class="pasivo">Sedes</span>
+        <a href="07-consulta-reserva.html">Mi reserva</a>
+        <span class="pasivo">Contacto</span>
+      </nav>
+    </header>
+
+    <main class="sitio-cuerpo" id="contenido">
+      <h1>Reserva confirmada</h1>
+      <p><span class="insignia ok">Estado: Confirmada</span> <span class="insignia ok">Pago: Pagado</span></p>
+
+      <div class="dos-columnas">
+        <section class="ticket" aria-labelledby="t-codigo">
+          <h2 id="t-codigo">Guarda tu código de reserva</h2>
+          <p><span class="codigo">AB12-CD34</span> <span class="ej">código de ejemplo</span></p>
+          <p>Hemos enviado el justificante a <span class="ej">correo@ejemplo.test</span>. Con este código y tu correo podrás consultar tu reserva.</p>
+          <div class="acciones">
+            <button type="button" class="btn">Copiar código</button>
+            <a class="btn acento" href="07-consulta-reserva.html">Ir a «Mi reserva»</a>
+          </div>
+          <hr class="corte">
+          <h3>Resumen</h3>
+          <dl class="rasgos">
+            <dt>Camper</dt><dd>Modelo A «Calima» <span class="ej">dato de ejemplo</span></dd>
+            <dt>Fechas</dt><dd>Del 10 al 14 de julio, 4 noches <span class="ej">fechas de ejemplo</span></dd>
+            <dt>Sede</dt><dd>Sede de ejemplo</dd>
+            <dt>Importe pagado</dt><dd>360 € <span class="ej">importe de ejemplo</span></dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="t-proximos">
+          <h2 id="t-proximos">Próximos pasos</h2>
+          <ul>
+            <li>Qué llevar a la recogida: carnet y documento de identidad (se verifican en persona).</li>
+            <li>Fianza: se gestiona en la recogida; <span class="pendiente">importe pendiente (PEND-018)</span>.</li>
+            <li>Dirección y horario de la sede: <span class="pendiente">datos de la empresa pendientes</span>.</li>
+          </ul>
+          <div class="acciones">
+            <button type="button" class="btn">Ver justificante</button>
+            <button type="button" class="btn">Contactar con la empresa</button>
+          </div>
+        </section>
+      </div>
+
+      <section class="seccion" aria-labelledby="t-variantes">
+        <h2 id="t-variantes">Otras variantes de la misma pantalla</h2>
+        <div class="aviso-sitio aviso" role="status">
+          <p><strong>Verificando pago.</strong> «Estamos verificando tu pago. No lo repitas: te avisaremos por correo.» La reserva no figura como confirmada hasta que el servidor reciba la notificación válida de la pasarela (CA-004).</p>
+        </div>
+        <div class="aviso-sitio error">
+          <p><strong>Pago rechazado.</strong> «No hemos podido completar el pago.» Se ofrece reintentar mientras dure el bloqueo (CA-006).</p>
+        </div>
+        <div class="aviso-sitio error">
+          <p><strong>Reserva expirada.</strong> «Tu reserva ha expirado y las fechas se han liberado. Si pagaste, te lo reembolsaremos.» Con opción de nueva búsqueda (CA-005, CA-007).</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sitio-pie">
+      <p>Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación</p>
+      <p><span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span></p>
+    </footer>
+  </div>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> «Verificando tu pago…»</p>
+        <p class="estado exito"><strong>Éxito:</strong> reserva confirmada con código y correo con justificante (CA-019).</p>
+        <p class="estado error"><strong>Error:</strong> pago fallido o reserva expirada, con salida a una nueva búsqueda.</p>
+        <p class="estado"><strong>Sin permisos:</strong> sin contexto de pago, se envía a «Mi reserva».</p>
+        <p class="estado"><strong>Sin conexión:</strong> «No podemos comprobar tu pago ahora. Si ya pagaste, recibirás un correo.»</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-010, RF-032 · HU-008, HU-009, HU-010 · CA-004, CA-005, CA-007, CA-019 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>El código de reserva se presenta como una matrícula (caja con doble filete y tipografía de ancho fijo) para que se lea y se copie sin confundir letras y números. El estado se dice con texto y símbolo, nunca solo con color.</li>
+        <li>El justificante de pago se emite en el MVP; la factura formal queda para Fase 2 o se define con asesoría (RN-027, P-008).</li>
+        <li>Pendientes del cliente: qué correos se envían además de la confirmación (DEC-023, ISS-009, ISS-018), datos de sede, fianza.</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P08) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados de búsqueda · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> No forma parte de la entrega inicial (opción B): la disponibilidad y el precio total automáticos pertenecen al MVP completo.</p>
+
+  <header class="cabecera">
+    <h1>Resultados de búsqueda: disponibilidad y precio (pantalla P04)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P04 de 03-ux · RF-002, RF-003, RF-004 · HU-002, HU-003, HU-004 · CA-001, CA-009, CA-015</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="01-inicio.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="03-ficha-camper.html">Campers</a>
+          <span>Sedes</span>
+          <a href="07-consulta-reserva.html">Mi reserva</a>
+          <span>Contacto</span>
+          <a href="02-resultados-busqueda.html" class="actual" aria-current="page">Buscar</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <section aria-labelledby="titulo-busqueda">
+          <h2 id="titulo-busqueda">Campers disponibles</h2>
+          <form action="#" aria-label="Modificar la búsqueda">
+            <div class="buscador">
+              <div class="campo">
+                <label for="recogida">Recogida</label>
+                <input id="recogida" type="text" value="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="devolucion">Devolución</label>
+                <input id="devolucion" type="text" value="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+              </div>
+              <div><button type="button" class="btn sec">Cambiar fechas</button></div>
+            </div>
+          </form>
+          <p aria-live="polite"><strong>3 resultados</strong> para 4 noches <span class="insignia aviso">dato de ejemplo</span></p>
+        </section>
+
+        <section aria-label="Lista de campers disponibles">
+          <article class="fila-resultado">
+            <figure class="foto-ejemplo">
+              <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+              <figcaption>IMAGEN DE EJEMPLO</figcaption>
+            </figure>
+            <div class="datos">
+              <h3>Camper Modelo A <span class="dato-ejemplo">(dato de ejemplo)</span></h3>
+              <p class="suave">2 plazas · Sede de ejemplo · <span class="insignia ok">Disponible</span></p>
+              <p class="precio"><strong>Total 4 noches: 360 €</strong> <span class="insignia aviso">importe de ejemplo</span></p>
+              <p class="nota-ejemplo">Precio calculado por el servidor con las tarifas y temporadas configuradas. Impuestos: tratamiento pendiente de validación legal (PEND-010).</p>
+              <div><a class="btn acento" href="04-resumen-y-datos-conductor.html">Reservar</a> <a class="btn sec" href="03-ficha-camper.html">Ver ficha</a></div>
+            </div>
+          </article>
+
+          <article class="fila-resultado">
+            <figure class="foto-ejemplo">
+              <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+              <figcaption>IMAGEN DE EJEMPLO</figcaption>
+            </figure>
+            <div class="datos">
+              <h3>Camper Modelo B <span class="dato-ejemplo">(dato de ejemplo)</span></h3>
+              <p class="suave">4 plazas · Sede de ejemplo · <span class="insignia ok">Disponible</span></p>
+              <p class="precio"><strong>Total 4 noches: 420 €</strong> <span class="insignia aviso">importe de ejemplo</span></p>
+              <div><a class="btn acento" href="04-resumen-y-datos-conductor.html">Reservar</a> <a class="btn sec" href="03-ficha-camper.html">Ver ficha</a></div>
+            </div>
+          </article>
+
+          <article class="fila-resultado">
+            <figure class="foto-ejemplo">
+              <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+              <figcaption>IMAGEN DE EJEMPLO</figcaption>
+            </figure>
+            <div class="datos">
+              <h3>Camper Modelo C <span class="dato-ejemplo">(dato de ejemplo)</span></h3>
+              <p class="suave">5 plazas · Sede de ejemplo · <span class="insignia error">No disponible para estas fechas</span></p>
+              <p class="nota-ejemplo">Un camper con reserva o bloqueo en parte del rango no aparece como reservable (CA-001, CA-002).</p>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <footer class="sitio-pie">
+        Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación
+        <span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueleto con altura reservada para las tarjetas.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> «No hay campers libres del {fecha} al {fecha}. Prueba con otras fechas o escríbenos.» En el MVP solo se ofrece cambiar fechas y contactar; las sugerencias automáticas son Fase 2.</div>
+      <div class="estado error"><strong>Error:</strong> fechas inválidas junto al campo («La devolución debe ser posterior a la recogida», «Para estas fechas el mínimo es {n} noches») o fallo del servidor con reintento.</div>
+      <div class="estado"><strong>Sin conexión:</strong> aviso y reintento sin perder los datos.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-002, RF-003, RF-004 · HU-002, HU-003, HU-004 · CA-001, CA-009, CA-015 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>La disponibilidad se revalida en el servidor en cada paso (VAL-007); el estado no se comunica solo con color: siempre texto.</li>
+        <li>Pendientes del cliente: política de cancelación y su momento de aplicación (ISS-002, B3), tratamiento de impuestos (PEND-010), «noche» frente a «día» y horarios (PEND-013), fotos reales (PEND-020).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P04) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

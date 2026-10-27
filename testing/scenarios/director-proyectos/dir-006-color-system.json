@@ -1,0 +1,28 @@
+{
+  "id": "DIR-006",
+  "agent": "Director de Proyectos",
+  "prompt": "El proyecto tiene interfaz web. Genera la propuesta con mockup y define la dirección cromática.",
+  "expected_sections": [
+    "Dirección visual",
+    "Documentos adjuntos"
+  ],
+  "required_behaviors": [
+    "coordina color-system antes de frontend-design",
+    "mantiene tres alternativas en A07",
+    "usa la recomendada en el mockup sin declararla aprobada"
+  ],
+  "forbidden_behaviors": [
+    "elige una paleta sin alternativas",
+    "presenta la recomendación como marca aprobada"
+  ],
+  "pass_criteria": [
+    "la propuesta ejecutiva sigue siendo concisa",
+    "A07 concentra el detalle cromático"
+  ],
+  "tags": [
+    "smoke",
+    "proposal",
+    "design-skill",
+    "color-system"
+  ]
+}

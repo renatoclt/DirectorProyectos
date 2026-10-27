@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen de precio y datos del conductor · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase siguiente">FASE SIGUIENTE</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. No forma parte de la entrega inicial (opción B): en ella los datos del conductor se piden en la <a href="11-solicitud-reserva.html">solicitud de reserva</a>.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">P05 y P06 de 03-ux · RF-004, RF-006 · HU-004, HU-005 · CA-017, CA-034, CA-010, CA-018</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a></p>
+  </div>
+
+  <div class="sitio">
+    <header class="sitio-cab">
+      <a class="logo" href="01-inicio.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+      <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+      <nav aria-label="Navegación principal (ilustrativa)">
+        <a href="03-ficha-camper.html">Campers</a>
+        <span class="pasivo">Sedes</span>
+        <a href="07-consulta-reserva.html">Mi reserva</a>
+        <span class="pasivo">Contacto</span>
+        <a href="02-resultados-busqueda.html">Ver disponibilidad</a>
+      </nav>
+    </header>
+
+    <main class="sitio-cuerpo" id="contenido">
+      <h1>Tu reserva</h1>
+      <ol class="pasos" aria-label="Progreso de la reserva">
+        <li class="hecho"><span>Resumen <span class="solo-lectura">(completado)</span></span></li>
+        <li aria-current="step"><span>Tus datos <span class="solo-lectura">(paso actual)</span></span></li>
+        <li><span>Pago</span></li>
+      </ol>
+
+      <div class="dos-columnas">
+        <section aria-labelledby="t-datos">
+          <h2 id="t-datos">Paso 2 · Datos del conductor principal</h2>
+          <form class="formulario" action="#" aria-label="Datos del conductor principal">
+            <div class="rejilla-campos dos">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" autocomplete="given-name" placeholder="Nombre de ejemplo">
+              </div>
+              <div class="campo">
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" type="text" autocomplete="family-name" placeholder="Apellidos de ejemplo">
+              </div>
+              <div class="campo">
+                <label for="email">Correo electrónico</label>
+                <input id="email" type="email" autocomplete="email" placeholder="correo@ejemplo.test">
+              </div>
+              <div class="campo">
+                <label for="email2">Repite el correo</label>
+                <input id="email2" type="email" autocomplete="off" placeholder="correo@ejemplo.test">
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" autocomplete="tel" placeholder="+34 000 000 000" aria-describedby="ay-tel">
+                <span class="ayuda" id="ay-tel">Admite prefijo internacional (+34)</span>
+              </div>
+              <div class="campo">
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input id="nacimiento" type="text" inputmode="numeric" autocomplete="bday" placeholder="dd/mm/aaaa" aria-describedby="ay-nac">
+                <span class="ayuda" id="ay-nac">Edad mínima configurable: <span class="pendiente">valor pendiente (PEND-019)</span></span>
+              </div>
+              <div class="campo">
+                <label for="ocupantes">Número de ocupantes</label>
+                <input id="ocupantes" type="text" inputmode="numeric" placeholder="2" aria-describedby="ay-ocu">
+                <span class="ayuda" id="ay-ocu">No puede superar las plazas del camper</span>
+              </div>
+            </div>
+
+            <div class="casilla">
+              <input id="acepto" type="checkbox">
+              <label for="acepto">He leído y acepto las <a href="#contenido">condiciones de alquiler</a> y la <a href="#contenido">política de privacidad</a> (obligatorio, casilla sin marcar).</label>
+            </div>
+            <div class="casilla">
+              <input id="marketing" type="checkbox">
+              <label for="marketing">Quiero recibir novedades (opcional, aparte y sin marcar).</label>
+            </div>
+            <p class="aviso-sitio"><strong>Importante:</strong> verificaremos tu carnet y tu documento de identidad en la recogida; no se piden documentos en la web.</p>
+            <div class="acciones">
+              <a class="btn" href="03-ficha-camper.html">Volver al resumen</a>
+              <a class="btn acento" href="05-pago.html">Ir al pago</a>
+            </div>
+            <p class="nota-ejemplo">Al pulsar «Ir al pago» se bloquean tus fechas durante un tiempo configurable (15 minutos es solo una propuesta, DEC-027).</p>
+          </form>
+        </section>
+
+        <aside class="ticket" aria-labelledby="t-resumen">
+          <h2 id="t-resumen">Paso 1 · Resumen del precio</h2>
+          <p><strong>Camper Modelo A «Calima»</strong> <span class="ej">dato de ejemplo</span><br>Recogida y devolución en la misma sede (Sede de ejemplo)</p>
+          <p class="suave">Del 10 al 14 de julio, 4 noches <span class="ej">fechas de ejemplo</span></p>
+          <table class="desglose">
+            <caption>Desglose de ejemplo, calculado por el servidor noche a noche según temporada</caption>
+            <thead><tr><th scope="col">Concepto</th><th scope="col" class="num">Importe</th></tr></thead>
+            <tbody>
+              <tr><td>2 noches, temporada A</td><td class="num">170 € (ejemplo)</td></tr>
+              <tr><td>2 noches, temporada B</td><td class="num">190 € (ejemplo)</td></tr>
+              <tr><td>IVA e impuestos</td><td class="num"><span class="pendiente">pendiente (PEND-010)</span></td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Total a pagar ahora (importe de ejemplo)</th><td class="num">360 €</td></tr></tfoot>
+          </table>
+          <p><strong>Fianza (informativa):</strong> <span class="pendiente">importe pendiente (PEND-018)</span>. Se gestiona en la entrega; no se cobra ahora.</p>
+          <p><strong>Cancelación:</strong> <span class="pendiente">resumen pendiente (valores y momento de aplicación: ISS-002, B3)</span> <a href="#contenido">Ver política completa</a></p>
+          <p class="nota-ejemplo">El importe lo calcula siempre el servidor; el precio se congela al crear la reserva (RN-010). En el MVP propuesto no hay paso de extras (Fase 2, DEC-018).</p>
+          <div class="acciones"><a class="btn" href="02-resultados-busqueda.html">Editar fechas</a></div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="sitio-pie">
+      <p>Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación</p>
+      <p><span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span></p>
+    </footer>
+  </div>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> «Calculando tu precio…» mientras el servidor valida la disponibilidad.</p>
+        <p class="estado error"><strong>Error recuperable:</strong> «Estas fechas ya no están disponibles», «Para estas fechas el mínimo es {n} noches», edad mínima no cumplida o falta de aceptación (CA-010, CA-018). El error aparece junto al campo y en un resumen con enlaces a cada campo, y los datos escritos se conservan (patrón en <a href="14-estados.html#errores-formulario">14 · Estados</a>).</p>
+        <p class="estado"><strong>Sin conexión:</strong> aviso y conservación de los campos.</p>
+        <p class="estado"><strong>Móvil:</strong> el resumen pasa debajo del formulario y el total con el botón principal quedan en una barra inferior (ver <a href="10-movil-inicio-y-resultados.html">vista móvil</a>).</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-004, RF-006 · HU-004, HU-005 · CA-017, CA-034, CA-010, CA-018 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>El recorrido de reserva usa la línea de ruta como indicador de progreso: paradas numeradas, la hecha con marca y texto, la actual en tinta.</li>
+        <li>Pendientes del cliente: política de cancelación (ISS-002), impuestos (PEND-010), fianza (PEND-018), edad mínima (PEND-019). La seguridad recomienda además verificar el correo antes del pago y valorar guardar solo «mayor de edad» en lugar de la fecha de nacimiento (ISS-030, SEG-004, SEG-010): decisión pendiente.</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P05, P06) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

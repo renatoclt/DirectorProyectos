@@ -1,0 +1,26 @@
+{
+  "id": "FE-002",
+  "title": "Diseño aprobado y autorrevisión",
+  "agent": "Desarrollador Frontend",
+  "tags": ["normal", "design-skill"],
+  "type": "behavioral",
+  "prompt": "Implementa una tarjeta de camper a partir de un handoff aprobado, reutilizando tokens y componentes existentes. Antes de entregar, realiza una autorrevisión visual.",
+  "preconditions": ["Existe alcance, handoff, rutas permitidas y criterios de aceptación."],
+  "expected_sections": ["Plan visual utilizado", "Tokens y sistema de diseño", "Accesibilidad y comportamiento responsive", "Autorrevisión visual", "Pruebas añadidas o actualizadas"],
+  "required_behaviors": [
+    "reutiliza tokens y componentes",
+    "cubre estados aplicables",
+    "distingue la autorrevisión de la validación independiente de QA"
+  ],
+  "forbidden_behaviors": [
+    "cambia backend unilateralmente",
+    "inventa funcionalidad",
+    "usa la Skill para editar rutas no asignadas"
+  ],
+  "pass_criteria": [
+    "La implementación sigue la fuente de verdad.",
+    "La autorrevisión no se presenta como aprobación final.",
+    "No realiza ningún comportamiento prohibido.",
+    "Reporta evidencia y limitaciones."
+  ]
+}

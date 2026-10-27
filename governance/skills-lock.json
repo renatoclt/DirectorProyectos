@@ -1,0 +1,56 @@
+{
+  "lock_version": "1.2.0",
+  "updated_on": "2026-10-26",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "local_path": ".github/skills/frontend-design",
+      "source_repository": "https://github.com/anthropics/skills",
+      "source_path": "skills/frontend-design",
+      "upstream_revision": "41bbe19",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE.txt",
+      "integration": "adapted-localized",
+      "allowed_agents": [
+        "Diseñador UX UI",
+        "Desarrollador Frontend",
+        "Prototipador UX"
+      ],
+      "purpose": "Creación y rediseño de interfaces web distintivas dentro del alcance aprobado."
+    },
+    {
+      "name": "frontend-design-review",
+      "local_path": ".github/skills/frontend-design-review",
+      "source_repository": "https://github.com/microsoft/skills",
+      "source_path": ".github/skills/frontend-design-review",
+      "upstream_revision": "cbfd1b6",
+      "license": "MIT",
+      "license_file": "LICENSE.txt",
+      "integration": "adapted-localized",
+      "allowed_agents": [
+        "Diseñador UX UI",
+        "Desarrollador Frontend",
+        "QA Engineer",
+        "Auditor de Entrega"
+      ],
+      "purpose": "Revisión visual, responsive, accesible y de sistema de diseño sin ampliar permisos."
+    },
+    {
+      "name": "color-system",
+      "local_path": ".github/skills/color-system",
+      "source_repository": "internal://equipo-agentes-vscode",
+      "source_path": ".github/skills/color-system",
+      "upstream_revision": "v6.0.0-internal",
+      "license": "repository",
+      "license_file": "LICENSE.txt",
+      "integration": "original-project",
+      "allowed_agents": [
+        "Diseñador UX UI",
+        "Desarrollador Frontend",
+        "QA Engineer",
+        "Auditor de Entrega"
+      ],
+      "purpose": "Generar tres direcciones cromáticas, recomendar una, producir tokens semánticos y validar contraste sin ampliar alcance ni permisos."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vista móvil (entrega inicial) · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+    <symbol id="escena-costa" viewBox="0 0 240 140"><rect class="e-cielo" width="240" height="140"/><circle class="e-sol" cx="186" cy="92" r="26"/><path class="e-mar" d="M0 100h240v40H0z"/><path class="e-suelo" d="M0 124h240v16H0z"/></symbol>
+    <symbol id="camper-furgo" viewBox="0 0 240 124"><path class="v-cuerpo" d="M22 104V42Q22 32 32 32H150Q160 32 168 42L192 72Q196 76 206 78Q218 80 218 90V104Z"/><path class="v-cristal" d="M156 40H162Q166 40 170 46L186 68H156Z"/><rect class="v-cristal" x="38" y="44" width="34" height="22" rx="3"/><rect class="v-cristal" x="80" y="44" width="34" height="22" rx="3"/><path class="v-franja" d="M22 84H214V90H22z"/><circle class="v-rueda" cx="66" cy="104" r="16"/><circle class="v-buje" cx="66" cy="104" r="6"/><circle class="v-rueda" cx="178" cy="104" r="16"/><circle class="v-buje" cx="178" cy="104" r="6"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase">ENTREGA INICIAL</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. Pantalla de la opción B (CR-001): inicio y solicitud de reserva en ancho móvil.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">opción B (CR-001), P01 y P05/P06 de 03-ux en ancho móvil (sección 8) · RNF-003, RF-001, RF-006 (parcial) · HU-016</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a> · Versión de la fase siguiente: <a href="10-movil-inicio-y-resultados.html">10 · Móvil con resultados y disponibilidad</a></p>
+  </div>
+
+  <main class="pagina" id="contenido">
+    <h1>Vista móvil: inicio y solicitud</h1>
+    <p>Enfoque «móvil primero»: una sola columna, menú compacto, objetivos táctiles de al menos 44 píxeles y una barra inferior con la acción principal siempre visible. Los dos «teléfonos» son contenedores estrechos ilustrativos.</p>
+
+    <div class="moviles">
+      <section aria-labelledby="t-m1">
+        <h2 class="movil-titulo" id="t-m1">Inicio en móvil</h2>
+        <div class="movil">
+          <div class="sitio-cab">
+            <a class="logo" href="01-inicio-entrega-inicial.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+            <span class="sello-marca">PROPUESTA, no aprobada</span>
+            <nav aria-label="Menú compacto (ilustrativo)">
+              <a href="13-catalogo-entrega-inicial.html">Campers</a>
+              <a href="12-tarifas-y-condiciones.html">Tarifas</a>
+            </nav>
+          </div>
+          <div class="sitio-cuerpo">
+            <h3>Alquila tu camper en España</h3>
+            <p>Elige tu camper y envíanos tu solicitud. Te confirmamos la disponibilidad.</p>
+            <article class="camper">
+              <figure class="foto">
+                <svg class="v-ocre" viewBox="0 0 240 140" role="img" aria-label="Ilustración de ejemplo: furgoneta camper ocre junto al mar al atardecer"><use href="#escena-costa"/><use href="#camper-furgo" x="30" y="32" width="180" height="93"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo A «Calima» <span class="ej">dato de ejemplo</span></h4>
+                <p class="precio">Desde 90 € <small>por noche · ejemplo</small></p>
+                <a class="btn" href="03-ficha-camper-entrega-inicial.html">Ver ficha de Calima</a>
+              </div>
+            </article>
+            <div class="barra-inferior">
+              <p class="nota-ejemplo">Sin cobro en la web</p>
+              <a class="btn acento" href="11-solicitud-reserva.html">Solicitar reserva</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="t-m2">
+        <h2 class="movil-titulo" id="t-m2">Solicitud en móvil</h2>
+        <div class="movil">
+          <div class="sitio-cab">
+            <a class="logo" href="01-inicio-entrega-inicial.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+            <nav aria-label="Menú compacto de la solicitud (ilustrativo)">
+              <a href="13-catalogo-entrega-inicial.html">Campers</a>
+              <a href="12-tarifas-y-condiciones.html">Tarifas</a>
+            </nav>
+          </div>
+          <div class="sitio-cuerpo">
+            <h3>Solicitar reserva</h3>
+            <p class="aviso-sitio"><strong>Importante:</strong> es una solicitud, no una reserva confirmada. No se cobra nada.</p>
+            <form class="formulario" action="#" aria-label="Solicitud de reserva (móvil)">
+              <div class="campo">
+                <label for="m-recogida">Recogida</label>
+                <input id="m-recogida" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="m-devolucion">Devolución</label>
+                <input id="m-devolucion" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="m-email">Correo electrónico</label>
+                <input id="m-email" type="email" autocomplete="email" placeholder="correo@ejemplo.test">
+              </div>
+              <div class="casilla">
+                <input id="m-acepto" type="checkbox">
+                <label for="m-acepto">Acepto la política de privacidad (obligatorio, casilla sin marcar). <span class="pendiente">Texto en borrador (PEND-010)</span></label>
+              </div>
+              <div class="barra-inferior">
+                <p class="nota-ejemplo">Sin cobro en la web</p>
+                <button type="button" class="btn acento">Enviar solicitud</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> esqueletos con la altura final reservada (<a href="14-estados.html#carga">14 · Estados</a>).</p>
+        <p class="estado error"><strong>Error:</strong> mensaje junto al campo, con texto que explica cómo corregir, y resumen arriba con enlaces a cada campo (<a href="14-estados.html#errores-formulario">14 · Estados</a>).</p>
+        <p class="estado exito"><strong>Éxito:</strong> confirmación de recepción en la misma pantalla, sin prometer disponibilidad (<a href="14-estados.html#solicitud-enviada">14 · Estados</a>).</p>
+        <p class="estado"><strong>Sin conexión:</strong> aviso y reintento, sin perder lo escrito.</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RNF-003 (adaptable a móvil), RF-001 (parcial), RF-006 (parcial: solicitud) · HU-016 (sección 8 de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>).</li>
+        <li>La barra inferior se muestra al final del contenido del teléfono; en la implementación se fijaría al borde inferior de la pantalla reservando su propio espacio para no tapar el contenido (por comprobar en navegador real).</li>
+        <li>La velocidad en móvil es un objetivo (RNF-001), sin garantía de resultados reales; el protocolo de medición está pendiente (PEND-014).</li>
+        <li>Diferencia con la fase siguiente: no hay resultados con disponibilidad ni total.</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

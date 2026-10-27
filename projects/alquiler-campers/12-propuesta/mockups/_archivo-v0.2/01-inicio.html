@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> No forma parte de la entrega inicial (opción B). Versión de la entrega inicial: <a href="01-inicio-entrega-inicial.html">01 · Inicio (entrega inicial)</a>.</p>
+
+  <header class="cabecera">
+    <h1>Inicio (pantalla P01)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P01 de 03-ux · RF-002, RF-018 · HU-001, HU-002, HU-015 · CA-028</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="index.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="03-ficha-camper.html">Campers</a>
+          <span>Sedes</span>
+          <a href="07-consulta-reserva.html">Mi reserva</a>
+          <span>Contacto</span>
+          <a href="02-resultados-busqueda.html" class="actual">Buscar</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <section class="hero" aria-labelledby="titulo-hero">
+          <h2 id="titulo-hero">Alquila tu camper en España</h2>
+          <p class="suave">Texto de ejemplo. El tono (tú o usted) es una decisión pendiente del cliente.</p>
+          <form action="#" aria-label="Buscar campers disponibles">
+            <div class="buscador">
+              <div class="campo">
+                <label for="sede">Sede</label>
+                <select id="sede">
+                  <option>Sede de ejemplo (por definir)</option>
+                </select>
+                <span class="ayuda">Solo se muestra si hay varias sedes (decisión pendiente).</span>
+              </div>
+              <div class="campo">
+                <label for="recogida">Recogida</label>
+                <input id="recogida" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                <span class="ayuda">Formato dd/mm/aaaa</span>
+              </div>
+              <div class="campo">
+                <label for="devolucion">Devolución</label>
+                <input id="devolucion" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                <span class="ayuda">Posterior a la recogida</span>
+              </div>
+              <div><button type="button" class="btn acento">Buscar</button></div>
+            </div>
+          </form>
+        </section>
+
+        <section aria-labelledby="titulo-destacados">
+          <h3 id="titulo-destacados">Campers destacados</h3>
+          <p class="nota-ejemplo">Dato de ejemplo: nombres, plazas y precios ficticios. Las fotos serán de ejemplo hasta que existan fotos reales.</p>
+          <div class="tarjetas">
+            <article class="camper">
+              <figure class="foto-ejemplo">
+                <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo A <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="suave">2 plazas · Sede de ejemplo</p>
+                <p class="precio">Desde 90 € / noche <span class="insignia aviso">dato de ejemplo</span></p>
+                <a class="btn sec" href="03-ficha-camper.html">Ver ficha</a>
+              </div>
+            </article>
+            <article class="camper">
+              <figure class="foto-ejemplo">
+                <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo B <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="suave">4 plazas · Sede de ejemplo</p>
+                <p class="precio">Desde 105 € / noche <span class="insignia aviso">dato de ejemplo</span></p>
+                <a class="btn sec" href="03-ficha-camper.html">Ver ficha</a>
+              </div>
+            </article>
+            <article class="camper">
+              <figure class="foto-ejemplo">
+                <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo C <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="suave">5 plazas · Sede de ejemplo</p>
+                <p class="precio">Desde 120 € / noche <span class="insignia aviso">dato de ejemplo</span></p>
+                <a class="btn sec" href="03-ficha-camper.html">Ver ficha</a>
+              </div>
+            </article>
+          </div>
+          <p class="nota-ejemplo">El precio orientativo «desde» es una decisión pendiente (PEND-029): el cálculo final lo hace siempre el servidor.</p>
+        </section>
+
+        <section aria-labelledby="titulo-sedes">
+          <h3 id="titulo-sedes">Sedes</h3>
+          <div class="tarjetas">
+            <article class="camper">
+              <div class="datos">
+                <h4>Sede de ejemplo</h4>
+                <p class="suave">Dirección y horario por definir por la empresa (dato de ejemplo).</p>
+                <span class="insignia">Página de sede indexable (RF-018)</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="titulo-como">
+          <h3 id="titulo-como">Cómo funciona</h3>
+          <ol>
+            <li><strong>Elige</strong> tus fechas y tu camper.</li>
+            <li><strong>Paga</strong> de forma segura con tarjeta.</li>
+            <li><strong>Recibe tu código</strong> de reserva por correo.</li>
+          </ol>
+        </section>
+      </div>
+
+      <footer class="sitio-pie">
+        <a href="07-consulta-reserva.html">Consultar mi reserva</a> · Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación
+        <span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueleto con la altura final reservada para evitar saltos de diseño.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> «Aún no hay campers publicados»; el contenido lo carga la empresa desde el panel.</div>
+      <div class="estado error"><strong>Error de fechas:</strong> «La devolución debe ser posterior a la recogida» junto al campo (CA-009).</div>
+      <div class="estado"><strong>Sin conexión:</strong> aviso y reintento sin perder los datos escritos.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-002, RF-018 · HU-001, HU-002, HU-015 · criterio CA-028 (según la matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>Estructura: un solo encabezado principal, navegación, buscador con etiquetas visibles, foco visible y «Saltar al contenido».</li>
+        <li>Pendientes del cliente: nombre, logotipo, paleta, tipografía y tono (PEND-025); una o varias sedes (PEND-028); precio «desde» (PEND-029); fotos reales (PEND-020).</li>
+        <li>Marca mostrada: nombre provisional «Ruta Camper», paleta y tipografía del sistema propuestas en 03-ux, sección 11. <strong>PROPUESTA, no aprobada.</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P01) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

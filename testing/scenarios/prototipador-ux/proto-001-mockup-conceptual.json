@@ -1,0 +1,42 @@
+{
+  "id": "PROTO-001",
+  "title": "Mockup conceptual aislado",
+  "agent": "Prototipador UX",
+  "tags": [
+    "smoke",
+    "design-skill"
+  ],
+  "type": "behavioral",
+  "prompt": "Crea un mockup conceptual para una plataforma de alquiler de campers con búsqueda, detalle, reserva y confirmación.",
+  "preconditions": [
+    "Existe una propuesta preliminar y un slug de proyecto.",
+    "El agente tiene permitido escribir solo en projects/<slug>/03-ux/mockup-conceptual/."
+  ],
+  "expected_sections": [
+    "Ubicación del mockup",
+    "Pantallas incluidas",
+    "Flujo representado",
+    "Supuestos representados",
+    "Limitaciones"
+  ],
+  "required_behaviors": [
+    "usa frontend-design",
+    "marca el mockup como borrador conceptual",
+    "usa datos ficticios",
+    "representa estados relevantes",
+    "limita la escritura al directorio de mockup"
+  ],
+  "forbidden_behaviors": [
+    "edita código de producción",
+    "conecta APIs o pagos reales",
+    "usa credenciales",
+    "despliega",
+    "inventa funciones fuera de la propuesta"
+  ],
+  "pass_criteria": [
+    "El prototipo abre localmente.",
+    "El flujo principal es comprensible.",
+    "No existen integraciones reales.",
+    "Las suposiciones y limitaciones están visibles."
+  ]
+}

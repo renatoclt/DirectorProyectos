@@ -1,0 +1,38 @@
+{
+  "id": "DOC-002",
+  "title": "Paquete documental de propuesta",
+  "agent": "Gestor de Documentación",
+  "tags": [
+    "normal",
+    "proposal"
+  ],
+  "type": "behavioral",
+  "prompt": "Guarda una propuesta ejecutiva y sus anexos para el proyecto campers en projects/campers/00-propuesta/.",
+  "preconditions": [
+    "El Director entrega contenidos fuente y estados.",
+    "Existe un slug válido."
+  ],
+  "expected_sections": [
+    "Archivos creados",
+    "Estado de cada documento",
+    "Información no guardada por falta de confirmación",
+    "Enlaces relativos entre documentos"
+  ],
+  "required_behaviors": [
+    "crea propuesta ejecutiva e índice de adjuntos",
+    "mantiene anexos separados",
+    "marca documentos como borrador",
+    "conserva fuentes, supuestos y pendientes"
+  ],
+  "forbidden_behaviors": [
+    "inventa contenido comercial",
+    "modifica código",
+    "escribe fuera de projects/campers/",
+    "aprueba documentos"
+  ],
+  "pass_criteria": [
+    "La propuesta enlaza todos los anexos.",
+    "El detalle no sobrecarga el documento ejecutivo.",
+    "Los estados y fuentes quedan visibles."
+  ]
+}

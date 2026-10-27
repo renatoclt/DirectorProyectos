@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vista móvil: inicio y resultados · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+    <symbol id="escena-costa" viewBox="0 0 240 140"><rect class="e-cielo" width="240" height="140"/><circle class="e-sol" cx="186" cy="92" r="26"/><path class="e-mar" d="M0 100h240v40H0z"/><path class="e-suelo" d="M0 124h240v16H0z"/></symbol>
+    <symbol id="escena-sierra" viewBox="0 0 240 140"><rect class="e-cielo" width="240" height="140"/><circle class="e-sol" cx="48" cy="48" r="20"/><path class="e-monte" d="M0 112l52-50 36 30 46-58 62 78 44-30v48H0z"/><path class="e-suelo" d="M0 124h240v16H0z"/></symbol>
+    <symbol id="camper-furgo" viewBox="0 0 240 124"><path class="v-cuerpo" d="M22 104V42Q22 32 32 32H150Q160 32 168 42L192 72Q196 76 206 78Q218 80 218 90V104Z"/><path class="v-cristal" d="M156 40H162Q166 40 170 46L186 68H156Z"/><rect class="v-cristal" x="38" y="44" width="34" height="22" rx="3"/><rect class="v-cristal" x="80" y="44" width="34" height="22" rx="3"/><path class="v-franja" d="M22 84H214V90H22z"/><circle class="v-rueda" cx="66" cy="104" r="16"/><circle class="v-buje" cx="66" cy="104" r="6"/><circle class="v-rueda" cx="178" cy="104" r="16"/><circle class="v-buje" cx="178" cy="104" r="6"/></symbol>
+    <symbol id="camper-baca" viewBox="0 0 240 124"><use href="#camper-furgo" width="240" height="124"/><path class="v-toldo" d="M30 26H150V33H30z"/><rect class="v-bulto" x="54" y="12" width="44" height="14" rx="5"/><rect class="v-bulto" x="104" y="16" width="30" height="10" rx="4"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase siguiente">FASE SIGUIENTE</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. No forma parte de la entrega inicial (opción B): la búsqueda y los resultados con disponibilidad pertenecen al MVP completo.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">P01 y P04 de 03-ux, sección 8 (responsive) · RF-002, RF-003 · HU-002, HU-016 · CA-030</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a> · Versión móvil de la entrega inicial: <a href="10-movil-entrega-inicial.html">10 · Móvil (entrega inicial)</a></p>
+  </div>
+
+  <main class="pagina" id="contenido">
+    <h1>Vista móvil: inicio y resultados con disponibilidad</h1>
+    <p>Enfoque «móvil primero»: una sola columna, menú compacto con «Ver disponibilidad» y «Mi reserva» siempre accesibles, objetivos táctiles amplios y el total con el botón principal en una barra inferior. Los dos «teléfonos» son contenedores estrechos ilustrativos.</p>
+
+    <div class="moviles">
+      <section aria-labelledby="t-m1">
+        <h2 class="movil-titulo" id="t-m1">Inicio en móvil</h2>
+        <div class="movil">
+          <div class="sitio-cab">
+            <a class="logo" href="01-inicio.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+            <span class="sello-marca">PROPUESTA, no aprobada</span>
+            <nav aria-label="Menú compacto (ilustrativo)">
+              <a href="02-resultados-busqueda.html">Disponibilidad</a>
+              <a href="07-consulta-reserva.html">Mi reserva</a>
+            </nav>
+          </div>
+          <div class="sitio-cuerpo">
+            <h3>Alquila tu camper en España</h3>
+            <form class="formulario" action="#" aria-label="Buscar campers disponibles (móvil)">
+              <div class="campo">
+                <label for="m-recogida">Recogida</label>
+                <input id="m-recogida" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="m-devolucion">Devolución</label>
+                <input id="m-devolucion" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+              </div>
+              <button type="button" class="btn acento completo">Ver disponibilidad</button>
+            </form>
+            <h3 class="seccion">Campers destacados</h3>
+            <article class="camper">
+              <figure class="foto">
+                <svg class="v-ocre" viewBox="0 0 240 140" role="img" aria-label="Ilustración de ejemplo: furgoneta camper ocre junto al mar al atardecer"><use href="#escena-costa"/><use href="#camper-furgo" x="30" y="32" width="180" height="93"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo A «Calima» <span class="ej">dato de ejemplo</span></h4>
+                <p class="precio">Desde 90 € <small>por noche · ejemplo</small></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="t-m2">
+        <h2 class="movil-titulo" id="t-m2">Resultados en móvil</h2>
+        <div class="movil">
+          <div class="sitio-cab">
+            <a class="logo" href="01-inicio.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+            <nav aria-label="Menú compacto de resultados (ilustrativo)">
+              <a href="02-resultados-busqueda.html" aria-current="page">Disponibilidad</a>
+              <a href="07-consulta-reserva.html">Mi reserva</a>
+            </nav>
+          </div>
+          <div class="sitio-cuerpo">
+            <h3>Campers libres del 10 al 14 de julio <span class="ej">fechas de ejemplo</span></h3>
+            <p aria-live="polite"><strong>2 campers libres</strong> · 4 noches <span class="ej">dato de ejemplo</span></p>
+            <article class="camper">
+              <figure class="foto">
+                <svg class="v-ocre" viewBox="0 0 240 140" role="img" aria-label="Ilustración de ejemplo: furgoneta camper ocre junto al mar al atardecer"><use href="#escena-costa"/><use href="#camper-furgo" x="30" y="32" width="180" height="93"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Calima <span class="ej">dato de ejemplo</span></h4>
+                <p class="suave">2 plazas · <span class="insignia ok">Disponible</span></p>
+                <p class="precio">Total: 360 € <small>importe de ejemplo</small></p>
+              </div>
+            </article>
+            <article class="camper fila">
+              <div class="datos">
+                <h4>Tramontana <span class="ej">dato de ejemplo</span></h4>
+                <p class="suave">4 plazas · <span class="insignia ok">Disponible</span></p>
+                <p class="precio">Total: 420 € <small>importe de ejemplo</small></p>
+                <a class="btn" href="03-ficha-camper.html">Ver ficha de Tramontana</a>
+              </div>
+            </article>
+            <div class="barra-inferior">
+              <p><strong>360 €</strong> <span class="ej">ejemplo</span></p>
+              <a class="btn acento" href="04-resumen-y-datos-conductor.html">Reservar Calima</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> esqueletos con la altura final reservada (<a href="14-estados.html#carga">14 · Estados</a>).</p>
+        <p class="estado vacio"><strong>Vacío:</strong> sin disponibilidad, con «Cambiar fechas» y «Escribirnos» (<a href="14-estados.html#sin-disponibilidad">14 · Estados</a>).</p>
+        <p class="estado error"><strong>Error:</strong> mensaje junto al campo, con texto que explica cómo corregir.</p>
+        <p class="estado"><strong>Sin conexión:</strong> aviso y reintento, sin perder lo escrito.</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-002, RF-003 · HU-002, HU-016 · CA-030 y, como objetivo, RNF-001 a RNF-005 (sección 8 de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>).</li>
+        <li>Los puntos de quiebre y los objetivos de rendimiento (RNF-001) se definen en la implementación; el protocolo de medición está pendiente (PEND-014).</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P01, P04, sección 8) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

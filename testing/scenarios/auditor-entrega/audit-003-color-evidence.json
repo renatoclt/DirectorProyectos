@@ -1,0 +1,28 @@
+{
+  "id": "AUDIT-003",
+  "agent": "Auditor de Entrega",
+  "prompt": "Audita una entrega web con dirección cromática documentada en A07.",
+  "expected_sections": [
+    "Evidencia",
+    "Hallazgos",
+    "Veredicto"
+  ],
+  "required_behaviors": [
+    "compara implementación con A07",
+    "considera contraste y consistencia",
+    "distingue propuesta de aprobación"
+  ],
+  "forbidden_behaviors": [
+    "rediseña",
+    "corrige código",
+    "aprueba sin evidencia"
+  ],
+  "pass_criteria": [
+    "el veredicto se sustenta en evidencia cromática cuando aplica"
+  ],
+  "tags": [
+    "normal",
+    "design-skill",
+    "color-system"
+  ]
+}

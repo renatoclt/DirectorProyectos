@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarifas y condiciones · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+  <p class="fase-aviso" role="note"><span class="fase">ENTREGA INICIAL</span> Pantalla nueva de la opción B (CR-001): tarifas orientativas y condiciones en una sola página.</p>
+
+  <header class="cabecera">
+    <h1>Tarifas orientativas y condiciones</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">Opción B (CR-001), derivada de P03 y P12 de 03-ux · RF-001 (precio orientativo), RF-016 (condiciones, borrador) · HU-001</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="01-inicio-entrega-inicial.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="01-inicio-entrega-inicial.html">Inicio</a>
+          <a href="03-ficha-camper-entrega-inicial.html">Campers</a>
+          <a href="12-tarifas-y-condiciones.html" class="actual" aria-current="page">Tarifas y condiciones</a>
+          <a href="11-solicitud-reserva.html">Solicitar reserva</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <h2>Tarifas y condiciones</h2>
+        <p class="aviso-sitio">Las tarifas son <strong>orientativas</strong>. El importe final y la disponibilidad los confirma la empresa al responder tu solicitud.</p>
+
+        <section aria-labelledby="titulo-tarifas">
+          <h3 id="titulo-tarifas">Tarifas orientativas por noche</h3>
+          <table class="desglose">
+            <caption class="nota-ejemplo">Tarifas de ejemplo (temporadas y mínimos por definir por la empresa)</caption>
+            <thead>
+              <tr><th scope="col">Camper</th><th scope="col">Temporada A (ejemplo)</th><th scope="col">Temporada B (ejemplo)</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Camper Modelo A (2 plazas)</th><td>85 € <span class="insignia aviso">dato de ejemplo</span></td><td>95 € <span class="insignia aviso">dato de ejemplo</span></td></tr>
+              <tr><th scope="row">Camper Modelo B (4 plazas)</th><td>100 € <span class="insignia aviso">dato de ejemplo</span></td><td>110 € <span class="insignia aviso">dato de ejemplo</span></td></tr>
+              <tr><th scope="row">Camper Modelo C (5 plazas)</th><td>115 € <span class="insignia aviso">dato de ejemplo</span></td><td>125 € <span class="insignia aviso">dato de ejemplo</span></td></tr>
+            </tbody>
+          </table>
+          <p class="nota-ejemplo">IVA e impuestos: <span class="pendiente">tratamiento pendiente (PEND-010)</span>. Fianza: <span class="pendiente">importe pendiente (PEND-018)</span>; se gestiona en la recogida.</p>
+        </section>
+
+        <section aria-labelledby="titulo-condiciones">
+          <h3 id="titulo-condiciones">Condiciones de alquiler</h3>
+          <p class="nota-ejemplo">Texto de ejemplo: la empresa define sus condiciones y su asesoría legal las valida. <span class="pendiente">Borrador pendiente de validación (PEND-010, PEND-022, PEND-023)</span></p>
+          <ul>
+            <li>Requisitos del conductor: edad mínima y permiso de conducir <span class="pendiente">pendiente (PEND-019)</span>.</li>
+            <li>Kilometraje, combustible y limpieza <span class="pendiente">pendiente (PEND-022)</span>.</li>
+            <li>Mascotas y viaje al extranjero <span class="pendiente">pendiente (PEND-022)</span>.</li>
+            <li>Seguro y franquicia <span class="pendiente">pendiente (PEND-022)</span>.</li>
+            <li>Cancelación y devolución tardía <span class="pendiente">pendiente (PEND-023, B3)</span>.</li>
+          </ul>
+        </section>
+
+        <p><a class="btn acento" href="11-solicitud-reserva.html">Solicitar reserva</a></p>
+      </div>
+
+      <footer class="sitio-pie">
+        Aviso legal · Privacidad · Cookies · Condiciones de alquiler
+        <span class="pendiente">Textos legales en borrador, pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> la página es de contenido y se muestra completa de una vez.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> «Tarifas disponibles próximamente. Consúltanos» con enlace a la solicitud.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-001 (precio orientativo) y RF-016 (condiciones, borrador a validar con asesoría) · HU-001.</li>
+        <li>Diferencia con la fase siguiente: no hay cálculo de precio total ni congelado del precio; las tarifas son un texto orientativo que edita el proveedor.</li>
+        <li>Pendientes del cliente: tarifas reales, temporadas, textos de condiciones y validación legal.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

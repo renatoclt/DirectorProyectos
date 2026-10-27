@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de reserva · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> No forma parte de la entrega inicial (opción B): la consulta y la cancelación por el cliente pertenecen al MVP completo.</p>
+
+  <header class="cabecera">
+    <h1>Consulta de reserva con código y correo (pantalla P09)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P09 y P10 de 03-ux · RF-011, RF-012, RF-013 · HU-011, HU-012 · CA-013, CA-020, CA-008</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="01-inicio.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="03-ficha-camper.html">Campers</a>
+          <span>Sedes</span>
+          <a href="07-consulta-reserva.html" class="actual" aria-current="page">Mi reserva</a>
+          <span>Contacto</span>
+          <a href="02-resultados-busqueda.html">Buscar</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <h2>Mi reserva</h2>
+
+        <section class="panel-lateral" aria-labelledby="titulo-acceso">
+          <h3 id="titulo-acceso">Accede con tu código y tu correo</h3>
+          <form action="#" aria-label="Consultar una reserva">
+            <div class="buscador">
+              <div class="campo">
+                <label for="codigo">Código de reserva</label>
+                <input id="codigo" type="text" placeholder="AB12-CD34 (ejemplo)" autocomplete="off">
+              </div>
+              <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input id="correo" type="email" placeholder="correo@ejemplo.test" autocomplete="email">
+              </div>
+              <div><button type="button" class="btn acento">Consultar</button></div>
+            </div>
+            <p class="nota-ejemplo">¿Perdiste tu código? Podemos reenviarte el correo de confirmación o puedes contactarnos. <span class="pendiente">Cómo se reenvía sin revelar si la reserva existe: pendiente (ISS-018)</span></p>
+          </form>
+          <div class="aviso-sitio error" role="alert">
+            <p><strong>Si los datos no coinciden:</strong> «No encontramos una reserva con esos datos.» El mensaje es idéntico en cualquier fallo y no confirma si la reserva existe; hay límite de intentos (CA-013).</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="titulo-detalle" style="margin-top:16px">
+          <h3 id="titulo-detalle">Detalle de la reserva (tras acceder)</h3>
+          <div class="panel-lateral">
+            <p><span class="insignia ok">Estado de la reserva: Confirmada</span> <span class="insignia ok">Estado del pago: Pagado</span></p>
+            <table class="desglose">
+              <caption class="nota-ejemplo">Datos de ejemplo</caption>
+              <tbody>
+                <tr><th scope="row">Camper</th><td>Camper Modelo A (ejemplo)</td></tr>
+                <tr><th scope="row">Fechas</th><td>dd/mm/aaaa a dd/mm/aaaa · 4 noches</td></tr>
+                <tr><th scope="row">Sede</th><td>Sede de ejemplo</td></tr>
+                <tr><th scope="row">Importe pagado</th><td>360 € (importe de ejemplo)</td></tr>
+              </tbody>
+            </table>
+            <p><button type="button" class="btn sec">Descargar justificante</button> <button type="button" class="btn sec">Contactar</button> <button type="button" class="btn peligro">Cancelar reserva</button></p>
+          </div>
+        </section>
+
+        <section aria-labelledby="titulo-cancelar" style="margin-top:16px">
+          <h3 id="titulo-cancelar">Cancelar la reserva (pantalla P10)</h3>
+          <div class="panel-lateral">
+            <p>Según la política <span class="pendiente">versión y tramo: pendientes (ISS-002, B3)</span>: reembolso de <strong>X €</strong> sobre el importe pagado. El importe lo calcula siempre el servidor.</p>
+            <p class="aviso-sitio"><strong>Segundo paso de verificación para cancelar:</strong> <span class="pendiente">propuesta de seguridad pendiente de decisión del cliente (B5, PEND-037, SEG-001)</span>, por ejemplo un enlace enviado al correo de la reserva.</p>
+            <div class="casilla">
+              <input id="entiendo" type="checkbox">
+              <label for="entiendo">Entiendo que la cancelación es inmediata y no se puede deshacer.</label>
+            </div>
+            <p><button type="button" class="btn sec">Mantener mi reserva</button> <button type="button" class="btn peligro">Cancelar y solicitar reembolso</button></p>
+            <p class="nota-ejemplo">Si el reembolso falla, el cliente ve «Estamos procesando tu reembolso» y la empresa lo gestiona desde el panel.</p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="sitio-pie">
+        Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación
+        <span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> «Buscando tu reserva…» / «Calculando reembolso…»</div>
+      <div class="estado exito"><strong>Éxito:</strong> detalle de la reserva; tras cancelar, resultado con importe y plazo de reembolso (plazo pendiente, PEND-009).</div>
+      <div class="estado error"><strong>Error:</strong> datos que no coinciden (mensaje genérico), límite de intentos, reserva no cancelable o fallo de reembolso (gestión manual).</div>
+      <div class="estado"><strong>Sin permisos:</strong> sin sesión de reserva, se vuelve a la consulta.</div>
+      <div class="estado"><strong>Sin conexión:</strong> aviso, sin enviar la cancelación dos veces.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-011, RF-012, RF-013 · HU-011, HU-012 · CA-013, CA-020, CA-008 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>No se propone cuenta de usuario en el MVP (Fase 2, HU-032). Código y correo viajan por formulario, nunca en la dirección de la página (SEG-001).</li>
+        <li>Pendientes del cliente: política de cancelación y su momento de aplicación (ISS-002, DEC-025), segundo paso para cancelar (B5), comisiones de reembolso (PEND-009), cliente sin acceso a su correo (PEND-023).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P09, P10) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

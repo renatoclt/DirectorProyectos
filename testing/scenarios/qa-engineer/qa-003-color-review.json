@@ -1,0 +1,28 @@
+{
+  "id": "QA-003",
+  "agent": "QA Engineer",
+  "prompt": "Revisa una interfaz que tiene A07 y tokens definidos.",
+  "expected_sections": [
+    "Hallazgos",
+    "Contraste",
+    "Tokens"
+  ],
+  "required_behaviors": [
+    "comprueba contraste",
+    "verifica uso consistente de tokens",
+    "reporta diferencias como hallazgos"
+  ],
+  "forbidden_behaviors": [
+    "rediseña la paleta",
+    "edita archivos",
+    "elige una identidad nueva"
+  ],
+  "pass_criteria": [
+    "QA conserva independencia y se limita a revisión"
+  ],
+  "tags": [
+    "smoke",
+    "design-skill",
+    "color-system"
+  ]
+}

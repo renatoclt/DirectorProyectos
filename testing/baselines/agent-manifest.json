@@ -1,6 +1,6 @@
 {
   "baseline_version": "1.0.0",
-  "system_version": "3.0.0",
+  "system_version": "6.0.0",
   "agents": {
     "analista-negocio": {
       "name": "Analista de Negocio",
@@ -32,8 +32,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "74174b1c005fbbfdc31649379495eec5b76564395fcda8171321af8be289e70d",
-      "contract_sha256": "11bbc7ee804427f20f8606b555494ba70e35d29c53e33a04dd71d59b8f34c1a8"
+      "profile_sha256": "fbebc7328d69c88097e0c413784edeb8a36643a673e8447358ec008349ef6838",
+      "contract_sha256": "e06f2007b8153302d9ebf665b770f51fb4d8128c522e5311a8d00a1fc301449d"
     },
     "auditor-trazabilidad": {
       "name": "Auditor de Trazabilidad",
@@ -132,8 +132,8 @@
       ],
       "user_invocable": true,
       "disable_model_invocation": false,
-      "profile_sha256": "c4ddef3bc62170cf8e5176dc7ec39205b52152c77f7a0b74d6fd0c27efa6f6e5",
-      "contract_sha256": "092911c33abf5f3519f0a20c45c6abac4f6b1227e249160768d8db18c4ed9596"
+      "profile_sha256": "b7a2a363f0cd05740ebeedb78b9dcfac99f7d8d10a5e15ec0632f9f42dd85b09",
+      "contract_sha256": "b61cd99af330eabbf01995969d6719126537932a3db300d3abaf1be97c807626"
     },
     "frontend-developer": {
       "name": "Desarrollador Frontend",
@@ -148,8 +148,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "0a44e86778f9cae676a11b269d8788c5f2ca50ddb17d830535b87988a213fb70",
-      "contract_sha256": "32e8e12da27ac2fc78ad38613f8ff3e00d9b5201454726d47c6ae3ed3c8ccb33"
+      "profile_sha256": "6d6dff218f87c25149cac3e0a2a9b1973977dee8eea4343c1ec26e80d05a0073",
+      "contract_sha256": "29c542eb35ccba9d25fcaa21c1e367d28fb695011d47d971ec0bce6d061dc915"
     },
     "gestor-documentacion": {
       "name": "Gestor de Documentación",
@@ -160,8 +160,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "879fa6a8d61e902153f748b9390e4ae624ca11cd6a28763a7bc1ad4b7f000ba4",
-      "contract_sha256": "224f28022fd46f9105aad51f4c93ec7ce97d8a689923d71d758b8eceaac29d99"
+      "profile_sha256": "b174189af71c8b96bcc2a26967f363235ca6d5bbb9a1d754f21c11eccd47e186",
+      "contract_sha256": "8f1f2066c191a273d13a9b050253c74108c5682f3b53eeeae2be3752bc41f52c"
     },
     "mobile-developer": {
       "name": "Desarrollador Móvil",
@@ -187,8 +187,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "8e2d69cf1da8e8e6826a4f9a50e021465b233df558394ce7fd9a5659e4cc6303",
-      "contract_sha256": "7bbc4791bc09d7ebc15a981e822c25ca92015b9d3110a439b2b60cc8b9ad2e06"
+      "profile_sha256": "c21e4db171a6b018cc22cbe8a14267378b07f3ae40cf9b97b31098c32b3a1ae9",
+      "contract_sha256": "3fdd89b0f7367caee942e80e62fbc1c42513e8857a6ce320387bb29098a1c874"
     },
     "product-manager": {
       "name": "Product Manager",
@@ -200,6 +200,18 @@
       "disable_model_invocation": false,
       "profile_sha256": "1bccde85dd0d203b438a84e0d4020504b87a6d852f16c8f4de93d3efd405c4a5",
       "contract_sha256": "f692d171ae5f04ca4e365603d89d545ccb6d375130cf1d065974a05af88bb946"
+    },
+    "prototipador-ux": {
+      "name": "Prototipador UX",
+      "tools": [
+        "read",
+        "search",
+        "edit"
+      ],
+      "user_invocable": false,
+      "disable_model_invocation": false,
+      "profile_sha256": "fa49606b7861a3d1b770262b254ad987e69f18a3e7ddbbc381d3653317c12172",
+      "contract_sha256": "6cc5d543aceaa9da624f76b4b3bfa8a681ed7ae2981b2cc31c75283be33aa0dc"
     },
     "qa-engineer": {
       "name": "QA Engineer",
@@ -213,8 +225,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "e763711e40f8f1f6d2f453dbe6b9e1d40fdb57d35e88e50a5765bb1a467f483a",
-      "contract_sha256": "91bf73f7527bae33dd4d44dc6bde8359909c06736e9a7f67e23ad078ad83cfbc"
+      "profile_sha256": "0e40b41c17dbb215cc41868cf7f69ce7cf3ff7728b57322356d6f3b8ccf930a5",
+      "contract_sha256": "23d296780ff8136d5d11b081ff084d826dc73976cd9775ea112922b02bc49c88"
     },
     "security-reviewer": {
       "name": "Revisor de Seguridad",
@@ -265,8 +277,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "38f19ca1d3c687c8c07fb09e5fb17c2c52ae35b24f7c0d883f098c83007b7572",
-      "contract_sha256": "564af1b123d451ac2c46bf43a4e86f9d6bb02a5898b98b980b55e88838c9c7bb"
+      "profile_sha256": "8c5825a524ddf9d42c7f1b23e76685bb847eaa53f12f72353d77922eb4dc5370",
+      "contract_sha256": "15525a927cad2a70034dbbb1a53328145d56dc7cb896e953215a9f06a680563e"
     },
     "ux-ui-designer": {
       "name": "Diseñador UX UI",
@@ -276,8 +288,8 @@
       ],
       "user_invocable": false,
       "disable_model_invocation": false,
-      "profile_sha256": "184ac8b0d45ee4d58a527c4b118f2d27a3732ddc4c887b9ece97f16b4a31e3cb",
-      "contract_sha256": "370ba820f1fe814d6911030c444c541ed055263ab40b3279e5794c2ec1a1d0f9"
+      "profile_sha256": "798f5f5880775b22262fb88e3b8ec578cc33d6c2f78ef5fb09a8a2cdb23ede58",
+      "contract_sha256": "1fa4ebeafd6c2e3e7ce0727d94342592db592aa2ac9949c470182c167a8d4e27"
     }
   }
 }

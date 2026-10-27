@@ -1,6 +1,97 @@
 {
-  "version": "1.0.0",
+  "version": "1.3.0",
   "scenarios": [
+    {
+      "id": "AN-001",
+      "agent": "Analista de Negocio",
+      "path": "analista-negocio/an-001-no-inventar.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "ARQ-001",
+      "agent": "Arquitecto de Soluciones",
+      "path": "arquitecto-soluciones/arq-001-proporcionalidad.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "AUDIT-001",
+      "agent": "Auditor de Entrega",
+      "path": "auditor-entrega/audit-001-evidencia-final.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "AUDIT-002",
+      "agent": "Auditor de Entrega",
+      "path": "auditor-entrega/audit-002-control-interfaz.json",
+      "tags": [
+        "normal",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "AUDIT-003",
+      "agent": "Auditor de Entrega",
+      "path": "auditor-entrega/audit-003-color-evidence.json",
+      "tags": [
+        "normal",
+        "design-skill",
+        "color-system"
+      ]
+    },
+    {
+      "id": "TRACE-001",
+      "agent": "Auditor de Trazabilidad",
+      "path": "auditor-trazabilidad/trace-001-huérfanos.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "BE-001",
+      "agent": "Desarrollador Backend",
+      "path": "backend-developer/be-001-contrato-api.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DATA-001",
+      "agent": "Especialista de Datos",
+      "path": "data-engineer/data-001-migracion-reversible.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DELIVERY-001",
+      "agent": "Delivery Manager",
+      "path": "delivery-manager/delivery-001-no-programa.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DEV-001",
+      "agent": "Desarrollador",
+      "path": "desarrollador/dev-001-sin-scope-creep.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DEVOPS-001",
+      "agent": "DevOps Engineer",
+      "path": "devops-engineer/devops-001-sin-despliegue.json",
+      "tags": [
+        "normal"
+      ]
+    },
     {
       "id": "DIR-001",
       "agent": "Director de Proyectos",
@@ -27,33 +118,82 @@
       ]
     },
     {
-      "id": "AN-001",
-      "agent": "Analista de Negocio",
-      "path": "analista-negocio/an-001-no-inventar.json",
-      "tags": [
-        "smoke"
-      ]
-    },
-    {
-      "id": "PM-001",
-      "agent": "Product Manager",
-      "path": "product-manager/pm-001-mvp-minimo.json",
+      "id": "DIR-004",
+      "agent": "Director de Proyectos",
+      "path": "director-proyectos/dir-004-skills-proporcionales.json",
       "tags": [
         "normal"
       ]
     },
     {
-      "id": "UX-001",
-      "agent": "Diseñador UX UI",
-      "path": "ux-ui-designer/ux-001-estados-interfaz.json",
+      "id": "DIR-005",
+      "agent": "Director de Proyectos",
+      "path": "director-proyectos/dir-005-propuesta-ejecutiva-adjuntos.json",
+      "tags": [
+        "smoke",
+        "proposal",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "DIR-006",
+      "agent": "Director de Proyectos",
+      "path": "director-proyectos/dir-006-color-system.json",
+      "tags": [
+        "smoke",
+        "proposal",
+        "design-skill",
+        "color-system"
+      ]
+    },
+    {
+      "id": "FE-001",
+      "agent": "Desarrollador Frontend",
+      "path": "frontend-developer/fe-001-seguridad-servidor.json",
       "tags": [
         "normal"
       ]
     },
     {
-      "id": "ARQ-001",
-      "agent": "Arquitecto de Soluciones",
-      "path": "arquitecto-soluciones/arq-001-proporcionalidad.json",
+      "id": "FE-002",
+      "agent": "Desarrollador Frontend",
+      "path": "frontend-developer/fe-002-diseno-y-autorrevision.json",
+      "tags": [
+        "normal",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "FE-003",
+      "agent": "Desarrollador Frontend",
+      "path": "frontend-developer/fe-003-color-tokens.json",
+      "tags": [
+        "normal",
+        "design-skill",
+        "color-system"
+      ]
+    },
+    {
+      "id": "DOC-001",
+      "agent": "Gestor de Documentación",
+      "path": "gestor-documentacion/doc-001-limite-ruta.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "DOC-002",
+      "agent": "Gestor de Documentación",
+      "path": "gestor-documentacion/doc-002-paquete-propuesta.json",
+      "tags": [
+        "normal",
+        "proposal"
+      ]
+    },
+    {
+      "id": "MOB-001",
+      "agent": "Desarrollador Móvil",
+      "path": "mobile-developer/mob-001-permisos.json",
       "tags": [
         "normal"
       ]
@@ -67,9 +207,62 @@
       ]
     },
     {
-      "id": "DELIVERY-001",
-      "agent": "Delivery Manager",
-      "path": "delivery-manager/delivery-001-no-programa.json",
+      "id": "PLAN-002",
+      "agent": "Planificador de Proyecto",
+      "path": "planificador-proyecto/plan-002-estimacion-preliminar.json",
+      "tags": [
+        "normal",
+        "proposal"
+      ]
+    },
+    {
+      "id": "PM-001",
+      "agent": "Product Manager",
+      "path": "product-manager/pm-001-mvp-minimo.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "PROTO-001",
+      "agent": "Prototipador UX",
+      "path": "prototipador-ux/proto-001-mockup-conceptual.json",
+      "tags": [
+        "smoke",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "QA-001",
+      "agent": "QA Engineer",
+      "path": "qa-engineer/qa-001-independencia.json",
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "id": "QA-002",
+      "agent": "QA Engineer",
+      "path": "qa-engineer/qa-002-revision-visual-independiente.json",
+      "tags": [
+        "smoke",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "QA-003",
+      "agent": "QA Engineer",
+      "path": "qa-engineer/qa-003-color-review.json",
+      "tags": [
+        "smoke",
+        "design-skill",
+        "color-system"
+      ]
+    },
+    {
+      "id": "SEC-001",
+      "agent": "Revisor de Seguridad",
+      "path": "security-reviewer/sec-001-sin-garantia.json",
       "tags": [
         "normal"
       ]
@@ -83,97 +276,9 @@
       ]
     },
     {
-      "id": "DEV-001",
-      "agent": "Desarrollador",
-      "path": "desarrollador/dev-001-sin-scope-creep.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "BE-001",
-      "agent": "Desarrollador Backend",
-      "path": "backend-developer/be-001-contrato-api.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "FE-001",
-      "agent": "Desarrollador Frontend",
-      "path": "frontend-developer/fe-001-seguridad-servidor.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "MOB-001",
-      "agent": "Desarrollador Móvil",
-      "path": "mobile-developer/mob-001-permisos.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "DATA-001",
-      "agent": "Especialista de Datos",
-      "path": "data-engineer/data-001-migracion-reversible.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "DEVOPS-001",
-      "agent": "DevOps Engineer",
-      "path": "devops-engineer/devops-001-sin-despliegue.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "QA-001",
-      "agent": "QA Engineer",
-      "path": "qa-engineer/qa-001-independencia.json",
-      "tags": [
-        "smoke"
-      ]
-    },
-    {
-      "id": "SEC-001",
-      "agent": "Revisor de Seguridad",
-      "path": "security-reviewer/sec-001-sin-garantia.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
       "id": "WRITER-001",
       "agent": "Redactor Técnico",
       "path": "technical-writer/writer-001-solo-validado.json",
-      "tags": [
-        "normal"
-      ]
-    },
-    {
-      "id": "TRACE-001",
-      "agent": "Auditor de Trazabilidad",
-      "path": "auditor-trazabilidad/trace-001-huérfanos.json",
-      "tags": [
-        "smoke"
-      ]
-    },
-    {
-      "id": "AUDIT-001",
-      "agent": "Auditor de Entrega",
-      "path": "auditor-entrega/audit-001-evidencia-final.json",
-      "tags": [
-        "smoke"
-      ]
-    },
-    {
-      "id": "DOC-001",
-      "agent": "Gestor de Documentación",
-      "path": "gestor-documentacion/doc-001-limite-ruta.json",
       "tags": [
         "normal"
       ]
@@ -193,6 +298,54 @@
       "tags": [
         "critical",
         "smoke"
+      ]
+    },
+    {
+      "id": "AGTTEST-003",
+      "agent": "Ingeniero de Testing de Agentes",
+      "path": "testing-agentes/agttest-003-skills-protegidas.json",
+      "tags": [
+        "critical",
+        "smoke",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "AGTTEST-004",
+      "agent": "Ingeniero de Testing de Agentes",
+      "path": "testing-agentes/agttest-004-color-skill-baseline.json",
+      "tags": [
+        "critical",
+        "smoke",
+        "design-skill",
+        "color-system"
+      ]
+    },
+    {
+      "id": "UX-001",
+      "agent": "Diseñador UX UI",
+      "path": "ux-ui-designer/ux-001-estados-interfaz.json",
+      "tags": [
+        "normal"
+      ]
+    },
+    {
+      "id": "UX-002",
+      "agent": "Diseñador UX UI",
+      "path": "ux-ui-designer/ux-002-direccion-visual-contextual.json",
+      "tags": [
+        "smoke",
+        "design-skill"
+      ]
+    },
+    {
+      "id": "UX-003",
+      "agent": "Diseñador UX UI",
+      "path": "ux-ui-designer/ux-003-color-system.json",
+      "tags": [
+        "smoke",
+        "design-skill",
+        "color-system"
       ]
     }
   ]

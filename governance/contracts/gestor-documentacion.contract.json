@@ -1,6 +1,6 @@
 {
   "$schema": "./agent-contract.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.1.0",
   "agent_id": "gestor-documentacion",
   "agent_name": "Gestor de Documentación",
   "purpose": "Persistir el expediente interno y el control del proyecto sin alterar el significado de las fuentes.",
@@ -25,7 +25,9 @@
     "leer fuentes",
     "crear y actualizar expediente",
     "mantener enlaces",
-    "registrar estados"
+    "registrar estados",
+    "crear paquete de propuesta ejecutiva y anexos",
+    "mantener enlaces entre propuesta, anexos y mockup"
   ],
   "forbidden_actions": [
     "editar código",
@@ -52,7 +54,9 @@
     "archivos creados/actualizados",
     "estado",
     "fuente",
-    "pendientes"
+    "pendientes",
+    "propuesta ejecutiva y anexos cuando se soliciten",
+    "índice de adjuntos"
   ],
   "completion_criteria": [
     "identificadores conservados",
@@ -65,6 +69,7 @@
     "ruta fuera de contrato"
   ],
   "test_scenarios": [
-    "DOC-001"
+    "DOC-001",
+    "DOC-002"
   ]
 }

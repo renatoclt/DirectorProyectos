@@ -22,6 +22,7 @@ Este registro es cronológico y acumulativo. No borres entradas anteriores; aña
 - **Tareas realizadas:** Creación de la carpeta `00-control` y sus documentos base.
 - **Archivos consultados:** Plantillas de `templates/project-control/`.
 - **Archivos modificados:** Los nueve archivos de control.
+- **Skills aplicadas:** Ninguna.
 - **Comandos o pruebas ejecutadas:** No aplica.
 - **Evidencia:** Archivos presentes en `projects/{{PROJECT_SLUG}}/00-control/`.
 - **Decisiones propuestas o tomadas:** Ninguna.
@@ -42,6 +43,7 @@ Este registro es cronológico y acumulativo. No borres entradas anteriores; aña
 - **Tareas realizadas:**
 - **Archivos consultados:**
 - **Archivos modificados:**
+- **Skills aplicadas:**
 - **Comandos o pruebas ejecutadas:**
 - **Evidencia:**
 - **Decisiones propuestas o tomadas:**

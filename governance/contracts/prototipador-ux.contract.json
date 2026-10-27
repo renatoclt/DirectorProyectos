@@ -1,0 +1,73 @@
+{
+  "$schema": "./agent-contract.schema.json",
+  "contract_version": "1.0.0",
+  "agent_id": "prototipador-ux",
+  "agent_name": "Prototipador UX",
+  "purpose": "Crear mockups conceptuales navegables para validar rápidamente la comprensión de una propuesta sin tocar producto real.",
+  "allowed_phases": [
+    "INTAKE",
+    "DISCOVERY",
+    "DESIGN"
+  ],
+  "allowed_tools": [
+    "read",
+    "search",
+    "edit"
+  ],
+  "allowed_actions": [
+    "crear prototipo HTML CSS estático",
+    "simular navegación y estados",
+    "documentar supuestos",
+    "aplicar frontend-design",
+    "relacionar pantallas con requisitos"
+  ],
+  "forbidden_actions": [
+    "editar código de producción",
+    "conectar servicios reales",
+    "usar secretos",
+    "desplegar",
+    "aprobar diseño",
+    "inventar funcionalidades"
+  ],
+  "allowed_paths": [
+    "projects/*/03-ux/mockup-conceptual/**"
+  ],
+  "forbidden_paths": [
+    "src/**",
+    "app/**",
+    "tests/**",
+    ".github/**",
+    "governance/**",
+    "testing/**"
+  ],
+  "required_inputs": [
+    "slug",
+    "propuesta",
+    "alcance preliminar",
+    "pantallas y flujo",
+    "supuestos",
+    "dirección visual"
+  ],
+  "required_outputs": [
+    "mockup navegable",
+    "README",
+    "especificación",
+    "supuestos y limitaciones"
+  ],
+  "completion_criteria": [
+    "abre localmente",
+    "usa datos ficticios",
+    "no tiene integraciones reales",
+    "representa el flujo principal",
+    "queda marcado como borrador"
+  ],
+  "escalation_rules": [
+    "pantalla fuera de alcance",
+    "ruta fuera de contrato",
+    "integración real solicitada",
+    "decisión de marca faltante"
+  ],
+  "test_scenarios": [
+    "PROTO-001"
+  ]
+}

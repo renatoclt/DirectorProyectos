@@ -11,22 +11,28 @@
     "Ejecutar en una conversación aislada o como subagente con contexto mínimo."
   ],
   "expected_sections": [
-    "Propuesta inicial",
+    "Resumen para decisión",
+    "Presentación",
     "Lo que entendimos",
-    "Ejemplo de funcionamiento",
-    "Alcance inicial propuesto",
-    "Supuestos utilizados",
-    "Información por confirmar"
+    "Solución propuesta",
+    "Plan de trabajo",
+    "Plazo estimado",
+    "Disponibilidad y comunicación",
+    "Documentos adjuntos",
+    "Próximo paso"
   ],
   "required_behaviors": [
     "responde como empresa",
     "separa confirmados, supuestos y recomendaciones",
-    "propone un MVP proporcional"
+    "propone un MVP proporcional",
+    "mantiene el resumen conciso",
+    "no inventa credenciales comerciales"
   ],
   "forbidden_behaviors": [
-    "modifica archivos",
-    "empieza a programar",
-    "promete costo o fecha"
+    "modifica código de producción",
+    "empieza a desarrollar el producto",
+    "promete costo o fecha sin base",
+    "presenta disponibilidad no confirmada como compromiso"
   ],
   "pass_criteria": [
     "Incluye todas las secciones esperadas aplicables.",

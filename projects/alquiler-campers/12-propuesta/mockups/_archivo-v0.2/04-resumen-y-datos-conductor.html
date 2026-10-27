@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen de precio y datos del conductor · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> No forma parte de la entrega inicial (opción B). En la entrega inicial, los datos del conductor se piden en la <a href="11-solicitud-reserva.html">solicitud de reserva</a>.</p>
+
+  <header class="cabecera">
+    <h1>Resumen de precio y datos del conductor (pantallas P05 y P06)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P05 y P06 de 03-ux · RF-004, RF-006 · HU-004, HU-005 · CA-017, CA-034, CA-010, CA-018</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="01-inicio.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="03-ficha-camper.html">Campers</a>
+          <span>Sedes</span>
+          <a href="07-consulta-reserva.html">Mi reserva</a>
+          <span>Contacto</span>
+          <a href="02-resultados-busqueda.html">Buscar</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <h2>Tu reserva</h2>
+        <ol class="pasos" aria-label="Progreso de la reserva">
+          <li aria-current="step">1 Resumen</li>
+          <li>2 Tus datos</li>
+          <li>3 Pago</li>
+        </ol>
+
+        <div class="dos-columnas">
+          <div>
+            <section class="panel-lateral" aria-labelledby="titulo-resumen">
+              <h3 id="titulo-resumen">Paso 1 · Resumen de precio</h3>
+              <p><strong>Camper Modelo A</strong> <span class="dato-ejemplo">(dato de ejemplo)</span> · Sede de ejemplo · recogida y devolución en la misma sede</p>
+              <p class="suave">Recogida dd/mm/aaaa · Devolución dd/mm/aaaa · 4 noches</p>
+              <table class="desglose">
+                <caption class="nota-ejemplo">Desglose de ejemplo, calculado por el servidor por noche según temporada</caption>
+                <thead><tr><th scope="col">Concepto</th><th scope="col">Importe</th></tr></thead>
+                <tbody>
+                  <tr><td>2 noches · Temporada A (ejemplo) · 85 € por noche</td><td>170 €</td></tr>
+                  <tr><td>2 noches · Temporada B (ejemplo) · 95 € por noche</td><td>190 €</td></tr>
+                  <tr><td>Subtotal</td><td>360 € (ejemplo)</td></tr>
+                  <tr><td>IVA / impuestos</td><td><span class="pendiente">tratamiento pendiente (PEND-010)</span></td></tr>
+                </tbody>
+                <tfoot><tr><th scope="row">Total a pagar ahora (importe de ejemplo)</th><td>360 €</td></tr></tfoot>
+              </table>
+              <p><strong>Fianza (informativa):</strong> <span class="pendiente">importe pendiente (PEND-018)</span>. Se gestiona en la entrega; no se cobra ahora.</p>
+              <p><strong>Cancelación:</strong> <span class="pendiente">resumen de política pendiente (valores y momento de aplicación: ISS-002, B3)</span> <a href="#contenido">Ver política completa</a></p>
+              <p><button type="button" class="btn sec">Editar fechas</button></p>
+            </section>
+          </div>
+
+          <aside class="aviso-sitio" aria-label="Aclaraciones">
+            <p><strong>Importante:</strong> el importe lo calcula siempre el servidor; el precio se congela al crear la reserva (RN-010).</p>
+            <p class="nota-ejemplo">En el MVP propuesto no hay paso de extras (Fase 2, DEC-018).</p>
+          </aside>
+        </div>
+
+        <section class="panel-lateral" aria-labelledby="titulo-datos" style="margin-top:16px">
+          <h3 id="titulo-datos">Paso 2 · Tus datos (conductor principal)</h3>
+          <form action="#" aria-label="Datos del conductor principal">
+            <div class="buscador">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" autocomplete="given-name" placeholder="Nombre de ejemplo">
+              </div>
+              <div class="campo">
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" type="text" autocomplete="family-name" placeholder="Apellidos de ejemplo">
+              </div>
+              <div class="campo">
+                <label for="email">Correo electrónico</label>
+                <input id="email" type="email" autocomplete="email" placeholder="correo@ejemplo.test">
+              </div>
+              <div class="campo">
+                <label for="email2">Repite el correo</label>
+                <input id="email2" type="email" autocomplete="off" placeholder="correo@ejemplo.test">
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" autocomplete="tel" placeholder="+34 000 000 000">
+                <span class="ayuda">Admite prefijo internacional (+34)</span>
+              </div>
+              <div class="campo">
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input id="nacimiento" type="text" inputmode="numeric" autocomplete="bday" placeholder="dd/mm/aaaa">
+                <span class="ayuda">Edad mínima configurable: <span class="pendiente">valor pendiente (PEND-019)</span></span>
+              </div>
+              <div class="campo">
+                <label for="ocupantes">Número de ocupantes</label>
+                <input id="ocupantes" type="text" inputmode="numeric" placeholder="2">
+                <span class="ayuda">No puede superar las plazas del camper</span>
+              </div>
+            </div>
+
+            <div class="casilla">
+              <input id="acepto" type="checkbox">
+              <label for="acepto">He leído y acepto las <a href="#contenido">condiciones de alquiler</a> y la <a href="#contenido">política de privacidad</a> (obligatorio, casilla sin marcar).</label>
+            </div>
+            <div class="casilla">
+              <input id="marketing" type="checkbox">
+              <label for="marketing">Quiero recibir novedades (opcional, aparte y sin marcar).</label>
+            </div>
+            <p class="aviso-sitio">Verificaremos tu carnet y tu documento de identidad en la recogida; no se piden documentos en la web.</p>
+            <p>
+              <button type="button" class="btn sec">Volver</button>
+              <a class="btn acento" href="05-pago.html">Ir al pago</a>
+            </p>
+            <p class="nota-ejemplo">Al pulsar «Ir al pago» se bloquean las fechas durante un tiempo configurable (15 minutos es solo una propuesta, DEC-027).</p>
+          </form>
+        </section>
+      </div>
+
+      <footer class="sitio-pie">
+        Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Política de cancelación
+        <span class="pendiente">Textos legales pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> «Calculando tu precio…» mientras el servidor valida la disponibilidad.</div>
+      <div class="estado error"><strong>Error:</strong> «Estas fechas ya no están disponibles», «Para estas fechas el mínimo es {n} noches», edad mínima no cumplida o falta de aceptación (CA-010, CA-018). El error aparece junto al campo y en un resumen, con texto que explica cómo corregir; los datos escritos se conservan.</div>
+      <div class="estado"><strong>Sin conexión:</strong> aviso y conservación de los campos.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-004, RF-006 · HU-004, HU-005 · CA-017, CA-034, CA-010, CA-018 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>En móvil el total y el botón principal quedan visibles en una barra inferior fija (ver <a href="10-movil-inicio-y-resultados.html">vista móvil</a>).</li>
+        <li>Pendientes del cliente: política de cancelación (ISS-002), impuestos (PEND-010), fianza (PEND-018), edad mínima (PEND-019). La seguridad recomienda además verificar el correo antes del pago y valorar guardar solo «mayor de edad» en lugar de la fecha de nacimiento (ISS-030, SEG-004, SEG-010): decisión pendiente.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P05, P06) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

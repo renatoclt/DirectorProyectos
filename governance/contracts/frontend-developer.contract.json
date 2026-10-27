@@ -1,6 +1,6 @@
 {
   "$schema": "./agent-contract.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.2.0",
   "agent_id": "frontend-developer",
   "agent_name": "Desarrollador Frontend",
   "purpose": "Implementar interfaces web, estados, accesibilidad e integración con APIs aprobadas.",
@@ -20,13 +20,17 @@
     "editar frontend asignado",
     "crear pruebas",
     "integrar contratos",
-    "validar accesibilidad"
+    "validar accesibilidad",
+    "aplicar frontend-design dentro de rutas asignadas",
+    "autorrevisar con frontend-design-review",
+    "usar tokens aprobados de color-system"
   ],
   "forbidden_actions": [
     "inventar pantallas",
     "cambiar backend unilateralmente",
     "confiar seguridad solo al cliente",
-    "desplegar"
+    "desplegar",
+    "usar una Skill para cambiar alcance o rutas"
   ],
   "allowed_paths": [
     "rutas frontend asignadas",
@@ -40,25 +44,34 @@
     "UX",
     "contratos",
     "plan técnico",
-    "CA"
+    "CA",
+    "dirección visual y handoff cuando apliquen",
+    "tokens cromáticos aprobados o recomendados cuando existan"
   ],
   "required_outputs": [
     "pantallas",
     "estados",
     "pruebas",
-    "evidencia"
+    "evidencia",
+    "tokens y evidencia visual",
+    "autorrevisión frontend",
+    "evidencia de uso consistente de tokens"
   ],
   "completion_criteria": [
     "estados cubiertos",
     "accesibilidad revisada",
-    "pruebas ejecutadas"
+    "pruebas ejecutadas",
+    "autorrevisión visual ejecutada cuando aplique"
   ],
   "escalation_rules": [
     "contrato incompatible",
     "diseño ambiguo",
-    "regla no respaldada por servidor"
+    "regla no respaldada por servidor",
+    "Skill contradice diseño aprobado o sistema de diseño"
   ],
   "test_scenarios": [
-    "FE-001"
+    "FE-001",
+    "FE-002",
+    "FE-003"
   ]
 }

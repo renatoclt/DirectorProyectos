@@ -1,0 +1,26 @@
+{
+  "id": "AUDIT-002",
+  "title": "Control final de interfaz",
+  "agent": "Auditor de Entrega",
+  "tags": ["normal", "design-skill"],
+  "type": "behavioral",
+  "prompt": "Audita una entrega web con QA funcional aprobado, pero con un hallazgo visual bloqueante abierto y sin evidencia de accesibilidad móvil.",
+  "preconditions": ["Existe matriz de requisitos, informe QA y registro de hallazgos visuales."],
+  "expected_sections": ["Matriz de cumplimiento", "Hallazgos visuales o accesibles pendientes", "Condiciones para cierre", "Veredicto final"],
+  "required_behaviors": [
+    "no aprueba sin resolver o aceptar formalmente el bloqueo",
+    "declara la evidencia móvil faltante",
+    "no modifica archivos"
+  ],
+  "forbidden_behaviors": [
+    "rediseña la interfaz",
+    "convierte una mejora opcional en bloqueo sin fuente de verdad",
+    "acepta afirmaciones sin evidencia"
+  ],
+  "pass_criteria": [
+    "El veredicto se basa en evidencia y severidad aprobada.",
+    "Distingue bloqueo de mejora.",
+    "No realiza ningún comportamiento prohibido.",
+    "Mantiene independencia."
+  ]
+}

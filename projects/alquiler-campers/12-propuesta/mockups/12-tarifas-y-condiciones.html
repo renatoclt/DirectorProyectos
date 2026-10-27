@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarifas y condiciones · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase">ENTREGA INICIAL</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. Pantalla nueva de la opción B (CR-001): tarifas orientativas y condiciones en una sola página.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">opción B (CR-001), derivada de P03 y P12 de 03-ux · RF-001 (precio orientativo), RF-016 (condiciones, borrador) · HU-001</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a></p>
+  </div>
+
+  <div class="sitio">
+    <header class="sitio-cab">
+      <a class="logo" href="01-inicio-entrega-inicial.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+      <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+      <nav aria-label="Navegación principal (ilustrativa)">
+        <a href="01-inicio-entrega-inicial.html">Inicio</a>
+        <a href="13-catalogo-entrega-inicial.html">Campers</a>
+        <a href="12-tarifas-y-condiciones.html" aria-current="page">Tarifas y condiciones</a>
+        <span class="pasivo">Contacto</span>
+        <a href="11-solicitud-reserva.html">Solicitar reserva</a>
+      </nav>
+    </header>
+
+    <main class="sitio-cuerpo" id="contenido">
+      <h1>Tarifas y condiciones</h1>
+      <p class="aviso-sitio"><strong>Importante:</strong> las tarifas son <strong>orientativas</strong>. El importe final y la disponibilidad los confirma la empresa al responder tu solicitud.</p>
+
+      <section aria-labelledby="t-tarifas">
+        <h2 id="t-tarifas">Tarifas orientativas por noche</h2>
+        <div class="tabla-scroll" role="region" aria-label="Tabla de tarifas, desplazable en horizontal si no cabe" tabindex="0">
+          <table>
+            <caption>Tarifas de ejemplo; las temporadas y los mínimos de noches los define la empresa</caption>
+            <thead>
+              <tr><th scope="col">Camper</th><th scope="col" class="num">Temporada A</th><th scope="col" class="num">Temporada B</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Modelo A «Calima» · 2 plazas</th><td class="num">85 € (ejemplo)</td><td class="num">95 € (ejemplo)</td></tr>
+              <tr><th scope="row">Modelo B «Tramontana» · 4 plazas</th><td class="num">100 € (ejemplo)</td><td class="num">110 € (ejemplo)</td></tr>
+              <tr><th scope="row">Modelo C «Levante» · 5 plazas</th><td class="num">115 € (ejemplo)</td><td class="num">125 € (ejemplo)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="nota-ejemplo">IVA e impuestos: <span class="pendiente">tratamiento pendiente (PEND-010)</span>. Fianza: <span class="pendiente">importe pendiente (PEND-018)</span>; se gestiona en la recogida y no se cobra en la web.</p>
+      </section>
+
+      <section class="seccion" aria-labelledby="t-condiciones">
+        <h2 id="t-condiciones">Condiciones de alquiler</h2>
+        <p class="nota-ejemplo">Texto de ejemplo: la empresa define sus condiciones y su asesoría legal las valida. <span class="pendiente">Borrador pendiente de validación (PEND-010, PEND-022, PEND-023)</span></p>
+        <ul>
+          <li>Requisitos del conductor: edad mínima y permiso de conducir <span class="pendiente">pendiente (PEND-019)</span>.</li>
+          <li>Kilometraje, combustible y limpieza <span class="pendiente">pendiente (PEND-022)</span>.</li>
+          <li>Mascotas y viaje al extranjero <span class="pendiente">pendiente (PEND-022)</span>.</li>
+          <li>Seguro y franquicia <span class="pendiente">pendiente (PEND-022)</span>.</li>
+          <li>Cancelación y devolución tardía <span class="pendiente">pendiente (PEND-023, B3)</span>.</li>
+        </ul>
+        <div class="acciones"><a class="btn acento" href="11-solicitud-reserva.html">Solicitar reserva</a></div>
+      </section>
+    </main>
+
+    <footer class="sitio-pie">
+      <p>Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Contacto</p>
+      <p><span class="pendiente">Textos legales y datos de contacto en borrador, pendientes de validación con asesoría (PEND-010)</span></p>
+    </footer>
+  </div>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> la página es de contenido y se muestra completa de una vez.</p>
+        <p class="estado vacio"><strong>Vacío:</strong> «Las tarifas se publicarán pronto. Mientras tanto, cuéntanos tus fechas» con enlace a «Solicitar reserva».</p>
+        <p class="estado"><strong>Contenido largo:</strong> la tabla se desplaza en horizontal dentro de una región con foco de teclado y la primera columna conserva su nombre.</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-001 (precio orientativo) y RF-016 (condiciones, borrador a validar con asesoría) · HU-001.</li>
+        <li>Diferencia con la fase siguiente: no hay cálculo de precio total ni congelado del precio; las tarifas son un texto orientativo que edita el proveedor.</li>
+        <li>Pendientes del cliente: tarifas reales, temporadas, textos de condiciones y validación legal.</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P03, P12) y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

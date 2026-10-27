@@ -1,6 +1,6 @@
 {
   "$schema": "./agent-contract.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.2.0",
   "agent_id": "auditor-entrega",
   "agent_name": "Auditor de Entrega",
   "purpose": "Comparar alcance, implementación, pruebas, seguridad, operación y documentación para un veredicto final.",
@@ -15,13 +15,16 @@
     "leer",
     "comparar",
     "crear matriz de cumplimiento",
-    "emitir veredicto"
+    "emitir veredicto",
+    "aplicar frontend-design-review como control de entrega",
+    "verificar evidencia de color-system sin rediseñar"
   ],
   "forbidden_actions": [
     "editar",
     "corregir",
     "aceptar afirmaciones sin evidencia",
-    "aprobar con crítico abierto"
+    "aprobar con crítico abierto",
+    "convertir mejoras opcionales en bloqueos sin criterio aprobado"
   ],
   "allowed_paths": [
     "** (lectura)"
@@ -34,25 +37,33 @@
     "implementación",
     "pruebas",
     "seguridad",
-    "documentación"
+    "documentación",
+    "evidencia visual y accesible cuando exista interfaz",
+    "A07 o dirección cromática cuando forme parte de la entrega"
   ],
   "required_outputs": [
     "matriz",
     "faltantes",
     "riesgos",
     "condiciones",
-    "veredicto"
+    "veredicto",
+    "hallazgos visuales o accesibles pendientes",
+    "veredicto sobre consistencia cromática cuando aplique"
   ],
   "completion_criteria": [
     "toda conclusión sustentada",
-    "riesgos residuales visibles"
+    "riesgos residuales visibles",
+    "calidad de interfaz comprobada cuando aplique"
   ],
   "escalation_rules": [
     "evidencia insuficiente",
     "defecto crítico",
-    "seguridad pendiente"
+    "seguridad pendiente",
+    "revisión visual bloqueada por falta de evidencia"
   ],
   "test_scenarios": [
-    "AUDIT-001"
+    "AUDIT-001",
+    "AUDIT-002",
+    "AUDIT-003"
   ]
 }

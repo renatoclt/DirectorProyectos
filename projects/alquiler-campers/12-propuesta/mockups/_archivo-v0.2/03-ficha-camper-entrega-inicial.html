@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de camper (entrega inicial) · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+  <p class="fase-aviso" role="note"><span class="fase">ENTREGA INICIAL</span> Pantalla de la opción B (CR-001): la ficha no comprueba disponibilidad ni calcula el total; invita a solicitar la reserva.</p>
+
+  <header class="cabecera">
+    <h1>Ficha de camper, versión entrega inicial (pantalla P03 simplificada)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P03 de 03-ux simplificada · RF-001 · HU-001 · opción B (CR-001)</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a> · Versión de la fase siguiente: <a href="03-ficha-camper.html">03 · Ficha con disponibilidad y precio</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="01-inicio-entrega-inicial.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="01-inicio-entrega-inicial.html">Inicio</a>
+          <a href="03-ficha-camper-entrega-inicial.html" class="actual" aria-current="page">Campers</a>
+          <a href="12-tarifas-y-condiciones.html">Tarifas y condiciones</a>
+          <a href="11-solicitud-reserva.html">Solicitar reserva</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <nav aria-label="Migas de pan"><p class="migas"><a href="01-inicio-entrega-inicial.html">Inicio</a> &gt; Campers &gt; Camper Modelo A</p></nav>
+
+        <div class="dos-columnas">
+          <section aria-labelledby="titulo-ficha">
+            <figure class="foto-ejemplo grande">
+              <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+              <figcaption>IMAGEN DE EJEMPLO (se sustituye por fotos reales cuando el cliente las aporte)</figcaption>
+            </figure>
+            <h2 id="titulo-ficha">Camper Modelo A <span class="dato-ejemplo">(dato de ejemplo)</span></h2>
+            <p>Descripción de ejemplo: texto breve que redactará la empresa. <span class="pendiente">Contenido real pendiente (PEND-020)</span></p>
+            <h3>Características</h3>
+            <ul>
+              <li>Plazas: 2 <span class="insignia aviso">dato de ejemplo</span></li>
+              <li>Equipamiento: cocina, nevera, cama doble <span class="insignia aviso">dato de ejemplo</span></li>
+              <li>Sede base: Sede de ejemplo</li>
+            </ul>
+            <p><strong>Fianza:</strong> <span class="pendiente">importe y texto pendientes (PEND-018)</span>. La fianza se gestiona en la recogida; no se cobra ahora.</p>
+            <p>Más información: <a href="12-tarifas-y-condiciones.html">Tarifas y condiciones</a> <span class="pendiente">textos pendientes de validación legal</span></p>
+          </section>
+
+          <aside class="panel-lateral" aria-labelledby="titulo-reserva">
+            <h3 id="titulo-reserva">¿Te interesa este camper?</h3>
+            <p>Desde 90 € / noche <span class="insignia aviso">dato de ejemplo</span></p>
+            <p class="nota-ejemplo">Precio orientativo. El importe final y la disponibilidad los confirma la empresa al responder tu solicitud.</p>
+            <p><a class="btn acento" href="11-solicitud-reserva.html">Solicitar reserva</a></p>
+            <p class="nota-ejemplo">No se cobra nada en la web.</p>
+          </aside>
+        </div>
+      </div>
+
+      <footer class="sitio-pie">
+        Aviso legal · Privacidad · Cookies · Condiciones de alquiler
+        <span class="pendiente">Textos legales en borrador, pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueleto de la galería y del bloque lateral.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> catálogo sin campers publicados.</div>
+      <div class="estado error"><strong>No encontrado:</strong> un camper retirado del contenido no aparece (404 o redirección: decisión pendiente, PEND-030).</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-001 (parcial) · HU-001 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14, simplificada).</li>
+        <li>Diferencia con la fase siguiente: no hay selector de fechas, comprobación de disponibilidad, desglose de precio ni botón «Reservar» hacia el pago.</li>
+        <li>La página es indexable con datos estructurados básicos de vehículo (RF-018, RNF-002); no se garantiza posicionamiento.</li>
+        <li>Pendientes del cliente: fotos reales (PEND-020), fianza (PEND-018), comportamiento de fichas retiradas (PEND-030), textos legales (PEND-010).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P03) y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

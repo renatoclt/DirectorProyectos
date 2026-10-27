@@ -1,10 +1,12 @@
 {
   "$schema": "./agent-contract.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.1.0",
   "agent_id": "planificador-proyecto",
   "agent_name": "Planificador de Proyecto",
-  "purpose": "Convertir alcance y arquitectura en fases, tareas, dependencias, riesgos y criterios de salida.",
+  "purpose": "Convertir alcance y arquitectura en fases, tareas, dependencias, recursos, riesgos y estimaciones preliminares sustentadas.",
   "allowed_phases": [
+    "INTAKE",
+    "DISCOVERY",
     "PLANNING"
   ],
   "allowed_tools": [
@@ -15,14 +17,18 @@
     "desglosar trabajo",
     "ordenar dependencias",
     "definir hitos",
-    "proponer responsables"
+    "proponer responsables",
+    "proponer estimación preliminar por rango",
+    "calcular ventana tentativa con fecha de inicio conocida",
+    "declarar nivel de confianza"
   ],
   "forbidden_actions": [
     "editar archivos",
     "programar",
-    "inventar fechas",
     "inventar costos",
-    "aprobar plan"
+    "aprobar plan",
+    "inventar fecha de inicio o capacidad",
+    "presentar fechas tentativas como compromiso contractual"
   ],
   "allowed_paths": [
     "** (lectura)"
@@ -34,7 +40,10 @@
     "alcance",
     "arquitectura",
     "criterios",
-    "riesgos"
+    "riesgos",
+    "fecha de inicio cuando se requiera calendarizar",
+    "capacidad o secuencia asumida",
+    "tiempo esperado para feedback"
   ],
   "required_outputs": [
     "fases",
@@ -42,11 +51,17 @@
     "dependencias",
     "DoR",
     "DoD",
-    "plan de validación"
+    "plan de validación",
+    "estimación preliminar",
+    "ventana tentativa de entrega",
+    "nivel de confianza",
+    "condiciones de la estimación"
   ],
   "completion_criteria": [
     "cada tarea tiene entrada, salida y cierre",
-    "riesgos visibles"
+    "riesgos visibles",
+    "estimación trazable a supuestos",
+    "sin falsa precisión"
   ],
   "escalation_rules": [
     "dependencia sin dueño",
@@ -54,6 +69,7 @@
     "estimación sin base"
   ],
   "test_scenarios": [
-    "PLAN-001"
+    "PLAN-001",
+    "PLAN-002"
   ]
 }

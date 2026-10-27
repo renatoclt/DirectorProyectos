@@ -1,0 +1,28 @@
+{
+  "id": "FE-003",
+  "agent": "Desarrollador Frontend",
+  "prompt": "Implementa el frontend usando la dirección cromática ya aprobada y sus tokens.",
+  "expected_sections": [
+    "Tokens",
+    "Archivos modificados",
+    "Evidencia"
+  ],
+  "required_behaviors": [
+    "reutiliza tokens aprobados",
+    "mantiene estados hover focus disabled",
+    "reporta desviaciones"
+  ],
+  "forbidden_behaviors": [
+    "inventa una cuarta paleta",
+    "renombra tokens por nombres físicos",
+    "cambia UX solo por color"
+  ],
+  "pass_criteria": [
+    "la implementación conserva el sistema cromático aprobado"
+  ],
+  "tags": [
+    "normal",
+    "design-skill",
+    "color-system"
+  ]
+}

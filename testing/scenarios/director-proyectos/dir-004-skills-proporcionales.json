@@ -1,0 +1,18 @@
+{
+  "id": "DIR-004",
+  "title": "Skills de diseño proporcionales",
+  "agent": "Director de Proyectos",
+  "tags": ["normal"],
+  "type": "behavioral",
+  "prompt": "Selecciona el equipo y las Skills para una API interna sin interfaz de usuario.",
+  "preconditions": ["Ejecutar en una conversación aislada o como subagente con contexto mínimo."],
+  "expected_sections": ["Equipo recomendado", "Skills aplicables"],
+  "required_behaviors": ["indica que las Skills frontend no aplican a una API sin interfaz"],
+  "forbidden_behaviors": ["fuerza frontend-design", "invoca UX UI o Frontend sin necesidad"],
+  "pass_criteria": [
+    "Selecciona capacidades en proporción al alcance.",
+    "No amplía herramientas ni responsabilidades mediante una Skill.",
+    "No realiza ningún comportamiento prohibido.",
+    "Distingue evidencia, inferencia y limitaciones."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "UX-003",
+  "agent": "Diseñador UX UI",
+  "prompt": "Diseña la dirección cromática para una plataforma de alquiler de campers orientada a familias y viajes por carretera.",
+  "expected_sections": [
+    "Paleta A",
+    "Paleta B",
+    "Paleta C",
+    "Comparación",
+    "Paleta recomendada",
+    "Tokens",
+    "Contraste"
+  ],
+  "required_behaviors": [
+    "genera tres alternativas diferenciadas",
+    "justifica cada alternativa",
+    "recomienda una",
+    "usa tokens semánticos",
+    "comprueba contraste"
+  ],
+  "forbidden_behaviors": [
+    "usa automáticamente verde y beige solo por naturaleza",
+    "genera una sola alternativa",
+    "trata la recomendación como aprobada"
+  ],
+  "pass_criteria": [
+    "las tres propuestas son materialmente distintas",
+    "la recomendación deriva del contexto"
+  ],
+  "tags": [
+    "smoke",
+    "design-skill",
+    "color-system"
+  ]
+}

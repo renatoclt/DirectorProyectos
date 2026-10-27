@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vista móvil: inicio y resultados · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> Esta versión con búsqueda y resultados con disponibilidad no forma parte de la entrega inicial (opción B). Versión móvil de la entrega inicial: <a href="10-movil-entrega-inicial.html">10 · Móvil (entrega inicial)</a>.</p>
+
+  <header class="cabecera">
+    <h1>Vista móvil: inicio y resultados (pantallas P01 y P04 en ancho móvil)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P01 y P04 de 03-ux, sección 8 (responsive) · RF-002, RF-003 · HU-002, HU-016 · CA-030</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <p>El diseño sigue el enfoque «móvil primero»: una sola columna, menú compacto con «Buscar» y «Mi reserva» siempre accesibles, objetivos táctiles amplios y el total con el botón principal visibles en una barra inferior fija. Los dos «teléfonos» son contenedores estrechos ilustrativos.</p>
+
+    <div class="moviles">
+      <section aria-labelledby="titulo-m1">
+        <h2 class="movil-titulo" id="titulo-m1">Inicio en móvil</h2>
+        <div class="movil">
+          <header class="sitio-cab">
+            <a class="logo" href="01-inicio.html">Ruta Camper</a>
+            <nav aria-label="Menú compacto (ilustrativo)">
+              <a href="02-resultados-busqueda.html">Buscar</a>
+              <a href="07-consulta-reserva.html">Mi reserva</a>
+              <span>Menú</span>
+            </nav>
+            <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+          </header>
+          <div class="sitio-cuerpo">
+            <div class="hero">
+              <h3>Alquila tu camper en España</h3>
+              <form action="#" aria-label="Buscar campers disponibles (móvil)">
+                <div class="buscador">
+                  <div class="campo">
+                    <label for="m-recogida">Recogida</label>
+                    <input id="m-recogida" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                  </div>
+                  <div class="campo">
+                    <label for="m-devolucion">Devolución</label>
+                    <input id="m-devolucion" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                  </div>
+                  <div><button type="button" class="btn acento" style="width:100%">Buscar</button></div>
+                </div>
+              </form>
+            </div>
+            <h3>Campers destacados</h3>
+            <article class="camper">
+              <figure class="foto-ejemplo">
+                <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo A <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="precio">Desde 90 € / noche <span class="insignia aviso">dato de ejemplo</span></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="titulo-m2">
+        <h2 class="movil-titulo" id="titulo-m2">Resultados en móvil</h2>
+        <div class="movil">
+          <header class="sitio-cab">
+            <a class="logo" href="01-inicio.html">Ruta Camper</a>
+            <nav aria-label="Menú compacto (ilustrativo)">
+              <a href="02-resultados-busqueda.html" class="actual">Buscar</a>
+              <a href="07-consulta-reserva.html">Mi reserva</a>
+            </nav>
+          </header>
+          <div class="sitio-cuerpo">
+            <h3>Campers disponibles</h3>
+            <p aria-live="polite"><strong>2 resultados</strong> · 4 noches <span class="insignia aviso">dato de ejemplo</span></p>
+            <article class="fila-resultado">
+              <figure class="foto-ejemplo">
+                <svg viewBox="0 0 200 100" role="img" aria-label="Ilustración esquemática de un camper (imagen de ejemplo)"><rect x="12" y="24" width="140" height="48" rx="10" fill="#ffffff" stroke="#1f4d3f" stroke-width="4"/><path d="M152 38h22q10 0 14 10l4 24h-40z" fill="#ffffff" stroke="#1f4d3f" stroke-width="4" stroke-linejoin="round"/><rect x="28" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><rect x="72" y="36" width="34" height="20" rx="4" fill="#c9d8cf" stroke="#1f4d3f" stroke-width="3"/><circle cx="48" cy="76" r="11" fill="#1e2420"/><circle cx="150" cy="76" r="11" fill="#1e2420"/></svg>
+                <figcaption>IMAGEN DE EJEMPLO</figcaption>
+              </figure>
+              <div class="datos">
+                <h4>Camper Modelo A <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="suave">2 plazas · <span class="insignia ok">Disponible</span></p>
+                <p class="precio">Total: 360 € <span class="insignia aviso">importe de ejemplo</span></p>
+              </div>
+            </article>
+            <article class="fila-resultado">
+              <div class="datos">
+                <h4>Camper Modelo B <span class="dato-ejemplo">(dato de ejemplo)</span></h4>
+                <p class="suave">4 plazas · <span class="insignia ok">Disponible</span></p>
+                <p class="precio">Total: 420 € <span class="insignia aviso">importe de ejemplo</span></p>
+              </div>
+            </article>
+            <div class="barra-inferior">
+              <span><strong>360 €</strong> <span class="nota-ejemplo">(ejemplo)</span></span>
+              <a class="btn acento" href="04-resumen-y-datos-conductor.html">Reservar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados" style="margin-top:16px">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueletos con la altura final reservada.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> sin disponibilidad, con «cambiar fechas» y «contacto».</div>
+      <div class="estado error"><strong>Error:</strong> mensaje junto al campo, con texto que explica cómo corregir.</div>
+      <div class="estado"><strong>Sin conexión:</strong> aviso y reintento, sin perder lo escrito.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-002, RF-003 · HU-002, HU-016 · CA-030 y, como objetivo, RNF-001 a RNF-005 (sección 8 de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>).</li>
+        <li>Los puntos de quiebre y los objetivos de rendimiento (RNF-001) se definen en la implementación; el protocolo de medición está pendiente (PEND-014).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P01, P04, sección 8) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

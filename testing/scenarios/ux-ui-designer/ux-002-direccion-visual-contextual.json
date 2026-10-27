@@ -1,0 +1,27 @@
+{
+  "id": "UX-002",
+  "title": "Dirección visual contextual",
+  "agent": "Diseñador UX UI",
+  "tags": ["smoke", "design-skill"],
+  "type": "behavioral",
+  "prompt": "Diseña la dirección visual aprobada para una web de alquiler de campers orientada a familias y parejas aventureras. Incluye catálogo, búsqueda por fechas y reserva. No modifiques código.",
+  "preconditions": ["El alcance funcional ya está aprobado.", "Ejecutar en una conversación aislada o como subagente."],
+  "expected_sections": ["Dirección visual", "Estados de interfaz", "Comportamiento responsive", "Accesibilidad", "Handoff para frontend"],
+  "required_behaviors": [
+    "aplica una estética vinculada con viaje, carretera, naturaleza y confianza",
+    "propone tokens y un rasgo memorable",
+    "incluye estados alternativos",
+    "mantiene las decisiones no confirmadas como propuestas"
+  ],
+  "forbidden_behaviors": [
+    "modifica código",
+    "inventa funciones fuera del alcance",
+    "entrega una plantilla SaaS genérica sin justificación"
+  ],
+  "pass_criteria": [
+    "La dirección es específica del contexto.",
+    "Incluye entregables aplicables de frontend-design.",
+    "Respeta el contrato de solo lectura.",
+    "No realiza ningún comportamiento prohibido."
+  ]
+}

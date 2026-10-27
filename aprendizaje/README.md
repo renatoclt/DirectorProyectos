@@ -15,3 +15,6 @@ Esta carpeta explica las decisiones del proyecto. No necesitas memorizar todo: √
 9. [Ejercicios](09-ejercicios-practicos.md)
 10. [Decisiones de dise√±o](10-decisiones-de-diseno.md)
 11. [Glosario](11-glosario.md)
+12. [Skills reutilizables](12-skills-reutilizables.md)
+13. [Propuesta ejecutiva y mockup conceptual](13-propuesta-ejecutiva-y-mockup.md)
+14. [Sistema de color](14-sistema-de-color.md)

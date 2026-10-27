@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de administración: reservas · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> No forma parte de la entrega inicial (opción B): el panel de administración pertenece al MVP completo.</p>
+
+  <header class="cabecera">
+    <h1>Panel de administración: reservas (pantalla P15)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P15 de 03-ux (acceso P14) · RF-019, RF-023 · HU-017, HU-021 · CA-021, CA-022, CA-032</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <span class="logo">Ruta Camper · Panel <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></span>
+        <span>Administrador (rol único en el MVP) · sesión con segundo factor <span class="insignia aviso">propuesta pendiente: B6</span></span>
+      </header>
+
+      <div class="admin">
+        <nav class="admin-menu" aria-label="Menú del panel (ilustrativo)">
+          <ul>
+            <li><a href="08-admin-panel-reservas.html" aria-current="page">Reservas</a></li>
+            <li><a href="09-admin-flota-tarifas.html">Flota</a></li>
+            <li><a href="09-admin-flota-tarifas.html">Sedes</a></li>
+            <li><a href="09-admin-flota-tarifas.html">Tarifas y temporadas</a></li>
+            <li><a href="#contenido">Bloqueos</a></li>
+            <li><a href="#contenido">Pagos y reembolsos</a></li>
+          </ul>
+        </nav>
+
+        <div class="admin-main">
+          <h2>Reservas</h2>
+          <form action="#" aria-label="Filtrar reservas">
+            <div class="buscador">
+              <div class="campo">
+                <label for="f-estado">Estado de la reserva</label>
+                <select id="f-estado"><option>Todos</option><option>Pendiente de pago</option><option>Confirmada</option><option>En curso</option><option>Completada</option><option>Cancelada</option></select>
+              </div>
+              <div class="campo">
+                <label for="f-camper">Camper</label>
+                <select id="f-camper"><option>Todos</option><option>Camper Modelo A (ejemplo)</option></select>
+              </div>
+              <div class="campo">
+                <label for="f-codigo">Código</label>
+                <input id="f-codigo" type="text" placeholder="AB12-CD34 (ejemplo)">
+              </div>
+              <div><button type="button" class="btn sec">Filtrar</button></div>
+            </div>
+          </form>
+
+          <div class="contenedor-tabla">
+            <table class="tabla-admin">
+              <caption class="nota-ejemplo">Datos de ejemplo (ficticios). Estados según RN-021 y RN-022.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Código</th>
+                  <th scope="col">Cliente</th>
+                  <th scope="col">Camper</th>
+                  <th scope="col">Fechas</th>
+                  <th scope="col">Estado reserva</th>
+                  <th scope="col">Estado pago</th>
+                  <th scope="col">Importe</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>AB12-CD34</td><td>Cliente de ejemplo 1</td><td>Modelo A</td><td>dd/mm – dd/mm</td><td><span class="insignia ok">Confirmada</span></td><td><span class="insignia ok">Pagado</span></td><td>360 €</td></tr>
+                <tr><td>EF56-GH78</td><td>Cliente de ejemplo 2</td><td>Modelo B</td><td>dd/mm – dd/mm</td><td><span class="insignia aviso">Pendiente de pago</span></td><td><span class="insignia aviso">Pendiente</span></td><td>420 €</td></tr>
+                <tr><td>IJ90-KL12</td><td>Cliente de ejemplo 3</td><td>Modelo A</td><td>dd/mm – dd/mm</td><td><span class="insignia error">Cancelada por cliente</span></td><td><span class="insignia">Reembolsado parcialmente</span></td><td>360 €</td></tr>
+                <tr><td>MN34-OP56</td><td>Cliente de ejemplo 4</td><td>Modelo C</td><td>dd/mm – dd/mm</td><td><span class="insignia error">Expirada</span></td><td><span class="insignia error">Fallido</span></td><td>480 €</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <section aria-labelledby="titulo-detalle" style="margin-top:16px">
+            <h3 id="titulo-detalle">Detalle de una reserva (ejemplo)</h3>
+            <div class="rejilla">
+              <div class="tarjeta">
+                <h4>Datos</h4>
+                <p>Cliente de ejemplo 1 · Camper Modelo A · 4 noches · 360 €</p>
+                <p class="nota-ejemplo">Estados de reserva y de pago, iguales que los que ve el cliente (CA-032).</p>
+              </div>
+              <div class="tarjeta">
+                <h4>Línea de tiempo de eventos</h4>
+                <ul>
+                  <li>Reserva creada (pendiente de pago)</li>
+                  <li>Pago recibido y validado por la pasarela</li>
+                  <li>Reserva confirmada y correo enviado</li>
+                </ul>
+              </div>
+              <div class="tarjeta">
+                <h4>Acciones</h4>
+                <p><button type="button" class="btn sec">Añadir nota</button></p>
+                <p><button type="button" class="btn peligro">Cancelar reserva</button></p>
+                <p class="nota-ejemplo">Cancelar y reembolsar con reautenticación: recomendación de seguridad pendiente (SEG-005, ISS-030).</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueleto de la tabla.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> «Aún no hay reservas».</div>
+      <div class="estado exito"><strong>Éxito:</strong> cambios guardados con aviso.</div>
+      <div class="estado error"><strong>Error:</strong> validación de campo, conflicto de fechas o acción no permitida por el estado.</div>
+      <div class="estado"><strong>Sin permisos:</strong> sesión caducada, se vuelve al acceso (P14: usuario y contraseña, límite de intentos y error genérico; recuperación de contraseña pendiente, PEND-026).</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-019, RF-023 · HU-017, HU-021 · CA-021, CA-022, CA-032 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14).</li>
+        <li>Panel usable en escritorio y tableta; en pantallas estrechas la tabla se desplaza horizontalmente con cabeceras visibles.</li>
+        <li>Pendientes del cliente: segundo factor obligatorio del administrador (B6, SEG-006), auditoría mínima de acciones (PEND-038, SEG-007), pantalla de inicio del panel (PEND-032), correo de aviso al administrador (PEND-027).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P14, P15) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

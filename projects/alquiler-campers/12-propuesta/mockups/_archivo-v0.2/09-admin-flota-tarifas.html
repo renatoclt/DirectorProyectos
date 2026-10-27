@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de administración: flota y tarifas · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+
+  <p class="fase-aviso siguiente" role="note"><span class="fase siguiente">FASE SIGUIENTE</span> No forma parte de la entrega inicial (opción B): la gestión de flota, sedes y tarifas desde un panel pasa a la fase siguiente (desviación de RN-001 y RNF-010, CR-001).</p>
+
+  <header class="cabecera">
+    <h1>Panel de administración: flota, sedes y tarifas (pantallas P16, P17 y P18)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">P16, P17 y P18 de 03-ux · RF-020, RF-021, RF-022 · HU-018, HU-019, HU-020 · CA-011, CA-012, CA-033, CA-034</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <span class="logo">Ruta Camper · Panel <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></span>
+        <span>Administrador (rol único en el MVP)</span>
+      </header>
+
+      <div class="admin">
+        <nav class="admin-menu" aria-label="Menú del panel (ilustrativo)">
+          <ul>
+            <li><a href="08-admin-panel-reservas.html">Reservas</a></li>
+            <li><a href="09-admin-flota-tarifas.html" aria-current="page">Flota</a></li>
+            <li><a href="#sedes">Sedes</a></li>
+            <li><a href="#tarifas">Tarifas y temporadas</a></li>
+            <li><a href="#contenido">Bloqueos</a></li>
+            <li><a href="#contenido">Pagos y reembolsos</a></li>
+          </ul>
+        </nav>
+
+        <div class="admin-main">
+          <h2>Flota</h2>
+          <div class="contenedor-tabla">
+            <table class="tabla-admin">
+              <caption class="nota-ejemplo">Datos de ejemplo (ficticios)</caption>
+              <thead>
+                <tr><th scope="col">Camper</th><th scope="col">Plazas</th><th scope="col">Sede base</th><th scope="col">Estado</th><th scope="col">Acciones</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Camper Modelo A (ejemplo)</td><td>2</td><td>Sede de ejemplo</td><td><span class="insignia ok">Activo</span></td><td><button type="button" class="btn sec">Editar</button> <button type="button" class="btn sec">Desactivar</button></td></tr>
+                <tr><td>Camper Modelo B (ejemplo)</td><td>4</td><td>Sede de ejemplo</td><td><span class="insignia ok">Activo</span></td><td><button type="button" class="btn sec">Editar</button> <button type="button" class="btn sec">Desactivar</button></td></tr>
+                <tr><td>Camper Modelo C (ejemplo)</td><td>5</td><td>Sede de ejemplo</td><td><span class="insignia">Desactivado</span></td><td><button type="button" class="btn sec">Editar</button> <button type="button" class="btn sec">Activar</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="aviso-sitio">Si un camper tiene reservas futuras, se desactiva sin eliminarlo y se avisa del impacto (VAL-021, DEC-028). <span class="pendiente">Regla detallada pendiente (PEND-024)</span></p>
+
+          <section aria-labelledby="titulo-alta" style="margin-top:16px">
+            <h3 id="titulo-alta">Alta o edición de un camper</h3>
+            <form action="#" aria-label="Alta o edición de camper">
+              <div class="buscador">
+                <div class="campo"><label for="a-modelo">Modelo</label><input id="a-modelo" type="text" placeholder="Modelo de ejemplo"></div>
+                <div class="campo"><label for="a-plazas">Plazas</label><input id="a-plazas" type="text" inputmode="numeric" placeholder="2"></div>
+                <div class="campo"><label for="a-equip">Equipamiento</label><input id="a-equip" type="text" placeholder="Cocina, nevera (ejemplo)"></div>
+                <div class="campo"><label for="a-fianza">Fianza informativa</label><input id="a-fianza" type="text" placeholder="Importe por definir"><span class="ayuda">Pendiente: PEND-018</span></div>
+                <div class="campo">
+                  <label for="a-sede">Sede base</label>
+                  <select id="a-sede"><option>Sede de ejemplo</option></select>
+                </div>
+              </div>
+              <div class="campo">
+                <label for="a-imagen">Imagen (formato y peso validados)</label>
+                <input id="a-imagen" type="text" placeholder="Seleccionar imagen (ilustrativo)">
+                <span class="ayuda">Las imágenes de ejemplo se sustituyen aquí por las reales sin intervención técnica (RNF-013).</span>
+              </div>
+              <div class="campo">
+                <label for="a-alt">Texto alternativo de la imagen (obligatorio)</label>
+                <input id="a-alt" type="text" placeholder="Describe la imagen para personas que no la ven">
+              </div>
+              <p><button type="button" class="btn acento">Guardar</button> <button type="button" class="btn sec">Cancelar</button></p>
+            </form>
+          </section>
+
+          <section id="sedes" aria-labelledby="titulo-sedes" style="margin-top:16px">
+            <h3 id="titulo-sedes">Sedes</h3>
+            <p>Alta, edición y desactivación de sedes: dirección, horarios y contacto, con la misma regla de desactivación (RF-021, CA-033). <span class="pendiente">Una o varias sedes: decisión pendiente (PEND-028)</span></p>
+          </section>
+
+          <section id="tarifas" aria-labelledby="titulo-tarifas" style="margin-top:16px">
+            <h3 id="titulo-tarifas">Tarifas y temporadas</h3>
+            <p class="aviso-sitio"><strong>Los cambios no afectan a reservas ya creadas</strong> (el precio se congela al reservar, CA-012).</p>
+            <div class="contenedor-tabla">
+              <table class="tabla-admin">
+                <caption class="nota-ejemplo">Valores de ejemplo «por validar»; los define la empresa (RF-022, RN-007, RN-008)</caption>
+                <thead>
+                  <tr><th scope="col">Temporada</th><th scope="col">Rango de fechas</th><th scope="col">Precio por noche (Modelo A)</th><th scope="col">Mínimo de noches</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Temporada A (ejemplo)</td><td>dd/mm – dd/mm</td><td>85 €</td><td>2</td></tr>
+                  <tr><td>Temporada B (ejemplo)</td><td>dd/mm – dd/mm</td><td>95 €</td><td>3</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="aviso-sitio error" role="alert">
+              <p><strong>Validaciones:</strong> las temporadas no pueden solaparse (VAL-020); el mínimo de noches debe ser al menos 1. La seguridad recomienda que el precio sea mayor que 0 o que exista un flujo definido para importe 0: <span class="pendiente">decisión pendiente (PEND-039, SEG-005)</span>.</p>
+            </div>
+            <p><button type="button" class="btn acento">Guardar tarifas</button></p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Carga:</strong> esqueleto de las listas.</div>
+      <div class="estado vacio"><strong>Vacío:</strong> «Aún no hay flota» con acción de alta.</div>
+      <div class="estado exito"><strong>Éxito:</strong> «Guardado»; el cambio aparece en la web sin intervención técnica (CA-011).</div>
+      <div class="estado error"><strong>Error:</strong> validación de campo, temporadas solapadas, desactivar con reservas futuras.</div>
+      <div class="estado"><strong>Sin permisos / sin conexión:</strong> sesión caducada → acceso; cambios no guardados avisados.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-020, RF-021, RF-022 · HU-018, HU-019, HU-020 · CA-011, CA-012, CA-033, CA-034 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14). Los extras de tarifa son Fase 2 (DEC-018) y no se muestran.</li>
+        <li>La subida de imágenes admite una lista cerrada de formatos con reprocesado, según la recomendación de seguridad (SEG-009).</li>
+        <li>Pendientes del cliente: valores reales de tarifas, temporadas y mínimos (PEND-008, PEND-017), fianza (PEND-018), sedes (PEND-028), regla al desactivar (PEND-024).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P16, P17, P18) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

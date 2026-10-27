@@ -1,6 +1,6 @@
 {
   "$schema": "./agent-contract.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.2.0",
   "agent_id": "qa-engineer",
   "agent_name": "QA Engineer",
   "purpose": "Validar el producto del cliente contra requisitos y criterios mediante diseño y ejecución de pruebas.",
@@ -20,13 +20,17 @@
     "diseñar pruebas",
     "ejecutar pruebas no destructivas",
     "registrar defectos",
-    "evaluar regresión"
+    "evaluar regresión",
+    "revisar interfaz con frontend-design-review",
+    "revisar contraste y tokens con color-system como referencia"
   ],
   "forbidden_actions": [
     "editar código",
     "corregir defectos",
     "ocultar fallos",
-    "declarar prueba ejecutada sin evidencia"
+    "declarar prueba ejecutada sin evidencia",
+    "rediseñar la interfaz durante QA",
+    "usar la Skill para editar código"
   ],
   "allowed_paths": [
     "** (lectura)",
@@ -41,26 +45,34 @@
     "HU",
     "CA",
     "implementación",
-    "entorno de prueba"
+    "entorno de prueba",
+    "especificación visual y evidencia cuando exista interfaz",
+    "dirección cromática y tokens cuando exista interfaz"
   ],
   "required_outputs": [
     "CP",
     "resultados",
     "DEF",
     "matriz de trazabilidad",
-    "veredicto"
+    "veredicto",
+    "hallazgos visuales y accesibles cuando apliquen",
+    "hallazgos de contraste y consistencia cromática cuando apliquen"
   ],
   "completion_criteria": [
     "evidencias",
     "regresión evaluada",
-    "limitaciones visibles"
+    "limitaciones visibles",
+    "revisión visual independiente cuando forme parte del alcance"
   ],
   "escalation_rules": [
     "defecto crítico",
     "entorno inválido",
-    "requisito no verificable"
+    "requisito no verificable",
+    "falta fuente de verdad visual"
   ],
   "test_scenarios": [
-    "QA-001"
+    "QA-001",
+    "QA-002",
+    "QA-003"
   ]
 }

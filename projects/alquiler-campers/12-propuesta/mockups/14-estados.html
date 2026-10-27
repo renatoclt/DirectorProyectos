@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estados alternativos · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="camper-furgo" viewBox="0 0 240 124"><path class="v-cuerpo" d="M22 104V42Q22 32 32 32H150Q160 32 168 42L192 72Q196 76 206 78Q218 80 218 90V104Z"/><path class="v-cristal" d="M156 40H162Q166 40 170 46L186 68H156Z"/><rect class="v-cristal" x="38" y="44" width="34" height="22" rx="3"/><rect class="v-cristal" x="80" y="44" width="34" height="22" rx="3"/><path class="v-franja" d="M22 84H214V90H22z"/><circle class="v-rueda" cx="66" cy="104" r="16"/><circle class="v-buje" cx="66" cy="104" r="6"/><circle class="v-rueda" cx="178" cy="104" r="16"/><circle class="v-buje" cx="178" cy="104" r="6"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase">ENTREGA INICIAL</span>
+    <span class="fase siguiente">FASE SIGUIENTE</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. Esta pantalla reúne estados de ambos alcances; cada bloque indica el suyo. La marca «Ruta Camper» es una PROPUESTA, no aprobada.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">estados de P04, P05/P06, P07, P08 y P15 de 03-ux (secciones 6, 7 y 10) y de la solicitud de la opción B (CR-001) · RF-002, RF-006, RF-007, RF-010, RF-023 · CA-001, CA-004, CA-005, CA-006, CA-007, CA-010</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a></p>
+  </div>
+
+  <main class="pagina" id="contenido">
+    <h1>Estados alternativos de la interfaz</h1>
+    <p class="lead">Lo que ve la persona cuando algo no sale como esperaba: sin disponibilidad, errores del formulario, solicitud enviada, pago rechazado o en verificación, panel vacío y carga. Cada mensaje dice qué ha pasado y qué hacer después.</p>
+
+    <nav aria-label="Estados incluidos en esta pantalla">
+      <ul>
+        <li><a href="#sin-disponibilidad">Sin disponibilidad</a></li>
+        <li><a href="#errores-formulario">Errores del formulario de solicitud</a></li>
+        <li><a href="#solicitud-enviada">Enviando y solicitud enviada</a></li>
+        <li><a href="#pago">Pago rechazado, en verificación y reserva expirada</a></li>
+        <li><a href="#vacio-panel">Vacío del panel</a></li>
+        <li><a href="#carga">Esqueleto de carga</a></li>
+        <li><a href="#otros">Sin conexión, contenido largo y foco de teclado</a></li>
+      </ul>
+    </nav>
+
+    <section class="bloque-estado" id="sin-disponibilidad" aria-labelledby="t-sin">
+      <header>
+        <h2 id="t-sin">Sin disponibilidad</h2>
+        <span class="fase siguiente">FASE SIGUIENTE</span>
+      </header>
+      <p class="nota-ejemplo">Resultados de búsqueda sin campers libres (P04, CA-001). Las sugerencias automáticas de fechas o vehículos son Fase 2: en el MVP solo se ofrece cambiar fechas y contactar.</p>
+      <div class="vista">
+        <div class="vacio" role="status">
+          <svg class="miniatura v-crema" viewBox="0 0 240 124" aria-hidden="true" focusable="false"><use href="#camper-furgo"/></svg>
+          <h3>No hay campers libres del 10 al 14 de julio <span class="ej">fechas de ejemplo</span></h3>
+          <p>Prueba con otras fechas o escríbenos y buscamos una alternativa contigo.</p>
+          <div class="acciones">
+            <a class="btn acento" href="02-resultados-busqueda.html">Cambiar fechas</a>
+            <button type="button" class="btn">Escribirnos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-estado" id="errores-formulario" aria-labelledby="t-err">
+      <header>
+        <h2 id="t-err">Errores del formulario de solicitud</h2>
+        <span class="fase">ENTREGA INICIAL</span>
+      </header>
+      <p class="nota-ejemplo">Error recuperable (CA-010, CA-018): resumen arriba con enlaces a cada campo, mensaje junto al campo con texto, símbolo y borde más grueso (no solo color) y los datos escritos se conservan.</p>
+      <div class="vista">
+        <div class="aviso-sitio error" role="alert">
+          <p><strong>Revisa 3 campos antes de enviar tu solicitud:</strong></p>
+          <ul>
+            <li><a href="#e-devolucion">La devolución debe ser posterior a la recogida</a></li>
+            <li><a href="#e-email">El correo electrónico no es válido</a></li>
+            <li><a href="#e-acepto">Falta aceptar la política de privacidad</a></li>
+          </ul>
+        </div>
+        <form class="formulario" action="#" aria-label="Solicitud de reserva con errores (ejemplo)">
+          <div class="rejilla-campos dos">
+            <div class="campo">
+              <label for="e-recogida">Recogida</label>
+              <input id="e-recogida" type="text" value="10 de julio (ejemplo)" autocomplete="off">
+            </div>
+            <div class="campo invalido">
+              <label for="e-devolucion">Devolución</label>
+              <input id="e-devolucion" type="text" value="9 de julio (ejemplo)" autocomplete="off" aria-invalid="true" aria-describedby="e-devolucion-err">
+              <p class="mensaje-error" id="e-devolucion-err">La devolución debe ser posterior a la recogida. Elige una fecha a partir del 11 de julio (ejemplo).</p>
+            </div>
+            <div class="campo invalido">
+              <label for="e-email">Correo electrónico</label>
+              <input id="e-email" type="email" value="correo.ejemplo.test" autocomplete="email" aria-invalid="true" aria-describedby="e-email-err">
+              <p class="mensaje-error" id="e-email-err">Escribe tu correo con arroba, por ejemplo nombre@ejemplo.test, para poder responderte.</p>
+            </div>
+          </div>
+          <div class="grupo-error">
+            <div class="casilla">
+              <input id="e-acepto" type="checkbox" aria-invalid="true" aria-describedby="e-acepto-err">
+              <label for="e-acepto">He leído y acepto la política de privacidad (obligatorio).</label>
+            </div>
+            <p class="mensaje-error" id="e-acepto-err">Para enviar la solicitud necesitamos que aceptes la política de privacidad.</p>
+          </div>
+          <div class="acciones"><button type="button" class="btn acento">Enviar solicitud</button></div>
+        </form>
+        <div class="aviso-sitio error" role="alert">
+          <p><strong>Error de envío:</strong> no hemos podido enviar tu solicitud. Lo que escribiste sigue aquí. Inténtalo de nuevo o contáctanos por teléfono o correo (<span class="pendiente">datos de contacto por definir</span>).</p>
+          <div class="acciones"><button type="button" class="btn">Reintentar el envío</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-estado" id="solicitud-enviada" aria-labelledby="t-env">
+      <header>
+        <h2 id="t-env">Enviando y solicitud enviada</h2>
+        <span class="fase">ENTREGA INICIAL</span>
+      </header>
+      <p class="nota-ejemplo">La confirmación no promete disponibilidad: la empresa la confirma a mano (RN-026, opción B).</p>
+      <div class="vista">
+        <div class="acciones"><button type="button" class="btn bloqueo" aria-disabled="true">Enviando tu solicitud…</button></div>
+        <div class="aviso-sitio ok" role="status">
+          <p><strong>Hemos recibido tu solicitud.</strong></p>
+          <p>La empresa la revisará y te responderá por correo o teléfono para confirmar la disponibilidad y los siguientes pasos. <strong>Tu solicitud todavía no es una reserva confirmada.</strong> Plazo de respuesta: <span class="pendiente">pendiente de definir por el cliente</span>.</p>
+          <div class="acciones"><a class="btn" href="13-catalogo-entrega-inicial.html">Seguir viendo campers</a><a class="btn" href="01-inicio-entrega-inicial.html">Volver al inicio</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-estado" id="pago" aria-labelledby="t-pago">
+      <header>
+        <h2 id="t-pago">Pago rechazado, en verificación y reserva expirada</h2>
+        <span class="fase siguiente">FASE SIGUIENTE</span>
+      </header>
+      <p class="nota-ejemplo">El pago lo gestiona la pasarela; la web nunca recibe datos de tarjeta (RNF-006, CA-031). La reserva solo se confirma cuando el servidor recibe la notificación de la pasarela (CA-004).</p>
+      <div class="vista">
+        <div class="aviso-sitio error" role="alert">
+          <h3>Pago rechazado</h3>
+          <p>No hemos podido completar el pago. Revisa los datos o prueba otra tarjeta. Tus fechas siguen reservadas durante 09:41 <span class="ej">tiempo de ejemplo</span>.</p>
+          <div class="acciones"><button type="button" class="btn acento">Reintentar el pago</button><a class="btn" href="04-resumen-y-datos-conductor.html">Volver a mis datos</a></div>
+        </div>
+        <div class="aviso-sitio aviso" role="status">
+          <h3>Pago en verificación</h3>
+          <p>Estamos verificando tu pago. No lo repitas: te avisaremos por correo. Mientras tanto no hay botón de pago para evitar un cobro doble.</p>
+          <div class="acciones"><a class="btn" href="07-consulta-reserva.html">Consultar el estado de mi reserva</a></div>
+        </div>
+        <div class="aviso-sitio error" role="alert">
+          <h3>Reserva expirada</h3>
+          <p>Tu reserva ha expirado y las fechas se han liberado. Si pagaste, te lo reembolsaremos.</p>
+          <div class="acciones"><a class="btn acento" href="02-resultados-busqueda.html">Buscar otras fechas</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-estado" id="vacio-panel" aria-labelledby="t-vac">
+      <header>
+        <h2 id="t-vac">Vacío del panel de administración</h2>
+        <span class="fase siguiente">FASE SIGUIENTE</span>
+      </header>
+      <p class="nota-ejemplo">Estado vacío de P15 (reservas): orienta la siguiente acción en lugar de dejar una tabla en blanco.</p>
+      <div class="vista">
+        <div class="vacio">
+          <h3>Aún no hay reservas</h3>
+          <p>Cuando una persona reserve, aparecerá aquí con el estado de su reserva y de su pago. Mientras tanto, comprueba que la flota y las tarifas estén activas.</p>
+          <a class="btn acento" href="09-admin-flota-tarifas.html">Revisar flota y tarifas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-estado" id="carga" aria-labelledby="t-carga">
+      <header>
+        <h2 id="t-carga">Esqueleto de carga</h2>
+        <span class="fase">ENTREGA INICIAL</span>
+        <span class="fase siguiente">FASE SIGUIENTE</span>
+      </header>
+      <p class="nota-ejemplo">Reservan la altura final para evitar saltos de diseño. La pulsación se detiene tras unos segundos y con reducción de movimiento no se anima.</p>
+      <div class="vista" aria-busy="true">
+        <p role="status"><span class="solo-lectura">Cargando campers…</span><strong aria-hidden="true">Cargando campers…</strong></p>
+        <div aria-hidden="true">
+          <article class="camper fila">
+            <span class="esqueleto foto-sk"></span>
+            <div class="datos">
+              <span class="esqueleto linea-sk ancho-l"></span>
+              <span class="esqueleto linea-sk ancho-s"></span>
+              <span class="esqueleto linea-sk ancho-m"></span>
+            </div>
+          </article>
+          <article class="camper fila">
+            <span class="esqueleto foto-sk"></span>
+            <div class="datos">
+              <span class="esqueleto linea-sk ancho-l"></span>
+              <span class="esqueleto linea-sk ancho-s"></span>
+              <span class="esqueleto linea-sk ancho-m"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque-estado" id="otros" aria-labelledby="t-otros">
+      <header>
+        <h2 id="t-otros">Sin conexión, contenido largo y foco de teclado</h2>
+        <span class="fase">ENTREGA INICIAL</span>
+        <span class="fase siguiente">FASE SIGUIENTE</span>
+      </header>
+      <div class="vista">
+        <div class="aviso-sitio aviso" role="status">
+          <h3>Sin conexión</h3>
+          <p>No hay conexión ahora mismo. Lo que escribiste sigue en el formulario. Comprueba tu conexión y vuelve a intentarlo.</p>
+          <div class="acciones"><button type="button" class="btn">Reintentar</button></div>
+        </div>
+        <div class="ticket">
+          <h3>Contenido largo</h3>
+          <p><strong>Camper Modelo B «Tramontana», edición extendida con toldo, baca y equipamiento completo para rutas largas por la costa y la sierra</strong> <span class="ej">dato de ejemplo</span></p>
+          <p>Correo de la persona: persona.con.un.nombre.muy.largo.para.probar.el.reflujo@ejemplo.test</p>
+        </div>
+        <h3>Foco de teclado</h3>
+        <p>Con la tecla Tab, cada elemento interactivo muestra un contorno grueso de color tinta (ocre sobre fondo oscuro). Así se vería sobre un botón, un campo y un enlace:</p>
+        <div class="acciones">
+          <a class="btn acento muestra-foco" href="11-solicitud-reserva.html">Solicitar reserva</a>
+          <a href="12-tarifas-y-condiciones.html" class="muestra-foco">Ver tarifas y condiciones</a>
+        </div>
+        <div class="campo">
+          <label for="o-campo">Campo con foco</label>
+          <input id="o-campo" class="muestra-foco" type="text" value="Texto de ejemplo">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="notas-diseno" aria-label="Notas de diseño">
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Referencias: estados de interfaz y microcopy de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (secciones 6, 7 y 10), criterios CA-001, CA-004 a CA-007, CA-010 y CA-018.</li>
+        <li>Los textos de error indican qué ocurrió y cómo seguir. El estado nunca depende solo del color: hay texto, símbolo y borde.</li>
+        <li>No se inventan reglas nuevas: el plazo de respuesta de la empresa, el correo de contacto y la duración del bloqueo siguen pendientes del cliente.</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

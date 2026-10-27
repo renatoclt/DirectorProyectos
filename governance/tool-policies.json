@@ -1,5 +1,5 @@
 {
-  "policy_version": "1.0.0",
+  "policy_version": "1.1.0",
   "target": "vscode",
   "visible_agents": [
     "Director de Proyectos"
@@ -149,6 +149,14 @@
     "Solo Director de Proyectos es visible en el selector.",
     "Los agentes ocultos deben permitir invocación como subagentes.",
     "QA, Seguridad y auditores no tienen herramienta edit.",
-    "El Ingeniero de Testing de Agentes no actualiza el baseline."
-  ]
+    "El Ingeniero de Testing de Agentes no actualiza el baseline.",
+    "Prototipador UX solo escribe mockups conceptuales dentro del expediente del proyecto."
+  ],
+  "prototype_agents": {
+    "Prototipador UX": [
+      "read",
+      "search",
+      "edit"
+    ]
+  }
 }

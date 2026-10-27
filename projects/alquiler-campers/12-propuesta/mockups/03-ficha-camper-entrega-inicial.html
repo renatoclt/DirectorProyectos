@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de camper (entrega inicial) · Mockup ilustrativo · Ruta Camper (propuesta)</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="isotipo" viewBox="0 0 40 40"><circle class="i-aro" cx="20" cy="20" r="18"/><path class="i-ruta" d="M9 29c4-9 9 0 13-8s5-7 9-11"/><circle class="i-ini" cx="9" cy="29" r="2.6"/><circle class="i-meta" cx="31" cy="10" r="3.2"/></symbol>
+    <symbol id="escena-costa" viewBox="0 0 240 140"><rect class="e-cielo" width="240" height="140"/><circle class="e-sol" cx="186" cy="92" r="26"/><path class="e-mar" d="M0 100h240v40H0z"/><path class="e-suelo" d="M0 124h240v16H0z"/></symbol>
+    <symbol id="camper-furgo" viewBox="0 0 240 124"><path class="v-cuerpo" d="M22 104V42Q22 32 32 32H150Q160 32 168 42L192 72Q196 76 206 78Q218 80 218 90V104Z"/><path class="v-cristal" d="M156 40H162Q166 40 170 46L186 68H156Z"/><rect class="v-cristal" x="38" y="44" width="34" height="22" rx="3"/><rect class="v-cristal" x="80" y="44" width="34" height="22" rx="3"/><path class="v-franja" d="M22 84H214V90H22z"/><circle class="v-rueda" cx="66" cy="104" r="16"/><circle class="v-buje" cx="66" cy="104" r="6"/><circle class="v-rueda" cx="178" cy="104" r="16"/><circle class="v-buje" cx="178" cy="104" r="6"/></symbol>
+  </svg>
+
+  <div class="banda-mock" role="note">
+    <span class="fase">ENTREGA INICIAL</span>
+    <p><strong>MOCKUP ILUSTRATIVO</strong> de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Nombres, importes, fechas y datos son de ejemplo. Pantalla de la opción B (CR-001): la ficha no comprueba disponibilidad ni calcula el total; invita a solicitar la reserva.</p>
+  </div>
+  <div class="origen" role="note">
+    <p>Proyecto: Web de alquiler de campers (alquiler-campers) · Origen: <span class="pendiente">P03 de 03-ux simplificada · RF-001 · HU-001 · opción B (CR-001)</span> · Estado: BORRADOR · Fecha: 2026-10-26</p>
+    <p><a href="index.html">Volver a la galería</a> · Versión de la fase siguiente: <a href="03-ficha-camper.html">03 · Ficha con disponibilidad y precio</a></p>
+  </div>
+
+  <div class="sitio">
+    <header class="sitio-cab">
+      <a class="logo" href="01-inicio-entrega-inicial.html"><svg class="isotipo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#isotipo"/></svg>Ruta Camper</a>
+      <span class="sello-marca">Marca: PROPUESTA, no aprobada</span>
+      <nav aria-label="Navegación principal (ilustrativa)">
+        <a href="01-inicio-entrega-inicial.html">Inicio</a>
+        <a href="13-catalogo-entrega-inicial.html" aria-current="page">Campers</a>
+        <a href="12-tarifas-y-condiciones.html">Tarifas y condiciones</a>
+        <span class="pasivo">Contacto</span>
+        <a href="11-solicitud-reserva.html">Solicitar reserva</a>
+      </nav>
+    </header>
+
+    <main class="sitio-cuerpo" id="contenido">
+      <nav aria-label="Migas de pan"><p class="migas"><a href="01-inicio-entrega-inicial.html">Inicio</a> › <a href="13-catalogo-entrega-inicial.html">Campers</a> › Calima</p></nav>
+
+      <div class="dos-columnas">
+        <div>
+          <figure class="foto">
+            <svg class="v-ocre" viewBox="0 0 240 140" role="img" aria-label="Ilustración de ejemplo: furgoneta camper ocre junto al mar al atardecer"><use href="#escena-costa"/><use href="#camper-furgo" x="30" y="32" width="180" height="93"/></svg>
+            <figcaption>IMAGEN DE EJEMPLO (se sustituye por fotos reales cuando el cliente las aporte)</figcaption>
+          </figure>
+          <h1>Camper Modelo A «Calima» <span class="ej">dato de ejemplo</span></h1>
+          <p>Descripción de ejemplo: texto breve que redactará la empresa. <span class="pendiente">Contenido real pendiente (PEND-020)</span></p>
+
+          <h2>Características</h2>
+          <dl class="rasgos">
+            <dt>Plazas</dt><dd>2 <span class="ej">dato de ejemplo</span></dd>
+            <dt>Equipamiento</dt><dd>Cocina, nevera y cama doble <span class="ej">dato de ejemplo</span></dd>
+            <dt>Sede base</dt><dd>Sede de ejemplo</dd>
+            <dt>Fianza</dt><dd><span class="pendiente">importe y texto pendientes (PEND-018)</span>. Se gestiona en la recogida; no se cobra ahora.</dd>
+          </dl>
+          <p>Antes de pedir tu reserva, revisa las <a href="12-tarifas-y-condiciones.html">tarifas y condiciones</a>. <span class="pendiente">Textos pendientes de validación legal</span></p>
+        </div>
+
+        <aside class="ticket" aria-labelledby="t-reserva">
+          <h2 id="t-reserva">¿Te interesa Calima?</h2>
+          <p class="precio">Desde 90 € <small>por noche · ejemplo</small></p>
+          <p class="nota-ejemplo">Precio orientativo. El importe final y la disponibilidad los confirma la empresa al responder tu solicitud.</p>
+          <hr class="corte">
+          <div class="acciones"><a class="btn acento completo" href="11-solicitud-reserva.html">Solicitar reserva de Calima</a></div>
+          <p class="nota-ejemplo">No se cobra nada en la web.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="sitio-pie">
+      <p>Aviso legal · Privacidad · Cookies · Condiciones de alquiler · Contacto</p>
+      <p><span class="pendiente">Textos legales y datos de contacto en borrador, pendientes de validación con asesoría (PEND-010)</span></p>
+    </footer>
+  </div>
+
+  <aside class="notas-diseno" aria-label="Estados y notas de diseño">
+    <section aria-labelledby="t-estados">
+      <h2 id="t-estados">Estados de la pantalla</h2>
+      <div class="estados">
+        <p class="estado carga"><strong>Carga:</strong> esqueleto de la ilustración y del bloque lateral con la altura final reservada.</p>
+        <p class="estado vacio"><strong>Vacío:</strong> catálogo sin campers publicados: se invita a «Solicitar reserva» para consultar la flota.</p>
+        <p class="estado error"><strong>No encontrado:</strong> un camper retirado del contenido no aparece (404 o redirección: <span class="pendiente">decisión pendiente, PEND-030</span>).</p>
+        <p class="estado"><strong>Contenido largo:</strong> el nombre y el equipamiento se parten en varias líneas sin desbordar; el bloque lateral pasa debajo en móvil.</p>
+      </div>
+    </section>
+    <section aria-labelledby="t-notas">
+      <h2 id="t-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-001 (parcial) · HU-001 (matriz de <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a>, sección 14, simplificada).</li>
+        <li>Diferencia con la fase siguiente: no hay selector de fechas, comprobación de disponibilidad, desglose de precio ni botón hacia el pago. La única acción principal es «Solicitar reserva».</li>
+        <li>La página es indexable con datos estructurados básicos de vehículo (RF-018, RNF-002); no se garantiza posicionamiento.</li>
+        <li>Pendientes del cliente: fotos reales (PEND-020), fianza (PEND-018), comportamiento de fichas retiradas (PEND-030), textos legales (PEND-010).</li>
+      </ul>
+    </section>
+  </aside>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P03) y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · <a href="direccion-visual.md">Dirección visual</a> · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

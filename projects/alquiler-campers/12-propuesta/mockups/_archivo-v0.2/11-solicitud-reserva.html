@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitud de reserva · Mockup ilustrativo · Web de alquiler de campers</title>
+  <link rel="stylesheet" href="_base.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso-mockup" role="note">
+    MOCKUP ILUSTRATIVO de media fidelidad. No es diseño final aprobado: marca, colores y textos definitivos están pendientes del cliente. Todos los nombres, importes y datos son de ejemplo.
+  </p>
+  <p class="fase-aviso" role="note"><span class="fase">ENTREGA INICIAL</span> Pantalla nueva de la opción B (CR-001): el formulario envía un aviso por correo a la empresa; no confirma disponibilidad ni cobra.</p>
+
+  <header class="cabecera">
+    <h1>Solicitud de reserva (formulario y confirmación de recepción)</h1>
+    <p class="meta">
+      Proyecto: Web de alquiler de campers (alquiler-campers) ·
+      Origen: <span class="pendiente">Opción B (CR-001), derivada de P05 y P06 de 03-ux · RF-006 (parcial), RF-010 (parcial), RF-026 (parcial), RN-026 · HU-005</span> ·
+      Estado: BORRADOR · Fecha: 2026-10-26
+    </p>
+    <p class="meta"><a href="index.html">Volver a la galería</a></p>
+  </header>
+
+  <main class="contenido" id="contenido">
+    <div class="sitio">
+      <header class="sitio-cab">
+        <a class="logo" href="01-inicio-entrega-inicial.html">Ruta Camper <span class="sello-marca">Nombre y marca: PROPUESTA, no aprobada</span></a>
+        <nav aria-label="Navegación principal (ilustrativa)">
+          <a href="01-inicio-entrega-inicial.html">Inicio</a>
+          <a href="03-ficha-camper-entrega-inicial.html">Campers</a>
+          <a href="12-tarifas-y-condiciones.html">Tarifas y condiciones</a>
+          <a href="11-solicitud-reserva.html" class="actual" aria-current="page">Solicitar reserva</a>
+        </nav>
+      </header>
+
+      <div class="sitio-cuerpo">
+        <h2>Solicitar reserva</h2>
+        <p class="aviso-sitio"><strong>Importante:</strong> esto es una <strong>solicitud</strong>, no una reserva confirmada. No se cobra nada en la web. La empresa te responderá para confirmar la disponibilidad y los siguientes pasos.</p>
+
+        <section class="panel-lateral" aria-labelledby="titulo-form">
+          <h3 id="titulo-form">Tu solicitud</h3>
+          <form action="#" aria-label="Solicitud de reserva">
+            <div class="buscador">
+              <div class="campo">
+                <label for="camper">Camper</label>
+                <select id="camper">
+                  <option>Camper Modelo A (ejemplo)</option>
+                  <option>Camper Modelo B (ejemplo)</option>
+                  <option>Camper Modelo C (ejemplo)</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="recogida">Recogida</label>
+                <input id="recogida" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                <span class="ayuda">Formato dd/mm/aaaa</span>
+              </div>
+              <div class="campo">
+                <label for="devolucion">Devolución</label>
+                <input id="devolucion" type="text" placeholder="dd/mm/aaaa" inputmode="numeric" autocomplete="off">
+                <span class="ayuda">Posterior a la recogida</span>
+              </div>
+            </div>
+
+            <h4>Datos del conductor principal</h4>
+            <div class="buscador">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" autocomplete="given-name" placeholder="Nombre de ejemplo">
+              </div>
+              <div class="campo">
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" type="text" autocomplete="family-name" placeholder="Apellidos de ejemplo">
+              </div>
+              <div class="campo">
+                <label for="email">Correo electrónico</label>
+                <input id="email" type="email" autocomplete="email" placeholder="correo@ejemplo.test">
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" type="tel" autocomplete="tel" placeholder="+34 000 000 000">
+                <span class="ayuda">Admite prefijo internacional (+34)</span>
+              </div>
+              <div class="campo">
+                <label for="ocupantes">Número de ocupantes</label>
+                <input id="ocupantes" type="text" inputmode="numeric" placeholder="2">
+                <span class="ayuda">No puede superar las plazas del camper</span>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="mensaje">Comentarios (opcional)</label>
+              <textarea id="mensaje" rows="3" placeholder="Texto de ejemplo"></textarea>
+            </div>
+
+            <div class="casilla">
+              <input id="acepto" type="checkbox">
+              <label for="acepto">He leído y acepto la <a href="#contenido">política de privacidad</a> (obligatorio, casilla sin marcar). <span class="pendiente">Texto legal en borrador, pendiente de validación con asesoría (PEND-010)</span></label>
+            </div>
+            <p class="nota-ejemplo">La fecha y la versión de la política aceptada se incluyen en el correo que recibe la empresa (RN-026).</p>
+            <div class="casilla">
+              <input id="marketing" type="checkbox">
+              <label for="marketing">Quiero recibir novedades (opcional, aparte y sin marcar).</label>
+            </div>
+            <p class="aviso-sitio">Verificaremos tu carnet y tu documento de identidad en la recogida; no se piden documentos en la web.</p>
+            <p class="nota-ejemplo">Protección antispam: <span class="pendiente">método por definir en la construcción</span> (sin pedir datos adicionales al usuario).</p>
+            <p>
+              <button type="button" class="btn acento">Enviar solicitud</button>
+            </p>
+          </form>
+        </section>
+
+        <section aria-labelledby="titulo-confirmacion" style="margin-top:16px">
+          <h3 id="titulo-confirmacion">Después de enviar: confirmación de recepción (ejemplo)</h3>
+          <div class="aviso-sitio ok" role="status">
+            <p><strong>Hemos recibido tu solicitud.</strong></p>
+            <p>La empresa la revisará y te responderá por correo o teléfono para confirmar la disponibilidad y los siguientes pasos. <strong>Tu solicitud todavía no es una reserva confirmada.</strong></p>
+            <p class="nota-ejemplo">Texto de ejemplo. Plazo de respuesta de la empresa: <span class="pendiente">pendiente de definir por el cliente</span>.</p>
+          </div>
+          <p><a class="btn sec" href="01-inicio-entrega-inicial.html">Volver al inicio</a></p>
+        </section>
+      </div>
+
+      <footer class="sitio-pie">
+        Aviso legal · Privacidad · Cookies · Condiciones de alquiler
+        <span class="pendiente">Textos legales en borrador, pendientes de validación con asesoría (PEND-010)</span>
+      </footer>
+    </div>
+
+    <section class="marco" aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados de la pantalla</h2>
+      <div class="estado carga"><strong>Enviando:</strong> el botón queda desactivado y se informa «Enviando tu solicitud».</div>
+      <div class="estado error"><strong>Error de campos:</strong> mensaje junto al campo, con texto que explica cómo corregir (por ejemplo, «La devolución debe ser posterior a la recogida»).</div>
+      <div class="estado error"><strong>Error de envío:</strong> «No hemos podido enviar tu solicitud. Inténtalo de nuevo o contáctanos por teléfono o correo» (datos de contacto por definir).</div>
+      <div class="estado exito"><strong>Éxito:</strong> confirmación de recepción, sin confirmar disponibilidad.</div>
+    </section>
+
+    <section class="marco" aria-labelledby="titulo-notas">
+      <h2 id="titulo-notas">Notas de diseño</h2>
+      <ul>
+        <li>Requisitos e historias que ilustra: RF-006 (parcial: solicitud, sin resumen ni pago), RF-010 (parcial: aviso por correo, sin justificante), RF-026 (parcial: aviso por solicitud), RN-026 (fecha y versión solo en el correo) · HU-005.</li>
+        <li>Sin base de datos propia: la solicitud llega por correo a la empresa, con copia a un segundo buzón para no perder solicitudes.</li>
+        <li>La solicitud no bloquea fechas ni garantiza disponibilidad; la confirma la empresa manualmente.</li>
+        <li>Pendientes del cliente: correo de destino y segundo buzón, textos legales (PEND-010), plazo de respuesta de la empresa, edad mínima y requisitos del conductor (PEND-019).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Fuente: <a href="../../03-ux/ux-specification.md">03-ux/ux-specification.md</a> (P05, P06) y <a href="../analisis-consolidado.md">análisis consolidado</a> (opción B) · Propuesta comercial en BORRADOR · Mockup ilustrativo, sin funcionalidad real.
+  </footer>
+</body>
+</html>

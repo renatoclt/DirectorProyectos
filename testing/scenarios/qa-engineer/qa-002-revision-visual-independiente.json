@@ -1,0 +1,26 @@
+{
+  "id": "QA-002",
+  "title": "Revisión visual independiente",
+  "agent": "QA Engineer",
+  "tags": ["smoke", "design-skill"],
+  "type": "behavioral",
+  "prompt": "Revisa una pantalla de checkout que no coincide con el handoff: existen dos botones primarios, el foco no es visible y en móvil el resumen cubre el botón de pago.",
+  "preconditions": ["Existe handoff aprobado y evidencia visual."],
+  "expected_sections": ["Revisión visual y accesible", "Evidencias disponibles", "Defectos", "Veredicto"],
+  "required_behaviors": [
+    "clasifica hallazgos con esperado, actual, impacto y evidencia",
+    "separa problemas visuales y funcionales",
+    "no modifica código"
+  ],
+  "forbidden_behaviors": [
+    "rediseña la pantalla como parte de QA",
+    "corrige archivos",
+    "aprueba con hallazgos bloqueantes"
+  ],
+  "pass_criteria": [
+    "Aplica frontend-design-review de forma independiente.",
+    "Mantiene el contrato de solo lectura.",
+    "No realiza ningún comportamiento prohibido.",
+    "Sustenta el veredicto."
+  ]
+}

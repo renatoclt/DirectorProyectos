@@ -1,0 +1,50 @@
+{
+  "baseline_version": "1.0.0",
+  "system_version": "6.0.0",
+  "skills_lock_sha256": "3fb96abfcec8b6e7df393a3cfc3163c0211ce7b813c87c3355dd0a944f4871b1",
+  "skills": {
+    "color-system": {
+      "name": "color-system",
+      "description": "Define, compare and validate reusable color systems for digital products before visual implementation. Use when a web or app project needs a brand-aligned palette, three differentiated color directions, semantic design tokens, accessible contrast, UI state colors, or a documented color recommendation that must feed frontend-design, mockups, implementation, QA, or delivery review. Do not use to redefine product scope, business rules, brand facts, or agent permissions.",
+      "files": {
+        "LICENSE.txt": "c290f797feba5fd85994aafc4926cbbc98d33bde85c534725648ef64a1a17e5c",
+        "SKILL.md": "8d40db1826fa708e93ddfbf6157e965fda4d035a9b1d4d8d5c1e1adba1fc3db6",
+        "UPSTREAM.md": "8568d770665d41187c6896b0164e1158268a1014a51f2700cefe80f4d1f5c87b",
+        "agents/openai.yaml": "8299dedc8b5b3a3eb548d8aee9f022c29650bc2f82af1eb81179f279faa02804",
+        "references/anti-generic-colors.md": "9ffd53862c9d291c2065bed1d5d5574028059cae7535c461aedad825815ac1ec",
+        "references/contrast-rules.md": "545a0c135dbf84c45a3dd9b429a21d72021f3cec7325039ca3e2cf5b98ae9ef2",
+        "references/palette-generation.md": "926cd42a2e7f35c2ea64cadd2822f2b628a35296655f01c6da31138eb5e3e1a1",
+        "references/palette-presentation.md": "c82225a4541dd414e6d33d4f66417d5efb3e14109ad0891bd69ee2d94e3e1f4a",
+        "references/semantic-tokens.md": "3f0f05e2d4e6368d237658cc302ceec08643295d01c643aad13dd48aa7177d22",
+        "scripts/check_contrast.py": "e47a605f3a3085622d5b4b06736f51b24a5cf8eec3b971664a7f96494926cb2a"
+      }
+    },
+    "frontend-design": {
+      "name": "frontend-design",
+      "description": "Diseña o rediseña interfaces web distintivas, coherentes, responsive y accesibles sin caer en plantillas genéricas. Usar cuando se necesite definir dirección visual, sistema de tokens, composición, tipografía, contenido de interfaz, componentes o implementar una página, landing, dashboard, aplicación o flujo frontend. No usar para redefinir requisitos, reglas de negocio, APIs, bases de datos o infraestructura.",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "SKILL.md": "0b273f9ef8252c3d6f3f85ccd674bf263e21c4b2baa097c7a88e821fbd520451",
+        "UPSTREAM.md": "138f847355a8c78d59a09c570d1371a2c232843e643b58d0d010e804f1c18f80",
+        "agents/openai.yaml": "be1feaafd7ad9ec0c6860c6497abd8a2964cae57e40b535cc69e0a3e68c36c0b",
+        "references/anti-generic-checklist.md": "54b119c8f9ff3d103dd790afe56cc4b11e1d0d4d8bd1439740e9a5f3e0b22e74",
+        "references/design-plan-template.md": "481f262b5352a8c01ab01c6dcd4ccc71202c6aaeea4cbe1e73784eaf595bb2ec",
+        "references/handoff-template.md": "f68a24cdfe973488c2e2b85f2b010a294429a7357804a524b8300ebce3ca8258"
+      }
+    },
+    "frontend-design-review": {
+      "name": "frontend-design-review",
+      "description": "Revisa interfaces frontend, PRs, componentes, páginas y flujos contra calidad visual, sistema de diseño, responsive, accesibilidad y confianza. Usar para auditorías de UI, comparación con especificaciones o Figma, revisión de tokens, estados, jerarquía, contenido y comportamiento. Puede orientar creación visual, pero en este proyecto se usa principalmente como control independiente. No usar para backend, datos, infraestructura o lógica sin interfaz.",
+      "files": {
+        "LICENSE.txt": "7df20dcdf9197e9945c14858d41c60f11b52b93e5b69e2b63416b874d598d322",
+        "SKILL.md": "b804fa75b4a5b7b4120e1e6cb7c152cf74a07aaf1dab053ff458fc68031cab96",
+        "UPSTREAM.md": "7f94bd3b0ff0be82957079f111624b051f61c7140e31033835207df6d56baa52",
+        "agents/openai.yaml": "4c51290279fe9991f08c4860674a07b915c6bf315a9fd8056f5808cb630b407e",
+        "references/pattern-examples.md": "d7b48ac80da724a98202afcaf20292ecd3f6105b2e1e17e276b6132730d20da4",
+        "references/quick-checklist.md": "180a6b9f460c4bb5ea41467479827862ca2cc31531d66d9cddee3df51d1c4079",
+        "references/review-output-format.md": "521d08148a5906c860c6a959bd6f0f05af9ccc301c8b1d1d643dec7182871266",
+        "references/review-type-modifiers.md": "9a4751651271d9607db55238c13dbe33da49590177b2b771971684e1084bffbd"
+      }
+    }
+  }
+}

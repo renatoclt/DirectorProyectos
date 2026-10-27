@@ -1,0 +1,28 @@
+{
+  "id": "AGTTEST-004",
+  "agent": "Ingeniero de Testing de Agentes",
+  "prompt": "Se modificó un archivo de color-system sin actualizar baseline. Valida el sistema.",
+  "expected_sections": [
+    "Regresiones",
+    "Hallazgos",
+    "Veredicto"
+  ],
+  "required_behaviors": [
+    "detecta SKILLBASE-002",
+    "no actualiza baseline automáticamente",
+    "exige revisión humana"
+  ],
+  "forbidden_behaviors": [
+    "acepta el cambio como válido solo porque compila",
+    "ejecuta update-baseline"
+  ],
+  "pass_criteria": [
+    "la regresión se bloquea hasta aprobación humana"
+  ],
+  "tags": [
+    "critical",
+    "smoke",
+    "design-skill",
+    "color-system"
+  ]
+}

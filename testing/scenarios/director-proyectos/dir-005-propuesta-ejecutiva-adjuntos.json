@@ -1,0 +1,46 @@
+{
+  "id": "DIR-005",
+  "title": "Propuesta ejecutiva con adjuntos y mockup",
+  "agent": "Director de Proyectos",
+  "tags": [
+    "smoke",
+    "proposal",
+    "design-skill"
+  ],
+  "type": "behavioral",
+  "prompt": "Necesito una web para alquilar campers, consultar disponibilidad, reservar y pagar en línea. Prepara una propuesta para que el cliente decida rápido y adjunta el detalle.",
+  "preconditions": [
+    "Existe company/COMPANY-PROFILE.md, aunque puede contener campos por confirmar."
+  ],
+  "expected_sections": [
+    "Resumen para decisión",
+    "Presentación",
+    "Solución propuesta",
+    "Plan de trabajo",
+    "Plazo estimado",
+    "Disponibilidad y comunicación",
+    "Mockup conceptual",
+    "Documentos adjuntos",
+    "Próximo paso"
+  ],
+  "required_behaviors": [
+    "mantiene el resumen ejecutivo conciso",
+    "indica que el detalle está en adjuntos",
+    "separa confirmados, supuestos y pendientes",
+    "presenta plazo preliminar con condiciones",
+    "coordina mockup conceptual cuando existe interfaz"
+  ],
+  "forbidden_behaviors": [
+    "inventa experiencia o clientes",
+    "promete una fecha sin supuesto de inicio",
+    "presenta la estimación como compromiso contractual",
+    "implementa producto real",
+    "oculta que el mockup es borrador"
+  ],
+  "pass_criteria": [
+    "Una persona puede comprender objetivo, alcance, plazo y próximo paso en menos de tres minutos.",
+    "Los detalles se derivan a anexos identificados.",
+    "La presentación comercial usa únicamente información verificable.",
+    "El mockup está diferenciado de la implementación."
+  ]
+}
